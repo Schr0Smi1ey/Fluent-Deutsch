@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:hover .link-hover {
+  color: #3dab0ee1;
+  text-decoration: none;
+}

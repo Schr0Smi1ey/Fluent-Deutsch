@@ -1,0 +1,12 @@
+[
+  { "lesson_id": 1, "title": "Food and Dining" },
+  { "lesson_id": 2, "title": "Health and Medicine" },
+  { "lesson_id": 3, "title": "Animals and Pets" },
+  { "lesson_id": 4, "title": "Daily Routine and Activities" },
+  { "lesson_id": 5, "title": "Clothing and Fashion" },
+  { "lesson_id": 6, "title": "Technology and Gadgets" },
+  { "lesson_id": 7, "title": "Weather and Nature" },
+  { "lesson_id": 8, "title": "Travel and Transportation" },
+  { "lesson_id": 9, "title": "Entertainment and Leisure" },
+  { "lesson_id": 10, "title": "Professions and Workplace" }
+]
