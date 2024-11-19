@@ -34,8 +34,8 @@ const NavBar = () => {
       <NavLink to="/tutorials">
         <span>Tutorials</span>
       </NavLink>
-      <NavLink to="/About">
-        <span className=" block text-center">About Us</span>
+      <NavLink to="/about-us">
+        <span className="block text-center">About Us</span>
       </NavLink>
     </ul>
   );

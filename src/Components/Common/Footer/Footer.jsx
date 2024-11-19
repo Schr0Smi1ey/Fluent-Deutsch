@@ -63,6 +63,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <p className="text-center w-fit mx-auto mt-5">
+        &copy; 2024 FluentDeutsch. All Rights Reserved.
+      </p>
     </div>
   );
 };

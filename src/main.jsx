@@ -14,6 +14,7 @@ import AuthProvider from "./Contexts/AuthContext/AuthProvider";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import Profile from "./Components/PrivateData/Profile";
 import UpdateProfile from "./Components/Forms/UpdateProfile";
+import AboutUs from "./Components/Pages/AboutUs/AboutUs";
 
 const router = createBrowserRouter([
   {
@@ -67,6 +68,10 @@ const router = createBrowserRouter([
             <UpdateProfile></UpdateProfile>
           </PrivateRoute>
         ),
+      },
+      {
+        path: "/about-us",
+        element: <AboutUs></AboutUs>,
       },
     ],
   },
