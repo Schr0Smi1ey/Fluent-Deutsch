@@ -1,0 +1,222 @@
+[
+  {
+    "id": "81",
+    "word": "Arzt",
+    "pronunciation": "ahrtst",
+    "meaning": "doctor",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 5,
+    "when_to_say": "When referring to a medical professional.",
+    "example": "Der Arzt untersucht den Patienten. (The doctor examines the patient.)"
+  },
+  {
+    "id": "82",
+    "word": "Krankenhaus",
+    "pronunciation": "KRANK-en-hows",
+    "meaning": "hospital",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 5,
+    "when_to_say": "When referring to a medical facility.",
+    "example": "Das Krankenhaus ist groß. (The hospital is big.)"
+  },
+  {
+    "id": "83",
+    "word": "Medikament",
+    "pronunciation": "meh-dee-kah-MENT",
+    "meaning": "medicine",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 5,
+    "when_to_say": "When referring to treatment for illness.",
+    "example": "Ich brauche ein Medikament. (I need medicine.)"
+  },
+  {
+    "id": "84",
+    "word": "Fieber",
+    "pronunciation": "FEE-ber",
+    "meaning": "fever",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 5,
+    "when_to_say": "When describing a high body temperature.",
+    "example": "Er hat Fieber. (He has a fever.)"
+  },
+  {
+    "id": "85",
+    "word": "Schmerzen",
+    "pronunciation": "SHMERT-sen",
+    "meaning": "pain",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 5,
+    "when_to_say": "When referring to physical discomfort.",
+    "example": "Ich habe Kopfschmerzen. (I have a headache.)"
+  },
+  {
+    "id": "86",
+    "word": "Apotheke",
+    "pronunciation": "ah-poh-TAY-keh",
+    "meaning": "pharmacy",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 5,
+    "when_to_say": "When referring to a place to get medicine.",
+    "example": "Die Apotheke ist geschlossen. (The pharmacy is closed.)"
+  },
+  {
+    "id": "87",
+    "word": "Pflaster",
+    "pronunciation": "PLAH-ster",
+    "meaning": "bandage",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 5,
+    "when_to_say": "When treating a small injury.",
+    "example": "Hast du ein Pflaster? (Do you have a bandage?)"
+  },
+  {
+    "id": "88",
+    "word": "Krankheit",
+    "pronunciation": "KRANK-hite",
+    "meaning": "illness",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 5,
+    "when_to_say": "When referring to being unwell.",
+    "example": "Die Krankheit ist ernst. (The illness is serious.)"
+  },
+  {
+    "id": "89",
+    "word": "Gesundheit",
+    "pronunciation": "geh-ZOONT-hite",
+    "meaning": "health",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 5,
+    "when_to_say": "When discussing well-being.",
+    "example": "Gesundheit ist wichtig. (Health is important.)"
+  },
+  {
+    "id": "90",
+    "word": "Impfung",
+    "pronunciation": "IM-foong",
+    "meaning": "vaccination",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 5,
+    "when_to_say": "When discussing immunizations.",
+    "example": "Die Impfung ist nötig. (The vaccination is necessary.)"
+  },
+  {
+    "id": "91",
+    "word": "Notfall",
+    "pronunciation": "NOTE-fall",
+    "meaning": "emergency",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 5,
+    "when_to_say": "When describing urgent situations.",
+    "example": "Das ist ein Notfall! (This is an emergency!)"
+  },
+  {
+    "id": "92",
+    "word": "Spritze",
+    "pronunciation": "SHPRIT-seh",
+    "meaning": "injection",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 5,
+    "when_to_say": "When referring to a needle treatment.",
+    "example": "Die Spritze tut nicht weh. (The injection doesn't hurt.)"
+  },
+  {
+    "id": "93",
+    "word": "Operation",
+    "pronunciation": "oh-per-atz-YONE",
+    "meaning": "surgery",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 5,
+    "when_to_say": "When referring to medical procedures.",
+    "example": "Die Operation war erfolgreich. (The surgery was successful.)"
+  },
+  {
+    "id": "94",
+    "word": "Therapie",
+    "pronunciation": "teh-rah-PEE",
+    "meaning": "therapy",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 5,
+    "when_to_say": "When referring to treatment plans.",
+    "example": "Die Therapie hilft. (The therapy helps.)"
+  },
+  {
+    "id": "95",
+    "word": "Röntgen",
+    "pronunciation": "RENT-gen",
+    "meaning": "X-ray",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 5,
+    "when_to_say": "When referring to imaging procedures.",
+    "example": "Das Röntgen zeigt einen Bruch. (The X-ray shows a fracture.)"
+  },
+  {
+    "id": "96",
+    "word": "Schwäche",
+    "pronunciation": "SHVEH-cheh",
+    "meaning": "weakness",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 5,
+    "when_to_say": "When referring to a lack of strength.",
+    "example": "Ich fühle eine Schwäche. (I feel a weakness.)"
+  },
+  {
+    "id": "97",
+    "word": "Zahnarzt",
+    "pronunciation": "TSAHN-arzt",
+    "meaning": "dentist",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 5,
+    "when_to_say": "When referring to a dental professional.",
+    "example": "Ich habe einen Termin beim Zahnarzt. (I have a dentist appointment.)"
+  },
+  {
+    "id": "98",
+    "word": "Husten",
+    "pronunciation": "HOO-sten",
+    "meaning": "cough",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 5,
+    "when_to_say": "When describing a respiratory symptom.",
+    "example": "Der Husten wird schlimmer. (The cough is getting worse.)"
+  },
+  {
+    "id": "99",
+    "word": "Heilung",
+    "pronunciation": "HIGH-loong",
+    "meaning": "healing",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 5,
+    "when_to_say": "When discussing recovery.",
+    "example": "Die Heilung dauert lange. (The healing takes a long time.)"
+  },
+  {
+    "id": "100",
+    "word": "Diät",
+    "pronunciation": "dee-ATE",
+    "meaning": "diet",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 5,
+    "when_to_say": "When discussing nutritional habits.",
+    "example": "Ich mache eine Diät. (I am on a diet.)"
+  }
+]

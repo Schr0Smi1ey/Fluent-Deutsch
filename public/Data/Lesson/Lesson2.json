@@ -1,0 +1,222 @@
+[
+  {
+    "id": "21",
+    "word": "Arzt",
+    "pronunciation": "ahrtst",
+    "meaning": "doctor",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 2,
+    "when_to_say": "When referring to a medical professional.",
+    "example": "Ich gehe zum Arzt. (I am going to the doctor.)"
+  },
+  {
+    "id": "22",
+    "word": "Krankheit",
+    "pronunciation": "KRAHNK-hight",
+    "meaning": "illness",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 2,
+    "when_to_say": "When describing being unwell.",
+    "example": "Die Krankheit ist ernst. (The illness is serious.)"
+  },
+  {
+    "id": "23",
+    "word": "Fieber",
+    "pronunciation": "FEE-ber",
+    "meaning": "fever",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 2,
+    "when_to_say": "When talking about symptoms of illness.",
+    "example": "Er hat hohes Fieber. (He has a high fever.)"
+  },
+  {
+    "id": "24",
+    "word": "Tablette",
+    "pronunciation": "tah-BLET-teh",
+    "meaning": "tablet",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 2,
+    "when_to_say": "When referring to medicine.",
+    "example": "Nimm eine Tablette gegen Schmerzen. (Take a tablet for pain.)"
+  },
+  {
+    "id": "25",
+    "word": "Krankenschwester",
+    "pronunciation": "KRAHNK-en-shves-ter",
+    "meaning": "nurse",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 2,
+    "when_to_say": "When referring to a hospital staff member.",
+    "example": "Die Krankenschwester hilft mir. (The nurse is helping me.)"
+  },
+  {
+    "id": "26",
+    "word": "Krankenhaus",
+    "pronunciation": "KRAHNK-en-house",
+    "meaning": "hospital",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 2,
+    "when_to_say": "When referring to medical facilities.",
+    "example": "Ich arbeite im Krankenhaus. (I work in the hospital.)"
+  },
+  {
+    "id": "27",
+    "word": "Medikament",
+    "pronunciation": "MEH-dee-kah-ment",
+    "meaning": "medicine",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 2,
+    "when_to_say": "When discussing treatment options.",
+    "example": "Ich brauche ein Medikament. (I need a medicine.)"
+  },
+  {
+    "id": "28",
+    "word": "Schmerz",
+    "pronunciation": "shmerts",
+    "meaning": "pain",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 2,
+    "when_to_say": "When describing discomfort or injury.",
+    "example": "Ich habe Schmerzen. (I am in pain.)"
+  },
+  {
+    "id": "29",
+    "word": "Husten",
+    "pronunciation": "HOO-sten",
+    "meaning": "cough",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 2,
+    "when_to_say": "When describing a symptom of illness.",
+    "example": "Der Husten ist schlimm. (The cough is bad.)"
+  },
+  {
+    "id": "30",
+    "word": "Thermometer",
+    "pronunciation": "tehr-moh-MEH-ter",
+    "meaning": "thermometer",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 2,
+    "when_to_say": "When measuring temperature.",
+    "example": "Wo ist das Thermometer? (Where is the thermometer?)"
+  },
+  {
+    "id": "31",
+    "word": "Operation",
+    "pronunciation": "oh-peh-rah-TSEE-on",
+    "meaning": "surgery",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 2,
+    "when_to_say": "When referring to medical procedures.",
+    "example": "Die Operation war erfolgreich. (The surgery was successful.)"
+  },
+  {
+    "id": "32",
+    "word": "Blut",
+    "pronunciation": "bloot",
+    "meaning": "blood",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 2,
+    "when_to_say": "When discussing injuries or health.",
+    "example": "Er verlor viel Blut. (He lost a lot of blood.)"
+  },
+  {
+    "id": "33",
+    "word": "Kopf",
+    "pronunciation": "koff",
+    "meaning": "head",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 2,
+    "when_to_say": "When describing body parts.",
+    "example": "Mein Kopf tut weh. (My head hurts.)"
+  },
+  {
+    "id": "34",
+    "word": "Zahn",
+    "pronunciation": "tsahn",
+    "meaning": "tooth",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 2,
+    "when_to_say": "When talking about dental health.",
+    "example": "Ich habe Zahnschmerzen. (I have a toothache.)"
+  },
+  {
+    "id": "35",
+    "word": "Notfall",
+    "pronunciation": "NOHT-fahl",
+    "meaning": "emergency",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 2,
+    "when_to_say": "When describing urgent situations.",
+    "example": "Das ist ein Notfall! (This is an emergency!)"
+  },
+  {
+    "id": "36",
+    "word": "Pflaster",
+    "pronunciation": "FLAHS-ter",
+    "meaning": "band-aid",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 2,
+    "when_to_say": "When referring to small injuries.",
+    "example": "Ich brauche ein Pflaster. (I need a band-aid.)"
+  },
+  {
+    "id": "37",
+    "word": "Röntgen",
+    "pronunciation": "ROENT-gen",
+    "meaning": "x-ray",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 2,
+    "when_to_say": "When diagnosing injuries.",
+    "example": "Der Arzt macht ein Röntgenbild. (The doctor takes an x-ray.)"
+  },
+  {
+    "id": "38",
+    "word": "Krücke",
+    "pronunciation": "KRÜ-keh",
+    "meaning": "crutch",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 2,
+    "when_to_say": "When describing mobility aids.",
+    "example": "Er benutzt eine Krücke. (He uses a crutch.)"
+  },
+  {
+    "id": "39",
+    "word": "Spritze",
+    "pronunciation": "SHPRIT-zeh",
+    "meaning": "injection",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 2,
+    "when_to_say": "When referring to medical treatments.",
+    "example": "Ich habe Angst vor Spritzen. (I am afraid of injections.)"
+  },
+  {
+    "id": "40",
+    "word": "Erkältung",
+    "pronunciation": "ehr-KEL-toong",
+    "meaning": "cold (illness)",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 2,
+    "when_to_say": "When referring to minor illnesses.",
+    "example": "Ich habe eine Erkältung. (I have a cold.)"
+  }
+]

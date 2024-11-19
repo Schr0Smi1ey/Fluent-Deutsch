@@ -1,0 +1,222 @@
+[
+  {
+    "id": "161",
+    "word": "Musik",
+    "pronunciation": "moo-ZEEK",
+    "meaning": "music",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 9,
+    "when_to_say": "When discussing melodies or songs.",
+    "example": "Ich liebe Musik. (I love music.)"
+  },
+  {
+    "id": "162",
+    "word": "Lied",
+    "pronunciation": "leet",
+    "meaning": "song",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 9,
+    "when_to_say": "When referring to a musical composition.",
+    "example": "Das Lied ist wunderschön. (The song is beautiful.)"
+  },
+  {
+    "id": "163",
+    "word": "Instrument",
+    "pronunciation": "IN-stroo-ment",
+    "meaning": "instrument",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 9,
+    "when_to_say": "When talking about musical tools.",
+    "example": "Ich spiele ein Instrument. (I play an instrument.)"
+  },
+  {
+    "id": "164",
+    "word": "Kunst",
+    "pronunciation": "koonst",
+    "meaning": "art",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 9,
+    "when_to_say": "When referring to creative expressions.",
+    "example": "Die Kunst ist faszinierend. (The art is fascinating.)"
+  },
+  {
+    "id": "165",
+    "word": "Maler",
+    "pronunciation": "MAH-ler",
+    "meaning": "painter",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 9,
+    "when_to_say": "When discussing visual artists.",
+    "example": "Der Maler malt ein Bild. (The painter is painting a picture.)"
+  },
+  {
+    "id": "166",
+    "word": "Gemälde",
+    "pronunciation": "geh-MAIL-deh",
+    "meaning": "painting",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 9,
+    "when_to_say": "When referring to visual artwork.",
+    "example": "Das Gemälde ist teuer. (The painting is expensive.)"
+  },
+  {
+    "id": "167",
+    "word": "Tanz",
+    "pronunciation": "tahnts",
+    "meaning": "dance",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 9,
+    "when_to_say": "When referring to a form of movement.",
+    "example": "Ich mag Tanz. (I like dance.)"
+  },
+  {
+    "id": "168",
+    "word": "Skulptur",
+    "pronunciation": "SKOOP-toohr",
+    "meaning": "sculpture",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 9,
+    "when_to_say": "When referring to three-dimensional art.",
+    "example": "Die Skulptur ist beeindruckend. (The sculpture is impressive.)"
+  },
+  {
+    "id": "169",
+    "word": "Orchester",
+    "pronunciation": "or-KEH-ster",
+    "meaning": "orchestra",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 9,
+    "when_to_say": "When discussing musical groups.",
+    "example": "Das Orchester spielt gut. (The orchestra plays well.)"
+  },
+  {
+    "id": "170",
+    "word": "Konzert",
+    "pronunciation": "kon-ZERT",
+    "meaning": "concert",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 9,
+    "when_to_say": "When attending musical performances.",
+    "example": "Das Konzert war fantastisch. (The concert was fantastic.)"
+  },
+  {
+    "id": "171",
+    "word": "Theater",
+    "pronunciation": "tay-AH-ter",
+    "meaning": "theater",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 9,
+    "when_to_say": "When referring to dramatic performances.",
+    "example": "Wir gehen ins Theater. (We are going to the theater.)"
+  },
+  {
+    "id": "172",
+    "word": "Bühne",
+    "pronunciation": "BYOO-neh",
+    "meaning": "stage",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 9,
+    "when_to_say": "When referring to performance platforms.",
+    "example": "Die Bühne ist groß. (The stage is big.)"
+  },
+  {
+    "id": "173",
+    "word": "Symphonie",
+    "pronunciation": "zim-foh-NEE",
+    "meaning": "symphony",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 9,
+    "when_to_say": "When referring to orchestral compositions.",
+    "example": "Die Symphonie ist lang. (The symphony is long.)"
+  },
+  {
+    "id": "174",
+    "word": "Chor",
+    "pronunciation": "kor",
+    "meaning": "choir",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 9,
+    "when_to_say": "When referring to vocal ensembles.",
+    "example": "Der Chor singt gut. (The choir sings well.)"
+  },
+  {
+    "id": "175",
+    "word": "Melodie",
+    "pronunciation": "meh-loh-DEE",
+    "meaning": "melody",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 9,
+    "when_to_say": "When describing musical sequences.",
+    "example": "Die Melodie ist eingängig. (The melody is catchy.)"
+  },
+  {
+    "id": "176",
+    "word": "Aquarell",
+    "pronunciation": "ah-kwah-REL",
+    "meaning": "watercolor",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 9,
+    "when_to_say": "When discussing painting techniques.",
+    "example": "Das Aquarell sieht sanft aus. (The watercolor looks gentle.)"
+  },
+  {
+    "id": "177",
+    "word": "Graffiti",
+    "pronunciation": "grah-FEE-tee",
+    "meaning": "graffiti",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 9,
+    "when_to_say": "When referring to street art.",
+    "example": "Das Graffiti ist bunt. (The graffiti is colorful.)"
+  },
+  {
+    "id": "178",
+    "word": "Rhythmus",
+    "pronunciation": "RIT-moos",
+    "meaning": "rhythm",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 9,
+    "when_to_say": "When referring to patterns in music.",
+    "example": "Der Rhythmus ist schnell. (The rhythm is fast.)"
+  },
+  {
+    "id": "179",
+    "word": "Noten",
+    "pronunciation": "NOH-ten",
+    "meaning": "music notes",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 9,
+    "when_to_say": "When reading sheet music.",
+    "example": "Ich lese die Noten. (I am reading the notes.)"
+  },
+  {
+    "id": "180",
+    "word": "Schauspieler",
+    "pronunciation": "SHAU-shpee-ler",
+    "meaning": "actor",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 9,
+    "when_to_say": "When discussing performers.",
+    "example": "Der Schauspieler ist talentiert. (The actor is talented.)"
+  }
+]

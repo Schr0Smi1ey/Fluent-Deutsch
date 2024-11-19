@@ -1,7 +1,7 @@
 a.active {
   text-decoration: none;
   position: relative;
-  color: #3dab0ee1;
+  color: white;
 }
 
 a.active::after {

@@ -1,0 +1,222 @@
+[
+  {
+    "id": "141",
+    "word": "Bahnhof",
+    "pronunciation": "BAHN-hohf",
+    "meaning": "train station",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 8,
+    "when_to_say": "When referring to a place where trains arrive and depart.",
+    "example": "Ich gehe zum Bahnhof. (I am going to the train station.)"
+  },
+  {
+    "id": "142",
+    "word": "Flughafen",
+    "pronunciation": "FLOOG-hah-fen",
+    "meaning": "airport",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 8,
+    "when_to_say": "When discussing air travel.",
+    "example": "Der Flughafen ist weit entfernt. (The airport is far away.)"
+  },
+  {
+    "id": "143",
+    "word": "Ticket",
+    "pronunciation": "TIK-ket",
+    "meaning": "ticket",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 8,
+    "when_to_say": "When talking about a pass for travel.",
+    "example": "Ich habe ein Zugticket gekauft. (I bought a train ticket.)"
+  },
+  {
+    "id": "144",
+    "word": "Reise",
+    "pronunciation": "RYE-zeh",
+    "meaning": "journey",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 8,
+    "when_to_say": "When referring to travel.",
+    "example": "Die Reise war lang. (The journey was long.)"
+  },
+  {
+    "id": "145",
+    "word": "Auto",
+    "pronunciation": "OW-toh",
+    "meaning": "car",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 8,
+    "when_to_say": "When referring to a vehicle.",
+    "example": "Das Auto ist neu. (The car is new.)"
+  },
+  {
+    "id": "146",
+    "word": "Fahrrad",
+    "pronunciation": "FAHR-rahd",
+    "meaning": "bicycle",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 8,
+    "when_to_say": "When referring to two-wheeled transportation.",
+    "example": "Ich fahre mit dem Fahrrad. (I ride the bicycle.)"
+  },
+  {
+    "id": "147",
+    "word": "Bus",
+    "pronunciation": "boos",
+    "meaning": "bus",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 8,
+    "when_to_say": "When referring to public transportation.",
+    "example": "Der Bus kommt pünktlich. (The bus is on time.)"
+  },
+  {
+    "id": "148",
+    "word": "Zug",
+    "pronunciation": "tsook",
+    "meaning": "train",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 8,
+    "when_to_say": "When referring to rail transportation.",
+    "example": "Der Zug ist schnell. (The train is fast.)"
+  },
+  {
+    "id": "149",
+    "word": "Straße",
+    "pronunciation": "STRAH-seh",
+    "meaning": "street",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 8,
+    "when_to_say": "When describing urban routes.",
+    "example": "Die Straße ist breit. (The street is wide.)"
+  },
+  {
+    "id": "150",
+    "word": "Koffer",
+    "pronunciation": "KO-ferr",
+    "meaning": "suitcase",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 8,
+    "when_to_say": "When referring to travel luggage.",
+    "example": "Mein Koffer ist schwer. (My suitcase is heavy.)"
+  },
+  {
+    "id": "151",
+    "word": "Pass",
+    "pronunciation": "pahs",
+    "meaning": "passport",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 8,
+    "when_to_say": "When referring to travel documents.",
+    "example": "Ich habe meinen Pass vergessen. (I forgot my passport.)"
+  },
+  {
+    "id": "152",
+    "word": "Landkarte",
+    "pronunciation": "LAHND-kah-teh",
+    "meaning": "map",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 8,
+    "when_to_say": "When referring to navigation tools.",
+    "example": "Die Landkarte ist nützlich. (The map is useful.)"
+  },
+  {
+    "id": "153",
+    "word": "Hafen",
+    "pronunciation": "HAH-fen",
+    "meaning": "port/harbor",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 8,
+    "when_to_say": "When referring to a docking place for ships.",
+    "example": "Der Hafen ist groß. (The port is large.)"
+  },
+  {
+    "id": "154",
+    "word": "Fähre",
+    "pronunciation": "FAIR-reh",
+    "meaning": "ferry",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 8,
+    "when_to_say": "When referring to boat transportation.",
+    "example": "Die Fähre fährt morgen. (The ferry leaves tomorrow.)"
+  },
+  {
+    "id": "155",
+    "word": "Verkehr",
+    "pronunciation": "FER-kayr",
+    "meaning": "traffic",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 8,
+    "when_to_say": "When referring to the movement of vehicles.",
+    "example": "Der Verkehr ist dicht. (The traffic is heavy.)"
+  },
+  {
+    "id": "156",
+    "word": "Reiseleiter",
+    "pronunciation": "RYE-zeh-lye-ter",
+    "meaning": "tour guide",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 8,
+    "when_to_say": "When discussing guided tours.",
+    "example": "Der Reiseleiter war freundlich. (The tour guide was friendly.)"
+  },
+  {
+    "id": "157",
+    "word": "Hotel",
+    "pronunciation": "hoh-TELL",
+    "meaning": "hotel",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 8,
+    "when_to_say": "When referring to accommodations.",
+    "example": "Das Hotel ist luxuriös. (The hotel is luxurious.)"
+  },
+  {
+    "id": "158",
+    "word": "Gepäck",
+    "pronunciation": "geh-PEK",
+    "meaning": "luggage",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 8,
+    "when_to_say": "When discussing bags and belongings.",
+    "example": "Das Gepäck ist am Schalter. (The luggage is at the counter.)"
+  },
+  {
+    "id": "159",
+    "word": "Taxis",
+    "pronunciation": "TAHK-sees",
+    "meaning": "taxi",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 8,
+    "when_to_say": "When referring to hired cars.",
+    "example": "Das Taxi wartet draußen. (The taxi is waiting outside.)"
+  },
+  {
+    "id": "160",
+    "word": "Flugzeug",
+    "pronunciation": "FLOOG-tsoyg",
+    "meaning": "airplane",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 8,
+    "when_to_say": "When referring to air transportation.",
+    "example": "Das Flugzeug fliegt hoch. (The airplane flies high.)"
+  }
+]

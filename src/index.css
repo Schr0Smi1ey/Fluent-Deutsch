@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 :hover .link-hover {
-  color: #3dab0ee1;
+  color: black;
   text-decoration: none;
 }
