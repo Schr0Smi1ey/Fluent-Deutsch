@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 import { CiPlay1 } from "react-icons/ci";
 import { ImCross } from "react-icons/im";
 import { useNavigate } from "react-router-dom";
@@ -93,6 +94,9 @@ const Tutorials = () => {
   };
   return (
     <div className="container mx-auto">
+      <Helmet>
+        <title>Fluent Deutsch | Tutorials</title>
+      </Helmet>
       <div className="relative py-5">
         <div className="text-center mb-5">
           <h1 className="font-bold text-3xl mb-3">

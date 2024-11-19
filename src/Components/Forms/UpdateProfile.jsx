@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { AuthContext } from "../../Contexts/AuthContext/AuthProvider";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const UpdateProfile = () => {
   const { user, updateUserProfile, Toast } = useContext(AuthContext);
@@ -32,6 +33,9 @@ const UpdateProfile = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
+      <Helmet>
+        <title>Fluent Deutsch | Profile Update</title>
+      </Helmet>
       <div className="bg-white shadow-lg rounded-lg w-full max-w-md p-6">
         <h2 className="text-3xl text-center font-bold text-gray-800 mb-4">
           Update Profile

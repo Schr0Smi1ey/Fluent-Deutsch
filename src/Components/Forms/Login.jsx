@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Contexts/AuthContext/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 const Login = () => {
   const { signInUser, signInWithGoogle, Toast } = useContext(AuthContext);
   const navigate = useNavigate();
@@ -29,6 +30,9 @@ const Login = () => {
   };
   return (
     <div className="min-h-[400px] py-10 flex items-center justify-center bg-gradient-to-t from-green-200 to-green-100">
+      <Helmet>
+        <title>Fluent Deutsch | Login</title>
+      </Helmet>
       <div className="bg-white shadow-md rounded-lg p-8 w-full max-w-sm">
         <h2 className="text-4xl font-bold mb-6 text-center">Login</h2>
         <form onSubmit={handleSubmit} className="space-y-4">

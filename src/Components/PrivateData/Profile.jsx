@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { AuthContext } from "../../Contexts/AuthContext/AuthProvider";
 import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const Profile = () => {
   const { user } = useContext(AuthContext);
@@ -10,6 +11,9 @@ const Profile = () => {
   };
   return (
     <div className="min-h-[400px] flex items-center justify-center bg-gradient-to-r from-green-50 to-green-100">
+      <Helmet>
+        <title>Fluent Deutsch | Profile</title>
+      </Helmet>
       <div className="bg-white shadow-lg rounded-lg flex flex-col md:flex-row w-full max-w-4xl p-6">
         {/* Profile Image */}
         <div className="flex justify-center items-center md:w-1/3 mb-6 md:mb-0">

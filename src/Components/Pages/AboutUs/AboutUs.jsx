@@ -8,6 +8,7 @@ import { IoLogoLinkedin } from "react-icons/io5";
 import { FaGithubSquare } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Contexts/AuthContext/AuthProvider";
+import { Helmet } from "react-helmet";
 const AboutUs = () => {
   const { user } = useContext(AuthContext);
   const navigate = useNavigate();
@@ -20,6 +21,9 @@ const AboutUs = () => {
   };
   return (
     <div>
+      <Helmet>
+        <title>Fluent Deutsch | About Us</title>
+      </Helmet>
       <div className="min-h-screen flex flex-col items-center py-10">
         <header className="text-center mb-10">
           <h1 className="text-5xl font-bold mb-3">

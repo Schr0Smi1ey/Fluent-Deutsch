@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Contexts/AuthContext/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet";
 const SignUp = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -55,6 +56,9 @@ const SignUp = () => {
   };
   return (
     <div className="min-h-[600px] py-10 flex items-center justify-center bg-gradient-to-t from-green-200 to-green-100">
+      <Helmet>
+        <title>Fluent Deutsch | Sign Up</title>
+      </Helmet>
       <div className="bg-white shadow-md rounded-lg p-8 w-full max-w-sm">
         <h2 className="text-2xl font-bold mb-6 text-center">Sign Up</h2>
         <form onSubmit={handleSubmit} className="space-y-4">

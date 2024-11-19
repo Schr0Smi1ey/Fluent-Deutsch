@@ -1,6 +1,7 @@
 import { useLoaderData, useNavigate } from "react-router-dom";
 import VocabularyCard from "../../Cards/VocabularyCard";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 
 const difficultyColors = {
   easy: "bg-green-100 border-green-400 hover:bg-green-200",
@@ -12,7 +13,6 @@ const VocabularyCards = () => {
   const vocabularies = useLoaderData();
   const [filterVocab, setFilterVocab] = useState(vocabularies);
   const navigate = useNavigate();
-
   const handleBackToLesson = () => {
     navigate("/start-learning");
   };
@@ -26,6 +26,15 @@ const VocabularyCards = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
+      <Helmet>
+        <title>
+          Fluent Deutsch |{" "}
+          {filterVocab.length > 0
+            ? `Lesson ${filterVocab[0].lesson_no}`
+            : "Loading..."}
+        </title>
+      </Helmet>
+
       <div className="text-center mb-10">
         <h1 className="font-extrabold text-4xl md:text-5xl text-gray-800 mb-6">
           Master German Vocabulary

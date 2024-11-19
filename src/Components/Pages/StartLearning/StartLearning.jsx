@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Contexts/AuthContext/AuthProvider";
+import { Helmet } from "react-helmet";
 
 const StartLearning = () => {
   const { user } = useContext(AuthContext);
@@ -23,6 +24,9 @@ const StartLearning = () => {
   };
   return (
     <div className="container mx-auto px-4">
+      <Helmet>
+        <title>Fluent Deutsch | Start Learning</title>
+      </Helmet>
       <div className="relative py-3 md:py-5 lg:py-8">
         <div className="text-center mb-5">
           <h1 className="font-bold text-3xl text-gray-800 mb-3">

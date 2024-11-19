@@ -1,10 +1,15 @@
 import { useContext } from "react";
 import { AuthContext } from "../Contexts/AuthContext/AuthProvider";
+import { RingLoader } from "react-spinners";
 
 const PrivateRoute = ({ children }) => {
   const { user, loading } = useContext(AuthContext);
   if (loading) {
-    return <span className="loading loading-bars loading-lg"></span>;
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <RingLoader color="#22c55d" size={150} />
+      </div>
+    );
   }
   if (user) {
     return children;
