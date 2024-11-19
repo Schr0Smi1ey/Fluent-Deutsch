@@ -1,6 +1,11 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Contexts/AuthContext/AuthProvider";
-import { Link, useNavigate } from "react-router-dom";
+import {
+  Link,
+  useLoaderData,
+  useLocation,
+  useNavigate,
+} from "react-router-dom";
 import { Helmet } from "react-helmet";
 const SignUp = () => {
   const [formData, setFormData] = useState({
@@ -10,9 +15,9 @@ const SignUp = () => {
     password: "",
   });
   const navigate = useNavigate();
-  const { createUser, Toast, updateUserProfile } = useContext(AuthContext);
+  const { createUser, Toast, updateUserProfile, signInWithGoogle } =
+    useContext(AuthContext);
   const [passwordError, setPasswordError] = useState("");
-
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -36,23 +41,42 @@ const SignUp = () => {
       setPasswordError("");
     }
   };
+  const location = useLocation();
   const handleSubmit = (e) => {
     e.preventDefault();
+
     if (passwordError) {
       Toast(passwordError, "error");
       return;
     }
-    createUser(formData.email, formData.password).then((userCredential) => {
-      updateUserProfile(formData.name, formData.photoURL)
-        .then(() => {
-          navigate("/login");
-          Toast("Account Created Successfully", "success");
-        })
-        .catch((error) => {
-          Toast(error.message, "error");
-        });
-    });
-    setFormData({ name: "", email: "", photoURL: "", password: "" });
+
+    createUser(formData.email, formData.password)
+      .then((userCredential) => {
+        return updateUserProfile(formData.name, formData.photoURL)
+          .then(() => {
+            Toast("Account Created Successfully", "success");
+            navigate(`${location.state?.from ? location.state.from : "/"}`);
+          })
+          .catch((error) => {
+            Toast(`Profile update failed: ${error.message}`, "error");
+          });
+      })
+      .catch((error) => {
+        Toast(`Sign-up failed: ${error.message}`, "error");
+      })
+      .finally(() => {
+        setFormData({ name: "", email: "", photoURL: "", password: "" });
+      });
+  };
+  const handleSignInWithGoogle = () => {
+    signInWithGoogle()
+      .then((userCredential) => {
+        navigate(`${location.state?.from ? location.state.from : "/"}`);
+        Toast("Login Successful", "success");
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
   };
   return (
     <div className="min-h-[600px] py-10 flex items-center justify-center bg-gradient-to-t from-green-200 to-green-100">
@@ -152,7 +176,10 @@ const SignUp = () => {
           <span className="border-b w-1/5 lg:w-1/4"></span>
         </div>
 
-        <button className="w-full bg-gray-100 font-bold py-2 rounded-lg hover:bg-gray-200 flex items-center justify-center space-x-2">
+        <button
+          onClick={handleSignInWithGoogle}
+          className="w-full bg-gray-100 font-bold py-2 rounded-lg hover:bg-gray-200 flex items-center justify-center space-x-2"
+        >
           <svg
             className="w-5 h-5"
             xmlns="http://www.w3.org/2000/svg"
@@ -182,6 +209,7 @@ const SignUp = () => {
           Already have an account?{" "}
           <Link
             to={"/login"}
+            state={{ from: location.state?.from }}
             className="text-blue-500 hover:underline font-medium"
           >
             Login

@@ -1,6 +1,6 @@
 import { useLoaderData, useNavigate } from "react-router-dom";
 import VocabularyCard from "../../Cards/VocabularyCard";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Helmet } from "react-helmet";
 
 const difficultyColors = {
@@ -39,12 +39,18 @@ const VocabularyCards = () => {
         <h1 className="font-extrabold text-4xl md:text-5xl text-gray-800 mb-6">
           Master German Vocabulary
         </h1>
-        <p className="text-gray-600 text-lg md:text-xl mx-auto w-[90%] md:w-2/3 leading-relaxed">
+        <p className="text-gray-600 text-lg md:text-xl mx-auto w-[90%] md:w-2/3 leading-relaxed mb-4">
           Kickstart your journey to fluency with FluentDeutsch! Explore words
           based on difficulty levels, learn their usage, and strengthen your
           communication in German. Expand your world today—one word at a time.
         </p>
 
+        <h1 className="text-2xl font-bold">
+          Welcome to Lesson{" "}
+          <span className="text-green-500 font-extrabold">
+            {filterVocab[0].lesson_no}
+          </span>
+        </h1>
         <div className="flex justify-center gap-6 mt-10">
           <div
             onClick={() => handleFilter("easy")}

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Helmet } from "react-helmet";
 import { CiPlay1 } from "react-icons/ci";
 import { ImCross } from "react-icons/im";
@@ -79,7 +79,6 @@ const Tutorials = () => {
   ];
   const navigate = useNavigate();
   const [selectedVideo, setSelectedVideo] = useState(null);
-
   const openModal = (videoId) => {
     setSelectedVideo(videoId);
     document.getElementById("video_modal").showModal();

@@ -4,7 +4,8 @@ import slide2 from "../../../../../public/Assets/Slide2.jpg";
 import slide3 from "../../../../../public/Assets/Slide3.jpg";
 import slide4 from "../../../../../public/Assets/Slide4.jpg";
 import slide5 from "../../../../../public/Assets/Slide5.png";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AuthContext } from "../../../../Contexts/AuthContext/AuthProvider";
 
 const Banner = () => {
   const sliderContent = [
@@ -59,6 +60,7 @@ const Banner = () => {
       bgTo: "#6d4c41",
     },
   ];
+  const { user } = useContext(AuthContext);
   const navigate = useNavigate();
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -79,6 +81,11 @@ const Banner = () => {
   };
   return (
     <section className="md:container mx-auto my-5">
+      {user && (
+        <h1 className="text-center font-bold text-green-500 text-2xl mb-4">
+          Welcome , {user.displayName}
+        </h1>
+      )}
       <div className="carousel w-full">
         {sliderContent.map((slide, index) => (
           <div

@@ -32,7 +32,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/tutorials",
-        element: <Tutorials></Tutorials>,
+        element: (
+          <PrivateRoute>
+            <Tutorials></Tutorials>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/lesson/:lesson_id",
@@ -43,7 +47,11 @@ const router = createBrowserRouter([
           const lesson = await response.json();
           return lesson || null;
         },
-        element: <Lesson></Lesson>,
+        element: (
+          <PrivateRoute>
+            <Lesson></Lesson>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/login",

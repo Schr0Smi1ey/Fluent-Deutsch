@@ -32,6 +32,9 @@ const NavBar = () => {
   const hideSignOutModal = () => {
     document.getElementById("signout-modal").close();
   };
+  const handleTutorials = () => {
+    navigate("/tutorials");
+  };
   const navElements = (
     <ul className="flex flex-col text-center lg:flex-row items-center justify-center gap-5 font-medium text-lg">
       <NavLink to="/">
@@ -40,7 +43,15 @@ const NavBar = () => {
       <NavLink to="/start-learning">
         <span>Learn</span>
       </NavLink>
-      <NavLink to="/tutorials">
+      <NavLink
+        to={"/tutorials"}
+        onClick={(e) => {
+          if (!user) {
+            e.preventDefault();
+            navigate("/login", { state: { from: "/tutorials" } });
+          }
+        }}
+      >
         <span>Tutorials</span>
       </NavLink>
       <NavLink to="/about-us">

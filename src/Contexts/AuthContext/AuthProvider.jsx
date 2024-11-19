@@ -16,7 +16,7 @@ const provider = new GoogleAuthProvider();
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const createUser = (email, password) => {
     setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
@@ -26,9 +26,11 @@ const AuthProvider = ({ children }) => {
     return signInWithEmailAndPassword(auth, email, password);
   };
   const signOutUser = () => {
+    setLoading(true);
     return signOut(auth);
   };
   const signInWithGoogle = () => {
+    setLoading(true);
     return signInWithPopup(auth, provider);
   };
   const updateUserProfile = (name, photoURL) => {
@@ -43,6 +45,7 @@ const AuthProvider = ({ children }) => {
         setUser(user);
         setLoading(false);
       } else {
+        setLoading(false);
         setUser(null);
       }
     });

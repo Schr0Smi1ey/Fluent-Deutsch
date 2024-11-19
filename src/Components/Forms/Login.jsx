@@ -1,17 +1,20 @@
 import { useContext } from "react";
 import { AuthContext } from "../../Contexts/AuthContext/AuthProvider";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 const Login = () => {
-  const { signInUser, signInWithGoogle, Toast } = useContext(AuthContext);
+  const { user, signInUser, signInWithGoogle, Toast } = useContext(AuthContext);
   const navigate = useNavigate();
+  const location = useLocation();
+  console.log("user", user);
+  const attemptedPath = location.state?.from || "/";
   const handleSubmit = (e) => {
     e.preventDefault();
     const email = e.target[0].value;
     const password = e.target[1].value;
     signInUser(email, password)
       .then((userCredential) => {
-        navigate("/");
+        navigate({ attemptedPath });
         Toast("Login Successful", "success");
       })
       .catch((error) => {
@@ -21,7 +24,7 @@ const Login = () => {
   const handleSignInWithGoogle = () => {
     signInWithGoogle()
       .then((userCredential) => {
-        navigate("/");
+        navigate(`${location.state?.from ? location.state.from : "/"}`);
         Toast("Login Successful", "success");
       })
       .catch((error) => {
@@ -115,6 +118,7 @@ const Login = () => {
           New to Fluent Deutsch?{" "}
           <Link
             to={"/signup"}
+            state={{ from: attemptedPath }}
             className="text-blue-500 hover:underline text-lg font-medium"
           >
             Register

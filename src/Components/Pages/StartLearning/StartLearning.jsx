@@ -15,9 +15,8 @@ const StartLearning = () => {
       });
   }, []);
   const handleLearningBtn = (id) => {
-    {
-      user ? navigate(`/lesson/${id}`) : navigate("/login");
-    }
+    console.log("id : ", id);
+    navigate(`/lesson/${id}`);
   };
   const handleViewMore = () => {
     navigate("/tutorials");
