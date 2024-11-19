@@ -34,7 +34,7 @@ const About = () => {
   return (
     <div className="container mx-auto">
       <div className="divider"></div>
-      <div className="flex w-fit gap-4 justify-center items-center mx-auto">
+      <div className="flex px-4 w-fit gap-4 justify-center items-center mx-auto">
         <ReactCountryFlag
           countryCode="DE"
           svg
@@ -57,10 +57,10 @@ const About = () => {
           {aboutContent.map((item, index) => (
             <div
               key={index}
-              className={`flex shadow-md hover:bg-gradient-to-t hover:from-green-200 hover:to-green-100 p-5 rounded-2xl ${
+              className={`flex gap-3 flex-col justify-center items-center shadow-md hover:bg-gradient-to-t hover:from-green-200 hover:to-green-100 p-5 rounded-2xl ${
                 index % 2 === 0
-                  ? "flex-row-reverse justify-end"
-                  : "flex-row justify-start"
+                  ? "sm:flex-row-reverse sm:justify-end"
+                  : "sm:flex-row sm:justify-start"
               } items-center text-center transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl`}
             >
               <div className="w-1/2 bg-gradient-to-r from-green-50 to-green-100 rounded-lg">
@@ -69,14 +69,16 @@ const About = () => {
               <div className="text-center w-3/4">
                 <h3
                   className={`text-4xl font-bold text-green-600 mb-4 ${
-                    index % 2 === 0 ? "text-left" : "text-right"
+                    index % 2 === 0
+                      ? "sm:text-left text-center"
+                      : "sm:text-right text-center"
                   }`}
                 >
                   {item.title}
                 </h3>
                 <p
                   className={`text-gray-700 ${
-                    index % 2 === 0 ? "text-left" : "text-right mr-0"
+                    index % 2 === 0 ? "sm:text-left" : "sm:text-right mr-0"
                   }`}
                 >
                   {item.description}

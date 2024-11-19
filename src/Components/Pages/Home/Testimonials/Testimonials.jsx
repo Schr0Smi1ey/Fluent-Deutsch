@@ -88,13 +88,13 @@ const Testimonials = () => {
               <div className="absolute flex flex-col gap-2 mr-2 top-1/2 right-0 transform -translate-y-1/2">
                 <button
                   onClick={handlePrev}
-                  className="btn btn-circle bg-green-500 hover:bg-white border-none"
+                  className="btn btn-circle bg-white hover:bg-white border-none"
                 >
                   <img src={upArrow} alt="Previous" className="w-8 h-8" />
                 </button>
                 <button
                   onClick={handleNext}
-                  className="btn btn-circle bg-green-500 hover:bg-white border-none"
+                  className="btn btn-circle bg-white hover:bg-white border-none"
                 >
                   <img src={downArrow} alt="Next" className="w-8 h-8" />
                 </button>

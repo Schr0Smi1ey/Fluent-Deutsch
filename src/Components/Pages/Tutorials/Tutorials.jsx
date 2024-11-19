@@ -146,7 +146,7 @@ const Tutorials = () => {
       {/* Modal */}
       <dialog
         id="video_modal"
-        className="modal modal-bottom sm:modal-middle"
+        className="modal modal-middle"
         onClose={closeModal}
       >
         <div className="modal-box relative">

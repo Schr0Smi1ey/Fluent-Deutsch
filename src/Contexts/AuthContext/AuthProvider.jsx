@@ -10,6 +10,7 @@ import {
   signInWithPopup,
 } from "firebase/auth";
 import { auth } from "../../API/firebase.init";
+import { toast, Flip } from "react-toastify";
 export const AuthContext = createContext(null);
 const provider = new GoogleAuthProvider();
 
@@ -47,6 +48,22 @@ const AuthProvider = ({ children }) => {
     });
     return () => unsubscribe();
   }, []);
+  const Toast = (message, type) => {
+    console.log("Toast:", message, type);
+    toast[type](message, {
+      position: "top-center",
+      autoClose: 1500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Flip,
+      toastClassName: "rounded-lg bg-[#f5f5f5] text-black w-96",
+      bodyClassName: "font-medium text-lg",
+    });
+  };
   const authInfo = {
     user,
     createUser,
@@ -56,6 +73,7 @@ const AuthProvider = ({ children }) => {
     updateUserProfile,
     setUser,
     loading,
+    Toast,
   };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>

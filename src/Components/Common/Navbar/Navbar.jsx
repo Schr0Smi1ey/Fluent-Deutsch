@@ -3,9 +3,13 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Contexts/AuthContext/AuthProvider";
 import "./Navbar.css";
 const NavBar = () => {
-  const { user, signOutUser } = useContext(AuthContext);
+  const { user, signOutUser, Toast } = useContext(AuthContext);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
+  const toggleMenuDropdown = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   const toggleProfileDropdown = () => {
     setIsProfileOpen((prevState) => !prevState);
   };
@@ -15,10 +19,14 @@ const NavBar = () => {
     toggleProfileDropdown();
   };
   const handleSignOut = () => {
-    signOutUser().then(() => {
-      console.log("Sign Out");
-      navigate("/");
-    });
+    signOutUser()
+      .then(() => {
+        Toast("Logged Out Successfully", "warning");
+        navigate("/");
+      })
+      .catch((error) => {
+        Toast(error.message, "error");
+      });
     hideSignOutModal();
   };
   const hideSignOutModal = () => {
@@ -60,7 +68,7 @@ const NavBar = () => {
           {isProfileOpen && (
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] w-52 mt-3 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] w-52 mt-3 mr-4 p-2 shadow"
             >
               <li className="block">
                 <img
@@ -69,7 +77,7 @@ const NavBar = () => {
                   className="block rounded-2xl mx-auto mb-2"
                 />
               </li>
-              <li>
+              <li className="hover:bg-gradient-to-t hover:from-green-200 hover:to-green-100">
                 <h3 className="justify-between flex font-bold text-base">
                   {user.displayName}
                   <span className="badge bg-green-500 font-semibold text-xs p-2">
@@ -77,12 +85,12 @@ const NavBar = () => {
                   </span>
                 </h3>
               </li>
-              <li className="font-semibold">
+              <li className="font-semibold hover:bg-gradient-to-t hover:from-green-200 hover:to-green-100">
                 <Link onClick={toggleProfileDropdown} to="/profile">
                   Profile
                 </Link>
               </li>
-              <li className="font-semibold">
+              <li className="font-semibold hover:bg-gradient-to-t hover:from-green-200 hover:to-green-100">
                 <Link onClick={showSignOutModal}>Logout</Link>
               </li>
             </ul>
@@ -169,6 +177,7 @@ const NavBar = () => {
               xmlns="http://www.w3.org/2000/svg"
               className="h-8 w-8"
               fill="none"
+              onClick={toggleMenuDropdown}
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
@@ -180,12 +189,12 @@ const NavBar = () => {
               />
             </svg>
           </div>
-          {
+          {isMenuOpen && (
             <ul className="menu menu-sm dropdown-content text-black lg:text-white bg-base-100 rounded-box z-[1] mt-14 w-40 p-4 pb-4 space-y-2 shadow">
-              <div>{navElements}</div>
               <div className="sm:hidden">{navElementsEnd}</div>
+              <div>{navElements}</div>
             </ul>
-          }
+          )}
         </div>
       </div>
     </div>

@@ -95,7 +95,7 @@ const Banner = () => {
                   <img
                     src={slide.imgSrc}
                     alt={`Slide ${index + 1}`}
-                    className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] rounded-full hover:scale-105 border-2 border-green-400 p-2"
+                    className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] rounded-full hover:scale-105 border-4 border-green-400 p-2"
                   />
                 </div>
                 <div className="w-4/6 mb-4 md:ml-4 lg:ml-6">
@@ -116,13 +116,13 @@ const Banner = () => {
               <div className="absolute left-2 right-2 md:left-4 md:right-4 lg:left-14 lg:right-14 top-1/2 flex -translate-y-1/2 transform justify-between">
                 <button
                   onClick={goToPreviousSlide}
-                  className="btn btn-circle bg-green-500 text-lg border-none hover:bg-white"
+                  className="btn btn-circle bg-white text-lg border-none hover:bg-white"
                 >
                   ❮
                 </button>
                 <button
                   onClick={goToNextSlide}
-                  className="btn btn-circle bg-green-500 text-lg border-none hover:bg-white"
+                  className="btn btn-circle bg-white text-lg border-none hover:bg-white"
                 >
                   ❯
                 </button>

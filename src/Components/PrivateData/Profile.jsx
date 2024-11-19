@@ -9,14 +9,14 @@ const Profile = () => {
     navigate("/update-profile");
   };
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="min-h-[400px] flex items-center justify-center bg-gradient-to-r from-green-50 to-green-100">
       <div className="bg-white shadow-lg rounded-lg flex flex-col md:flex-row w-full max-w-4xl p-6">
         {/* Profile Image */}
         <div className="flex justify-center items-center md:w-1/3 mb-6 md:mb-0">
           <img
             src={user.photoURL || "https://via.placeholder.com/150"}
             alt="Profile"
-            className="w-40 h-40 rounded-full border-4 border-blue-500 object-cover"
+            className="w-40 h-40 rounded-full border-4 border-green-500 object-cover"
           />
         </div>
 
@@ -31,7 +31,7 @@ const Profile = () => {
           </p>
           <button
             onClick={handleUpdateProfile}
-            className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg text-lg font-bold"
+            className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg text-lg font-bold"
           >
             Update Profile
           </button>

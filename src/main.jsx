@@ -7,7 +7,7 @@ import ErrorPage from "./Components/Common/Errorpage/Errorpage";
 import Home from "./Components/Pages/Home/Home";
 import StartLearning from "./Components/Pages/StartLearning/StartLearning";
 import Tutorials from "./Components/Pages/Tutorials/Tutorials";
-import Lesson from "./Components/Pages/Lesson/VocabularyCards";
+import Lesson from "./Components/PrivateData/Lesson/VocabularyCards";
 import Login from "./Components/Forms/Login";
 import SignUp from "./Components/Forms/SignUP";
 import AuthProvider from "./Contexts/AuthContext/AuthProvider";

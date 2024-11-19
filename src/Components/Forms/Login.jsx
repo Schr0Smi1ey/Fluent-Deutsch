@@ -1,9 +1,8 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { AuthContext } from "../../Contexts/AuthContext/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
 const Login = () => {
-  const [Error, setError] = useState("");
-  const { signInUser, signInWithGoogle } = useContext(AuthContext);
+  const { signInUser, signInWithGoogle, Toast } = useContext(AuthContext);
   const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -12,26 +11,27 @@ const Login = () => {
     signInUser(email, password)
       .then((userCredential) => {
         navigate("/");
+        Toast("Login Successful", "success");
       })
       .catch((error) => {
-        setError(error.message);
+        Toast(error.message, "error");
       });
   };
   const handleSignInWithGoogle = () => {
     signInWithGoogle()
       .then((userCredential) => {
         navigate("/");
+        Toast("Login Successful", "success");
       })
       .catch((error) => {
         setError(error.message);
       });
   };
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="min-h-[400px] py-10 flex items-center justify-center bg-gradient-to-t from-green-200 to-green-100">
       <div className="bg-white shadow-md rounded-lg p-8 w-full max-w-sm">
-        <h2 className="text-2xl font-bold mb-6 text-center">Login</h2>
+        <h2 className="text-4xl font-bold mb-6 text-center">Login</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
-          {/* Email Field */}
           <div>
             <label className="block text-sm font-medium mb-1" htmlFor="email">
               Email
@@ -39,13 +39,12 @@ const Login = () => {
             <input
               type="email"
               id="email"
-              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400"
               placeholder="Enter your email"
               required
             />
           </div>
 
-          {/* Password Field */}
           <div>
             <label
               className="block text-sm font-medium mb-1"
@@ -56,23 +55,21 @@ const Login = () => {
             <input
               type="password"
               id="password"
-              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400"
               placeholder="Enter your password"
               required
             />
           </div>
 
-          {/* Forget Password */}
           <div className="text-right">
             <a href="#" className="text-sm text-blue-500 hover:underline">
               Forgot Password?
             </a>
           </div>
 
-          {/* Login Button */}
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white font-bold py-2 rounded-lg hover:bg-blue-600"
+            className="w-full bg-green-500 text-white font-bold py-2 rounded-lg hover:bg-green-600"
           >
             Login
           </button>
@@ -80,10 +77,9 @@ const Login = () => {
 
         <div className="divider text-gray-400">OR</div>
 
-        {/* Google Login Button */}
         <button
           onClick={handleSignInWithGoogle}
-          className="w-full bg-red-500 text-white font-bold py-2 rounded-lg hover:bg-red-600 flex items-center justify-center space-x-2"
+          className="w-full bg-gray-100 font-bold py-2 rounded-lg flex items-center justify-center space-x-2"
         >
           <svg
             className="w-5 h-5"

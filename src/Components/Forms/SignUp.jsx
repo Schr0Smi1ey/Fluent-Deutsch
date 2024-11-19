@@ -9,7 +9,7 @@ const SignUp = () => {
     password: "",
   });
   const navigate = useNavigate();
-  const { createUser, setUser, updateUserProfile } = useContext(AuthContext);
+  const { createUser, Toast, updateUserProfile } = useContext(AuthContext);
   const [passwordError, setPasswordError] = useState("");
 
   const handleInputChange = (e) => {
@@ -37,28 +37,27 @@ const SignUp = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    createUser(formData.email, formData.password)
-      .then((userCredential) => {
-        const user = userCredential.user;
-        updateUserProfile(formData.name, formData.photoURL)
-          .then(() => {
-            navigate("/login");
-          })
-          .catch((error) => {
-            console.error("Error updating profile:", error.message);
-          });
-      })
-      .catch((error) => {
-        console.error("Error creating user:", error.message);
-      });
+    if (passwordError) {
+      Toast(passwordError, "error");
+      return;
+    }
+    createUser(formData.email, formData.password).then((userCredential) => {
+      updateUserProfile(formData.name, formData.photoURL)
+        .then(() => {
+          navigate("/login");
+          Toast("Account Created Successfully", "success");
+        })
+        .catch((error) => {
+          Toast(error.message, "error");
+        });
+    });
     setFormData({ name: "", email: "", photoURL: "", password: "" });
   };
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="min-h-[600px] py-10 flex items-center justify-center bg-gradient-to-t from-green-200 to-green-100">
       <div className="bg-white shadow-md rounded-lg p-8 w-full max-w-sm">
         <h2 className="text-2xl font-bold mb-6 text-center">Sign Up</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
-          {/* Name */}
           <div>
             <label className="block text-sm font-medium mb-1" htmlFor="name">
               Name
@@ -69,13 +68,12 @@ const SignUp = () => {
               name="name"
               value={formData.name}
               onChange={handleInputChange}
-              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400"
               placeholder="Enter your name"
               required
             />
           </div>
 
-          {/* Email */}
           <div>
             <label className="block text-sm font-medium mb-1" htmlFor="email">
               Email
@@ -86,13 +84,12 @@ const SignUp = () => {
               name="email"
               value={formData.email}
               onChange={handleInputChange}
-              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400"
               placeholder="Enter your email"
               required
             />
           </div>
 
-          {/* Photo URL */}
           <div>
             <label
               className="block text-sm font-medium mb-1"
@@ -106,12 +103,11 @@ const SignUp = () => {
               name="photoURL"
               value={formData.photoURL}
               onChange={handleInputChange}
-              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400"
               placeholder="Enter photo URL"
             />
           </div>
 
-          {/* Password */}
           <div>
             <label
               className="block text-sm font-medium mb-1"
@@ -128,7 +124,7 @@ const SignUp = () => {
               className={`w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 ${
                 passwordError
                   ? "border-red-500 focus:ring-red-400"
-                  : "focus:ring-blue-400"
+                  : "focus:ring-green-400"
               }`}
               placeholder="Enter your password"
               required
@@ -138,25 +134,21 @@ const SignUp = () => {
             )}
           </div>
 
-          {/* Register Button */}
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white font-bold py-2 rounded-lg hover:bg-blue-600"
-            disabled={!!passwordError}
+            className="w-full bg-green-500 text-white font-bold py-2 rounded-lg hover:bg-green-600"
           >
             Register
           </button>
         </form>
 
-        {/* Divider */}
         <div className="flex items-center justify-between my-4">
           <span className="border-b w-1/5 lg:w-1/4"></span>
           <p className="text-xs text-gray-500">OR</p>
           <span className="border-b w-1/5 lg:w-1/4"></span>
         </div>
 
-        {/* Login with Google */}
-        <button className="w-full bg-red-500 text-white font-bold py-2 rounded-lg hover:bg-red-600 flex items-center justify-center space-x-2">
+        <button className="w-full bg-gray-100 font-bold py-2 rounded-lg hover:bg-gray-200 flex items-center justify-center space-x-2">
           <svg
             className="w-5 h-5"
             xmlns="http://www.w3.org/2000/svg"
@@ -182,7 +174,6 @@ const SignUp = () => {
           <span>Sign Up with Google</span>
         </button>
 
-        {/* Already Have Account */}
         <p className="mt-4 text-lg text-center">
           Already have an account?{" "}
           <Link

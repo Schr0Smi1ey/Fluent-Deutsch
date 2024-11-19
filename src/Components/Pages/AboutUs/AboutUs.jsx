@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import story from "../../../../public/Assets/Story.png";
 import { SiListmonk } from "react-icons/si";
 import Founder from "../../../../public/Assets/Founder.jpg";
@@ -6,8 +6,18 @@ import Mission from "../../../../public/Assets/Mission.png";
 import { FaFacebook, FaTwitter } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { FaGithubSquare } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../../Contexts/AuthContext/AuthProvider";
 const AboutUs = () => {
+  const { user } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const handleGetStarted = () => {
+    if (user) {
+      navigate("/start-learning");
+    } else {
+      navigate("/login");
+    }
+  };
   return (
     <div>
       <div className="min-h-screen flex flex-col items-center py-10">
@@ -181,7 +191,7 @@ const AboutUs = () => {
 
                   <div className="flex justify-center md:justify-start space-x-8 mt-6">
                     <Link
-                      href="#"
+                      to="https://www.facebook.com/radiant.remel.5/"
                       target="_blank"
                       className="text-gray-700 hover:text-green-500 transition-colors duration-300 transform hover:scale-110"
                     >
@@ -189,7 +199,7 @@ const AboutUs = () => {
                     </Link>
 
                     <Link
-                      href="#"
+                      to={"https://www.linkedin.com/in/sarafat-karim/"}
                       target="_blank"
                       className="text-gray-700 hover:text-green-500 transition-colors duration-300 transform hover:scale-110"
                     >
@@ -197,7 +207,7 @@ const AboutUs = () => {
                     </Link>
 
                     <Link
-                      href="#"
+                      to="https://x.com/sarafat_karim"
                       target="_blank"
                       className="text-gray-700 hover:text-green-500 transition-colors duration-300 transform hover:scale-110"
                     >
@@ -205,7 +215,7 @@ const AboutUs = () => {
                     </Link>
 
                     <Link
-                      href="#"
+                      to={"https://github.com/Schr0Smi1ey"}
                       target="_blank"
                       className="text-gray-700 hover:text-green-500 transition-colors duration-300 transform hover:scale-110"
                     >
@@ -228,12 +238,12 @@ const AboutUs = () => {
                   language. Dive into interactive lessons, engaging exercises,
                   and practical tips to speak with confidence.
                 </p>
-                <Link
-                  to="/login"
+                <button
+                  onClick={handleGetStarted}
                   className="inline-block font-semibold bg-green-500 text-white py-3 px-8 text-lg rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-green-600 focus:ring-4 focus:ring-green-300 shadow-lg"
                 >
                   Get Started
-                </Link>
+                </button>
               </div>
 
               <div className="flex justify-center md:justify-end">

@@ -9,7 +9,7 @@ const ErrorPage = () => {
         </p>
         <a
           href="/"
-          className="mt-6 inline-block px-6 py-2 bg-blue-500 text-white text-lg rounded-md hover:bg-blue-600"
+          className="mt-6 inline-block px-6 py-2 bg-green-500 text-white text-lg rounded-md hover:bg-green-600"
         >
           Go Back to Home
         </a>
