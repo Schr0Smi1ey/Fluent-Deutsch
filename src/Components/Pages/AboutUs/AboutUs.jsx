@@ -1,97 +1,252 @@
 import React from "react";
-
+import story from "../../../../public/Assets/Story.png";
+import { SiListmonk } from "react-icons/si";
+import Founder from "../../../../public/Assets/Founder.jpg";
+import Mission from "../../../../public/Assets/Mission.png";
+import { FaFacebook, FaTwitter } from "react-icons/fa";
+import { IoLogoLinkedin } from "react-icons/io5";
+import { FaGithubSquare } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const AboutUs = () => {
   return (
     <div>
-      <div className="bg-gray-100 min-h-screen flex flex-col items-center py-10">
+      <div className="min-h-screen flex flex-col items-center py-10">
         <header className="text-center mb-10">
-          <h1 className="text-4xl font-bold text-blue-700">About Us</h1>
-          <p className="text-lg text-gray-700 mt-2">
+          <h1 className="text-5xl font-bold mb-3">
+            About Fluent <span className="text-green-500">Deutsch</span>
+          </h1>
+          <p className="w-[80%] mx-auto text-lg text-gray-500 mt-2">
             Learn German with FluentDeutsch - Your trusted companion on the
             journey to mastering the German language.
           </p>
         </header>
 
-        <section className="max-w-4xl mx-auto px-4 py-8 bg-white rounded-lg shadow-lg">
-          <h2 className="text-3xl font-semibold text-gray-800 mb-6">
-            Our Mission
-          </h2>
-          <p className="text-lg text-gray-700 mb-4">
-            At FluentDeutsch, our mission is to make learning German easy,
-            accessible, and enjoyable for everyone. Whether you are a beginner
-            or looking to improve your skills, our platform offers a variety of
-            tools, exercises, and resources to help you achieve fluency.
-          </p>
-          <p className="text-lg text-gray-700 mb-6">
-            We believe in the power of immersive learning, providing real-world
-            examples, interactive lessons, and native speaker content to enhance
-            your learning experience.
-          </p>
-
-          <h2 className="text-3xl font-semibold text-gray-800 mb-6">
-            Our Story
-          </h2>
-          <p className="text-lg text-gray-700 mb-4">
-            FluentDeutsch was created by a passionate team of language
-            enthusiasts, educators, and developers. Our team is dedicated to
-            bringing the best language learning experience to students across
-            the globe.
-          </p>
-          <p className="text-lg text-gray-700 mb-6">
-            The idea for FluentDeutsch originated from our own experiences
-            learning languages and the challenges we faced in finding effective,
-            engaging, and flexible learning resources. That's why we decided to
-            build a platform that addresses these challenges and helps learners
-            thrive.
-          </p>
-
-          <h2 className="text-3xl font-semibold text-gray-800 mb-6">
-            Why Choose FluentDeutsch?
-          </h2>
-          <ul className="list-disc pl-5 text-lg text-gray-700 space-y-4">
-            <li>Interactive lessons that cater to all skill levels</li>
-            <li>Real-world language usage with practical exercises</li>
-            <li>
-              Native speaker content to improve listening and comprehension
-            </li>
-            <li>Customizable learning paths and progress tracking</li>
-            <li>Friendly and supportive community of learners</li>
-          </ul>
-
-          <h2 className="text-3xl font-semibold text-gray-800 mb-6">
-            Meet the Founder
-          </h2>
-          <div className="flex flex-wrap justify-center gap-8">
-            <div className="max-w-xs text-center bg-white shadow-lg rounded-lg p-6">
+        <section className="max-w-4xl mx-auto px-4 py-8 rounded-lg">
+          <div className="bg-gradient-to-r from-green-50 to-green-100 relative mb-5 py-12 px-6 md:px-12 lg:px-20 rounded-2xl shadow-xl max-w-4xl mx-auto">
+            <div className="absolute inset-0 opacity-20">
               <img
-                src="https://via.placeholder.com/150"
-                alt="Team Member 1"
-                className="w-32 h-32 rounded-full mx-auto mb-4"
+                src={Mission}
+                alt="German Culture"
+                className="w-full h-full object-cover"
               />
-              <h3 className="text-xl font-semibold text-gray-800">
-                Anna Müller
-              </h3>
-              <p className="text-lg text-gray-600">
-                Co-founder & Language Expert
+            </div>
+            <div className="text-center mb-10">
+              <h2 className="text-4xl font-extrabold text-gray-800 mb-4 tracking-tight">
+                Our Mission
+              </h2>
+              <div className="w-24 h-1 bg-green-600 mx-auto rounded-full"></div>
+            </div>
+            <div className="text-lg text-gray-700 leading-relaxed space-y-8">
+              <p>
+                At Fluent{" "}
+                <span className="text-green-600 font-semibold">Deutsch</span>,
+                our mission is to make learning German easy, accessible, and
+                enjoyable for everyone. Whether you are a beginner or looking to
+                improve your skills, our platform offers a variety of tools,
+                exercises, and resources to help you achieve fluency.
+              </p>
+              <p>
+                We believe in the power of immersive learning, providing
+                real-world examples, interactive lessons, and native speaker
+                content to enhance your learning experience. Together, let’s
+                unlock the doors to fluency and explore the beauty of the German
+                language.
               </p>
             </div>
           </div>
 
-          <section className="mt-12 text-center">
-            <h2 className="text-3xl font-semibold text-gray-800 mb-6">
-              Join Us on Your Language Learning Journey
+          <div className="relative bg-gradient-to-br from-green-50 to-green-100 py-12 px-6 md:px-16 lg:px-24 rounded-lg shadow-lg overflow-hidden">
+            <div className="absolute inset-0 opacity-20">
+              <img
+                src={story}
+                alt="German Culture"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="relative text-center md:text-left">
+              <div className="mb-8">
+                <h2 className="text-4xl md:text-5xl font-extrabold text-green-700 mb-4">
+                  Our Story
+                </h2>
+                <div className="w-20 h-2 bg-green-500 mx-auto md:mx-0"></div>
+              </div>
+              <div className="space-y-6 text-gray-800 text-lg md:text-xl">
+                <p>
+                  FluentDeutsch was born out of a shared passion for languages,
+                  education, and technology. Our founders, a group of language
+                  enthusiasts and educators, set out with a mission to break the
+                  barriers to language learning by combining innovative
+                  technology with immersive experiences.
+                </p>
+                <p>
+                  The journey began with a simple idea: to create a platform
+                  that mirrors how we naturally learn languages – through
+                  stories, culture, and interaction. FluentDeutsch isn’t just a
+                  learning platform; it’s a vibrant gateway to the heart of the
+                  German-speaking world.
+                </p>
+              </div>
+              <div className="mt-8">
+                <button className="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-full shadow-md transition duration-300">
+                  Learn More About Us
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white p-10 rounded-3xl shadow-2xl max-w-6xl mx-auto my-16">
+            <h2 className="text-4xl font-extrabold mb-12 text-center leading-tight">
+              Why Choose <span className="text-green-500">FluentDeutsch</span>?
             </h2>
-            <p className="text-lg text-gray-700 mb-4">
-              Start your journey with FluentDeutsch today and immerse yourself
-              in the German language with engaging lessons and practical
-              exercises.
-            </p>
-            <a
-              href="/get-started"
-              className="text-white bg-blue-700 hover:bg-blue-600 py-2 px-6 rounded-lg text-lg"
-            >
-              Get Started
-            </a>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+              <div className="flex items-start gap-6 p-6 bg-green-50 rounded-xl shadow-md transform transition-transform duration-300 hover:scale-105">
+                <div className="text-4xl text-green-600">
+                  <SiListmonk />
+                </div>
+                <p className="text-lg text-gray-700">
+                  Interactive lessons that cater to all skill levels
+                </p>
+              </div>
+              <div className="flex items-start gap-6 p-6 bg-green-50 rounded-xl shadow-md transform transition-transform duration-300 hover:scale-105">
+                <div className="text-4xl text-green-600">
+                  <SiListmonk />
+                </div>
+                <p className="text-lg text-gray-700">
+                  Real-world language usage with practical exercises
+                </p>
+              </div>
+              <div className="flex items-start gap-6 p-6 bg-green-50 rounded-xl shadow-md transform transition-transform duration-300 hover:scale-105">
+                <div className="text-4xl text-green-600">
+                  <SiListmonk />
+                </div>
+                <p className="text-lg text-gray-700">
+                  Native speaker content to improve listening and comprehension
+                </p>
+              </div>
+              <div className="flex items-start gap-6 p-6 bg-green-50 rounded-xl shadow-md transform transition-transform duration-300 hover:scale-105">
+                <div className="text-4xl text-green-600">
+                  <SiListmonk />
+                </div>
+                <p className="text-lg text-gray-700">
+                  Customizable learning paths and progress tracking
+                </p>
+              </div>
+              <div className="flex items-start gap-6 p-6 bg-green-50 rounded-xl shadow-md transform transition-transform duration-300 hover:scale-105">
+                <div className="text-4xl text-green-600">
+                  <SiListmonk />
+                </div>
+                <p className="text-lg text-gray-700">
+                  Friendly and supportive community of learners
+                </p>
+              </div>
+              <div className="flex items-start gap-6 p-6 bg-green-50 rounded-xl shadow-md transform transition-transform duration-300 hover:scale-105">
+                <div className="text-4xl text-green-600">
+                  <SiListmonk />
+                </div>
+                <p className="text-lg text-gray-700">
+                  Gamified quizzes to make learning fun and engaging
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="py-16 bg-gray-50">
+            <div className="max-w-6xl mx-auto px-6 text-center md:text-left">
+              <h2 className="text-4xl font-extrabold text-gray-800 mb-8 tracking-tight">
+                Meet the Founder
+              </h2>
+              <div className="flex flex-col md:flex-row items-center justify-between gap-12">
+                <div className="w-full md:w-1/3 bg-gradient-to-r from-green-400 to-green-300 p-4 rounded-xl shadow-lg">
+                  <img
+                    src={Founder}
+                    alt="Founder"
+                    className="w-56 h-56 rounded-full mx-auto mb-6 border-8 border-white shadow-xl"
+                  />
+                </div>
+
+                <div className="w-full md:w-2/3 text-center md:text-left">
+                  <h3 className="text-3xl font-semibold text-gray-800 mb-4">
+                    Sarafat Karim
+                  </h3>
+                  <p className="text-lg text-gray-600 italic mb-4">
+                    Founder & CEO
+                  </p>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                    Sarafat Karim is the visionary behind FluentDeutsch,
+                    dedicated to making the German language accessible and
+                    enjoyable for learners around the world. With a passion for
+                    education and a commitment to excellence, Sarafat is guiding
+                    the team to shape the future of language learning.
+                  </p>
+
+                  <div className="flex justify-center md:justify-start space-x-8 mt-6">
+                    <Link
+                      href="#"
+                      target="_blank"
+                      className="text-gray-700 hover:text-green-500 transition-colors duration-300 transform hover:scale-110"
+                    >
+                      <FaFacebook className="text-3xl" />
+                    </Link>
+
+                    <Link
+                      href="#"
+                      target="_blank"
+                      className="text-gray-700 hover:text-green-500 transition-colors duration-300 transform hover:scale-110"
+                    >
+                      <IoLogoLinkedin className="text-3xl" />
+                    </Link>
+
+                    <Link
+                      href="#"
+                      target="_blank"
+                      className="text-gray-700 hover:text-green-500 transition-colors duration-300 transform hover:scale-110"
+                    >
+                      <FaTwitter className="text-3xl" />
+                    </Link>
+
+                    <Link
+                      href="#"
+                      target="_blank"
+                      className="text-gray-700 hover:text-green-500 transition-colors duration-300 transform hover:scale-110"
+                    >
+                      <FaGithubSquare className="text-3xl" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section className="mt-16 bg-white text-gray-800 py-16 px-6 md:px-12 lg:px-16">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+              <div className="text-center md:text-left">
+                <h2 className="text-4xl font-extrabold text-green-500 leading-tight mb-6">
+                  Start Your German Journey Today
+                </h2>
+                <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                  FluentDeutsch is your gateway to mastering the German
+                  language. Dive into interactive lessons, engaging exercises,
+                  and practical tips to speak with confidence.
+                </p>
+                <Link
+                  to="/login"
+                  className="inline-block font-semibold bg-green-500 text-white py-3 px-8 text-lg rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-green-600 focus:ring-4 focus:ring-green-300 shadow-lg"
+                >
+                  Get Started
+                </Link>
+              </div>
+
+              <div className="flex justify-center md:justify-end">
+                <div className="relative">
+                  <div className="w-full px-4 h-64 md:h-80 lg:h-96 bg-gradient-to-br from-green-200 to-green-500 rounded-lg shadow-lg flex items-center justify-center">
+                    <span className="text-white text-2xl font-bold">
+                      📘 Learn German
+                    </span>
+                  </div>
+                  <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-green-100 opacity-50 rounded-full blur-3xl"></div>
+                </div>
+              </div>
+            </div>
           </section>
         </section>
       </div>

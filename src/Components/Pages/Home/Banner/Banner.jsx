@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
-import slide1 from "../../../../../public/Slide1.png";
-import slide2 from "../../../../../public/Slide2.jpg";
-import slide3 from "../../../../../public/Slide3.jpg";
-import slide4 from "../../../../../public/Slide4.jpg";
-import slide5 from "../../../../../public/Slide5.png";
+import slide1 from "../../../../../public/Assets/Slide1.png";
+import slide2 from "../../../../../public/Assets/Slide2.jpg";
+import slide3 from "../../../../../public/Assets/Slide3.jpg";
+import slide4 from "../../../../../public/Assets/Slide4.jpg";
+import slide5 from "../../../../../public/Assets/Slide5.png";
 import { useState } from "react";
 
 const Banner = () => {
@@ -95,7 +95,7 @@ const Banner = () => {
                   <img
                     src={slide.imgSrc}
                     alt={`Slide ${index + 1}`}
-                    className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] rounded-full"
+                    className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] rounded-full hover:scale-105 border-2 border-green-400 p-2"
                   />
                 </div>
                 <div className="w-4/6 mb-4 md:ml-4 lg:ml-6">
@@ -116,13 +116,13 @@ const Banner = () => {
               <div className="absolute left-2 right-2 md:left-4 md:right-4 lg:left-14 lg:right-14 top-1/2 flex -translate-y-1/2 transform justify-between">
                 <button
                   onClick={goToPreviousSlide}
-                  className="btn btn-circle text-lg bg-transparent border-none hover:bg-orange-100"
+                  className="btn btn-circle bg-green-500 text-lg border-none hover:bg-white"
                 >
                   ❮
                 </button>
                 <button
                   onClick={goToNextSlide}
-                  className="btn btn-circle text-lg bg-transparent border-none hover:bg-orange-100"
+                  className="btn btn-circle bg-green-500 text-lg border-none hover:bg-white"
                 >
                   ❯
                 </button>

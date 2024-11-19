@@ -93,32 +93,35 @@ const Tutorials = () => {
   };
   return (
     <div className="container mx-auto">
-      <div className="bg-[#9538E2] relative py-5">
+      <div className="relative py-5">
         <div className="text-center mb-5">
           <h1 className="font-bold text-3xl mb-3">
-            Best Tutorials for Learning German
+            Learn German with Engaging Tutorials
           </h1>
-          <p className="text-gray-300 w-[90%] md:w-1/2 mx-auto">
-            Discover the best tutorials to master the German language with
-            FluentDeutsch. Learn grammar, build vocabulary, and improve your
-            pronunciation through engaging lessons designed for all levels.
+          <p className="text-gray-500 w-[90%] md:w-1/2 mx-auto">
+            Explore a curated collection of video tutorials to master German at
+            your own pace. From grammar tips and vocabulary building to
+            pronunciation practice, these engaging YouTube videos are perfect
+            for learners of all levels. Start watching and take your German to
+            the next level!
           </p>
         </div>
+
         <div className="w-fit mx-auto">
           <button
             onClick={handleLearnVocab}
-            className="px-4 py-2 rounded-xl font-semibold text-xl bg-white"
+            className="px-4 py-2 bg-green-500 text-white rounded-xl font-semibold text-xl"
           >
             Learn Vocabularies
           </button>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 p-5 lg:grid-cols-3 gap-5">
         {tutorials.map((tutorial) => (
           <div
             key={tutorial.id}
-            className="bg-white p-5 rounded-xl shadow-lg my-5"
+            className="bg-white p-5 my-5 shadow-xl rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-t hover:from-green-200 hover:to-green-100"
           >
             <div
               className="cursor-pointer relative"

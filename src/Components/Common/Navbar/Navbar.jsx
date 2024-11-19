@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Contexts/AuthContext/AuthProvider";
+import "./Navbar.css";
 const NavBar = () => {
   const { user, signOutUser } = useContext(AuthContext);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
@@ -143,7 +144,7 @@ const NavBar = () => {
     <div
       className={`navbar container py-5 px-2 sm:p-5 mx-auto ${
         location.pathname === "/"
-          ? "bg-green-500 text-white"
+          ? "bg-gradient-to-r from-green-400 to-green-500 text-white"
           : "bg-white text-black"
       } rounded-t-xl`}
     >
@@ -152,7 +153,7 @@ const NavBar = () => {
           to={"/"}
           className="text-black flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2 rounded-lg font-bold bg-white hover:bg-green-500 hover:border-2 hover:border-black hover:text-white text-lg sm:text-xl"
         >
-          Fluent <span className="text-orange-500">Deutsch</span>
+          Fluent <span className="text-green-500">Deutsch</span>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">{navElements}</div>

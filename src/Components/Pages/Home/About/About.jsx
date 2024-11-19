@@ -57,13 +57,13 @@ const About = () => {
           {aboutContent.map((item, index) => (
             <div
               key={index}
-              className={`flex shadow-md p-5 rounded-2xl ${
+              className={`flex shadow-md hover:bg-gradient-to-t hover:from-green-200 hover:to-green-100 p-5 rounded-2xl ${
                 index % 2 === 0
                   ? "flex-row-reverse justify-end"
                   : "flex-row justify-start"
-              } items-center text-center`}
+              } items-center text-center transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl`}
             >
-              <div className="w-1/2">
+              <div className="w-1/2 bg-gradient-to-r from-green-50 to-green-100 rounded-lg">
                 <img src={item.icon} alt={item.title} className="w-30 h-30" />
               </div>
               <div className="text-center w-3/4">
