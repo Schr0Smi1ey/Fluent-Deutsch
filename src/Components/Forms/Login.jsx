@@ -1,36 +1,47 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../Contexts/AuthContext/AuthProvider";
+import { IoMdEye } from "react-icons/io";
+import { VscEyeClosed } from "react-icons/vsc";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
+
 const Login = () => {
-  const { user, signInUser, signInWithGoogle, Toast } = useContext(AuthContext);
+  const { signInUser, signInWithGoogle, Toast } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
-  console.log("user", user);
+  const [email, setEmail] = useState(""); // Track email input
+  const [showPassword, setShowPassword] = useState(false);
+  const handlePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
+
   const attemptedPath = location.state?.from || "/";
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    const email = e.target[0].value;
-    const password = e.target[1].value;
+    const password = e.target[1].value; // Password from the form
     signInUser(email, password)
-      .then((userCredential) => {
-        navigate({ attemptedPath });
+      .then(() => {
+        console.log("attempted path: ", attemptedPath);
+        navigate(attemptedPath);
         Toast("Login Successful", "success");
       })
       .catch((error) => {
         Toast(error.message, "error");
       });
   };
+
   const handleSignInWithGoogle = () => {
     signInWithGoogle()
-      .then((userCredential) => {
-        navigate(`${location.state?.from ? location.state.from : "/"}`);
+      .then(() => {
+        navigate(attemptedPath);
         Toast("Login Successful", "success");
       })
       .catch((error) => {
-        setError(error.message);
+        Toast(error.message, "error");
       });
   };
+
   return (
     <div className="min-h-[400px] py-10 flex items-center justify-center bg-gradient-to-t from-green-200 to-green-100">
       <Helmet>
@@ -46,6 +57,8 @@ const Login = () => {
             <input
               type="email"
               id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400"
               placeholder="Enter your email"
               required
@@ -59,19 +72,35 @@ const Login = () => {
             >
               Password
             </label>
-            <input
-              type="password"
-              id="password"
-              className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400"
-              placeholder="Enter your password"
-              required
-            />
+            <div className="relative rounded-lg">
+              <input
+                type={showPassword ? "text" : "password"}
+                id="password"
+                className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400"
+                placeholder="Enter your password"
+                required
+              />
+              <div
+                className="absolute inset-y-0 right-3 flex items-center cursor-pointer"
+                onClick={handlePasswordVisibility}
+              >
+                {showPassword ? (
+                  <VscEyeClosed className="w-5 h-5 text-gray-500 hover:text-gray-700" />
+                ) : (
+                  <IoMdEye className="w-5 h-5 text-gray-500 hover:text-gray-700" />
+                )}
+              </div>
+            </div>
           </div>
 
           <div className="text-right">
-            <a href="#" className="text-sm text-blue-500 hover:underline">
+            <Link
+              to="/forgot-password"
+              state={{ email }} // Pass the email state
+              className="text-sm text-blue-500 hover:underline"
+            >
               Forgot Password?
-            </a>
+            </Link>
           </div>
 
           <button
@@ -113,7 +142,6 @@ const Login = () => {
           <span>Login with Google</span>
         </button>
 
-        {/* Register */}
         <p className="mt-4 text-lg text-center">
           New to Fluent Deutsch?{" "}
           <Link

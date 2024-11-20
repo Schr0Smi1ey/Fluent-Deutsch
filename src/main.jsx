@@ -15,6 +15,7 @@ import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import Profile from "./Components/PrivateData/Profile";
 import UpdateProfile from "./Components/Forms/UpdateProfile";
 import AboutUs from "./Components/Pages/AboutUs/AboutUs";
+import ForgotPassword from "./Components/Forms/forgotPassword";
 
 const router = createBrowserRouter([
   {
@@ -80,6 +81,10 @@ const router = createBrowserRouter([
       {
         path: "/about-us",
         element: <AboutUs></AboutUs>,
+      },
+      {
+        path: "/forgot-password",
+        element: <ForgotPassword></ForgotPassword>,
       },
     ],
   },

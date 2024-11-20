@@ -120,7 +120,7 @@ const Tutorials = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 p-5 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 p-5 lg:grid-cols-3 gap-5">
         {tutorials.map((tutorial) => (
           <div
             key={tutorial.id}
@@ -133,7 +133,7 @@ const Tutorials = () => {
               <img
                 src={`https://img.youtube.com/vi/${tutorial.videoId}/0.jpg`}
                 alt="Video thumbnail"
-                className="w-[300px] md:w-[350px] lg:w-[450px] h-[150px] md:h-[250px] lg:h-[300px] rounded-2xl object-cover"
+                className="w-[300px] md:w-[350px] lg:w-[450px] h-[250px] lg:h-[300px] rounded-2xl object-cover"
               />
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-2xl">
                 <span className="flex items-center gap-2 text-green-500 text-2xl font-bold">

@@ -1,11 +1,8 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Contexts/AuthContext/AuthProvider";
-import {
-  Link,
-  useLoaderData,
-  useLocation,
-  useNavigate,
-} from "react-router-dom";
+import { IoMdEye } from "react-icons/io";
+import { VscEyeClosed } from "react-icons/vsc";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 const SignUp = () => {
   const [formData, setFormData] = useState({
@@ -14,6 +11,10 @@ const SignUp = () => {
     photoURL: "",
     password: "",
   });
+  const [showPassword, setShowPassword] = useState(false);
+  const handlePasswordVisivility = () => {
+    setShowPassword(!showPassword);
+  };
   const navigate = useNavigate();
   const { createUser, Toast, updateUserProfile, signInWithGoogle } =
     useContext(AuthContext);
@@ -143,20 +144,30 @@ const SignUp = () => {
             >
               Password
             </label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              value={formData.password}
-              onChange={handleInputChange}
-              className={`w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 ${
-                passwordError
-                  ? "border-red-500 focus:ring-red-400"
-                  : "focus:ring-green-400"
-              }`}
-              placeholder="Enter your password"
-              required
-            />
+            <div className="relative rounded-lg">
+              <input
+                type={showPassword ? "text" : "password"}
+                id="password"
+                name="password"
+                value={formData.password}
+                onChange={handleInputChange}
+                className={`w-full px-3 py-2 pr-10 border rounded-lg focus:outline-none focus:ring-2 ${
+                  passwordError ? "focus:ring-red-400" : "focus:ring-green-400"
+                }`}
+                placeholder="Enter your password"
+                required
+              />
+              <div
+                className="absolute inset-y-0 right-3 flex items-center cursor-pointer"
+                onClick={handlePasswordVisivility}
+              >
+                {showPassword ? (
+                  <VscEyeClosed className="w-5 h-5 text-gray-500 hover:text-gray-700" />
+                ) : (
+                  <IoMdEye className="w-5 h-5 text-gray-500 hover:text-gray-700" />
+                )}
+              </div>
+            </div>
             {passwordError && (
               <p className="text-sm text-red-500 mt-1">{passwordError}</p>
             )}

@@ -8,21 +8,21 @@ import {
   updateProfile,
   GoogleAuthProvider,
   signInWithPopup,
+  sendPasswordResetEmail,
 } from "firebase/auth";
-import { auth } from "../../API/firebase.init";
+import { auth } from "../../API/firebase.init.js";
 import { toast, Flip } from "react-toastify";
 export const AuthContext = createContext(null);
 const provider = new GoogleAuthProvider();
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const createUser = (email, password) => {
     setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
   };
   const signInUser = (email, password) => {
-    setLoading(true);
     return signInWithEmailAndPassword(auth, email, password);
   };
   const signOutUser = () => {
@@ -39,15 +39,18 @@ const AuthProvider = ({ children }) => {
       photoURL: photoURL,
     });
   };
+  const resetPassword = (email) => {
+    return sendPasswordResetEmail(auth, email);
+  };
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
         setUser(user);
-        setLoading(false);
       } else {
-        setLoading(false);
         setUser(null);
       }
+      console.log("called");
+      setLoading(false);
     });
     return () => unsubscribe();
   }, []);
@@ -76,7 +79,9 @@ const AuthProvider = ({ children }) => {
     updateUserProfile,
     setUser,
     loading,
+    setLoading,
     Toast,
+    resetPassword,
   };
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
