@@ -1,11 +1,13 @@
+import React, { useEffect, useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../../../../Contexts/AuthContext/AuthProvider";
 import slide1 from "../../../../../public/Assets/Slide1.png";
 import slide2 from "../../../../../public/Assets/Slide2.jpg";
 import slide3 from "../../../../../public/Assets/Slide3.jpg";
 import slide4 from "../../../../../public/Assets/Slide4.jpg";
 import slide5 from "../../../../../public/Assets/Slide5.png";
-import { useContext, useState } from "react";
-import { AuthContext } from "../../../../Contexts/AuthContext/AuthProvider";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Banner = () => {
   const sliderContent = [
@@ -60,6 +62,7 @@ const Banner = () => {
       bgTo: "#6d4c41",
     },
   ];
+
   const { user } = useContext(AuthContext);
   const navigate = useNavigate();
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -79,10 +82,26 @@ const Banner = () => {
   const handleLearningBtn = () => {
     navigate("/start-learning");
   };
+
+  useEffect(() => {
+    AOS.init();
+    return () => {
+      AOS.refresh();
+    };
+  }, []);
+
+  useEffect(() => {
+    AOS.refresh();
+  }, [currentSlide]);
+
   return (
     <section className="md:container mx-auto my-5">
       {user && (
-        <h1 className="text-center font-bold text-green-500 text-2xl mb-4">
+        <h1
+          data-aos="fade-down"
+          data-aos-duration="1000"
+          className="text-center font-bold text-green-500 text-2xl mb-4"
+        >
           Welcome , {user.displayName}
         </h1>
       )}
@@ -93,6 +112,8 @@ const Banner = () => {
             className={`carousel-item relative w-full ${
               index === currentSlide ? "block" : "hidden"
             }`}
+            data-aos="fade-down"
+            data-aos-duration="1000"
           >
             <div
               className={`w-full md:p-10 md:px-16 lg:px-28 flex justify-center items-center bg-gradient-to-r from-[${slide.bgFrom}] to-[${slide.bgTo}]`}
@@ -103,18 +124,30 @@ const Banner = () => {
                     src={slide.imgSrc}
                     alt={`Slide ${index + 1}`}
                     className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] rounded-full hover:scale-105 border-4 border-green-400 p-2"
+                    data-aos="zoom-in"
+                    data-aos-duration="800"
                   />
                 </div>
                 <div className="w-4/6 mb-4 md:ml-4 lg:ml-6">
-                  <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-5">
+                  <h1
+                    className="font-bold text-3xl md:text-4xl lg:text-5xl xl:text-6xl mb-5"
+                    data-aos="fade-left"
+                  >
                     {slide.title}
                   </h1>
-                  <p className="font-normal text-base text-gray-800 mb-6">
+                  <p
+                    className="font-normal text-base text-gray-800 mb-6"
+                    data-aos="fade-left"
+                    data-aos-delay="200"
+                  >
                     {slide.description}
                   </p>
                   <button
                     onClick={handleLearningBtn}
                     className="btn bg-green-500 font-semibold text-lg text-white"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                    data-aos-duration="1000"
                   >
                     {slide.buttonText}
                   </button>
@@ -124,12 +157,16 @@ const Banner = () => {
                 <button
                   onClick={goToPreviousSlide}
                   className="btn btn-circle bg-white text-lg border-none hover:bg-white"
+                  data-aos="fade-left"
+                  data-aos-duration="800"
                 >
                   ❮
                 </button>
                 <button
                   onClick={goToNextSlide}
                   className="btn btn-circle bg-white text-lg border-none hover:bg-white"
+                  data-aos="fade-right"
+                  data-aos-duration="800"
                 >
                   ❯
                 </button>

@@ -3,8 +3,14 @@ import about2 from "./about2.svg";
 import about3 from "./about3.svg";
 import about4 from "./about4.svg";
 import ReactCountryFlag from "react-country-flag";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const About = () => {
+  useEffect(() => {
+    Aos.init({ duration: 800 });
+  }, []);
   const aboutContent = [
     {
       title: "Free. Fun. Effective.",
@@ -56,6 +62,7 @@ const About = () => {
         <div className="max-w-4xl mx-auto grid grid-cols-1 gap-10">
           {aboutContent.map((item, index) => (
             <div
+              data-aos="flip-left"
               key={index}
               className={`flex gap-3 flex-col justify-center items-center shadow-md hover:bg-gradient-to-t hover:from-green-200 hover:to-green-100 p-5 rounded-2xl ${
                 index % 2 === 0

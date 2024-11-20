@@ -1,10 +1,10 @@
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { AuthContext } from "../../../Contexts/AuthContext/AuthProvider";
 import { Helmet } from "react-helmet";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const StartLearning = () => {
-  const { user } = useContext(AuthContext);
   const [lessons, setLessons] = useState([]);
   const navigate = useNavigate();
   useEffect(() => {
@@ -21,6 +21,15 @@ const StartLearning = () => {
   const handleViewMore = () => {
     navigate("/tutorials");
   };
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+    return () => {
+      AOS.refresh();
+    };
+  }, []);
+  useEffect(() => {
+    AOS.refresh();
+  }, [lessons]);
   return (
     <div className="container mx-auto px-4">
       <Helmet>
@@ -45,6 +54,7 @@ const StartLearning = () => {
         {lessons.map((lesson) => {
           return (
             <div
+              data-aos="zoom-in"
               key={lesson.lesson_id}
               className="bg-white flex flex-col justify-center items-center p-6 rounded-xl shadow-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-t hover:from-green-200 hover:to-green-100"
             >
@@ -81,7 +91,10 @@ const StartLearning = () => {
             foundational grammar concepts to build a strong base.
           </p>
         </div>
-        <div className="w-full flex justify-center items-center mb-8">
+        <div
+          data-aos="flip-left"
+          className="w-full flex justify-center items-center mb-8"
+        >
           <div className="relative group w-fit rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
             <iframe
               className="w-[320px] md:w-[560px] lg:w-[720px] h-[180px] md:h-[315px] lg:h-[405px] rounded-xl"

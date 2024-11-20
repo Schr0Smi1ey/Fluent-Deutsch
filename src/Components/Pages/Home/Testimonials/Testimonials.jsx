@@ -5,7 +5,9 @@ import Commenter3 from "../../../../../public/Assets/commenter3.png";
 import Commenter4 from "../../../../../public/Assets/commenter4.png";
 import Commenter1 from "../../../../../public/Assets/commenter1.jpg";
 import { useState } from "react";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 const Testimonials = () => {
   const testimonials = [
     {
@@ -44,7 +46,16 @@ const Testimonials = () => {
       (prev) => (prev - 1 + testimonials.length) % testimonials.length
     );
   };
+  useEffect(() => {
+    AOS.init();
+    return () => {
+      AOS.refresh();
+    };
+  }, []);
 
+  useEffect(() => {
+    AOS.refresh();
+  }, [activeSlide]);
   const { text, name, location, image } = testimonials[activeSlide];
   return (
     <div>
@@ -70,7 +81,10 @@ const Testimonials = () => {
           </div>
 
           <div className="carousel rounded-box h-fit">
-            <div className="carousel-item w-fit rounded-xl shadow-lg h-full flex items-center p-5 relative">
+            <div
+              data-aos="zoom-in"
+              className="carousel-item w-fit rounded-xl shadow-lg h-full flex items-center p-5 relative"
+            >
               <div className="relative bg-gradient-to-r from-green-50 to-green-100 w-[80%] ml-3 bg-white rounded-xl space-y-5 p-5 pt-10 sm:pl-14 xl:pt-14 font-poppins font-medium text-base text-[#5E6282]">
                 <p className="sm:w-[95%]">{text}</p>
                 <div>

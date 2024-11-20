@@ -1,4 +1,11 @@
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const LearningPathway = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  });
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
@@ -8,8 +15,10 @@ const LearningPathway = () => {
         <p className="text-lg text-gray-600 text-center mb-12">
           Follow our structured approach to mastering German, step by step.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Step 1 */}
+        <div
+          data-aos="fade-down"
+          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+        >
           <div className="text-center p-6 bg-gray-50 rounded-lg shadow-md border-t-4 border-green-500">
             <div className="w-16 h-16 bg-green-500 text-white rounded-full mx-auto flex items-center justify-center text-2xl font-bold mb-4">
               1
@@ -22,8 +31,10 @@ const LearningPathway = () => {
               and grammar rules.
             </p>
           </div>
-          {/* Step 2 */}
-          <div className="text-center p-6 bg-gray-50 rounded-lg shadow-md border-t-4 border-green-500">
+          <div
+            data-aos="fade-down"
+            className="text-center p-6 bg-gray-50 rounded-lg shadow-md border-t-4 border-green-500"
+          >
             <div className="w-16 h-16 bg-green-500 text-white rounded-full mx-auto flex items-center justify-center text-2xl font-bold mb-4">
               2
             </div>
@@ -35,8 +46,10 @@ const LearningPathway = () => {
               scenarios.
             </p>
           </div>
-          {/* Step 3 */}
-          <div className="text-center p-6 bg-gray-50 rounded-lg shadow-md border-t-4 border-green-500">
+          <div
+            data-aos="fade-down"
+            className="text-center p-6 bg-gray-50 rounded-lg shadow-md border-t-4 border-green-500"
+          >
             <div className="w-16 h-16 bg-green-500 text-white rounded-full mx-auto flex items-center justify-center text-2xl font-bold mb-4">
               3
             </div>

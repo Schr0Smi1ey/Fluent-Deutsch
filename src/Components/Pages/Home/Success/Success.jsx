@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CountUp from "react-countup";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Success = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <div className="container mx-auto">
       <section
@@ -12,19 +17,28 @@ const Success = () => {
           Our Achievements
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
-          <div className="bg-white shadow-lg hover:bg-gradient-to-t hover:from-green-200 p-8 rounded-xl transform transition-transform duration-300 hover:scale-105">
+          <div
+            data-aos="zoom-in"
+            className="bg-white shadow-lg hover:bg-gradient-to-t hover:from-green-200 p-8 rounded-xl transform transition-transform duration-300 hover:scale-105"
+          >
             <h3 className="text-6xl font-extrabold text-green-500">
               <CountUp end={15000} duration={2.5} />
             </h3>
             <p className="text-xl font-medium text-gray-700 mt-4">Users</p>
           </div>
-          <div className="bg-white shadow-lg hover:bg-gradient-to-t hover:from-green-200 p-8 rounded-xl transform transition-transform duration-300 hover:scale-105">
+          <div
+            data-aos="zoom-in"
+            className="bg-white shadow-lg hover:bg-gradient-to-t hover:from-green-200 p-8 rounded-xl transform transition-transform duration-300 hover:scale-105"
+          >
             <h3 className="text-6xl font-extrabold text-green-500">
               <CountUp end={1200} duration={2.5} />
             </h3>
             <p className="text-xl font-medium text-gray-700 mt-4">Lessons</p>
           </div>
-          <div className="bg-white shadow-lg hover:bg-gradient-to-t hover:from-green-200 p-8 rounded-xl transform transition-transform duration-300 hover:scale-105">
+          <div
+            data-aos="zoom-in"
+            className="bg-white shadow-lg hover:bg-gradient-to-t hover:from-green-200 p-8 rounded-xl transform transition-transform duration-300 hover:scale-105"
+          >
             <h3 className="text-6xl font-extrabold text-green-500">
               <CountUp end={8000} duration={2.5} />
             </h3>
@@ -32,7 +46,10 @@ const Success = () => {
               Words Learned
             </p>
           </div>
-          <div className="bg-white shadow-lg hover:bg-gradient-to-t hover:from-green-200 p-8 rounded-xl transform transition-transform duration-300 hover:scale-105">
+          <div
+            data-aos="zoom-in"
+            className="bg-white shadow-lg hover:bg-gradient-to-t hover:from-green-200 p-8 rounded-xl transform transition-transform duration-300 hover:scale-105"
+          >
             <h3 className="text-6xl font-extrabold text-green-500">
               <CountUp end={300} duration={2.5} />
             </h3>

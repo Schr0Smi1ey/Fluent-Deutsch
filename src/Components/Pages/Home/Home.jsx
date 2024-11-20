@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // import AOS styles
 import Banner from "./Banner/Banner";
 import About from "./About/About";
 import Success from "./Success/Success";
@@ -12,11 +14,11 @@ const Home = () => {
       <Helmet>
         <title>Fluent Deutsch | Home</title>
       </Helmet>
-      <Banner></Banner>
-      <About></About>
-      <Success></Success>
-      <LearningPathway></LearningPathway>
-      <Testimonials></Testimonials>
+      <Banner />
+      <About />
+      <Success />
+      <LearningPathway />
+      <Testimonials />
     </div>
   );
 };
