@@ -35,9 +35,6 @@ const NavBar = () => {
   const hideSignOutModal = () => {
     document.getElementById("signout-modal").close();
   };
-  const handleTutorials = () => {
-    navigate("/tutorials");
-  };
   const navElements = (
     <ul className="flex flex-col text-center lg:flex-row items-center justify-center gap-5 font-medium text-lg">
       <NavLink to="/">
@@ -170,7 +167,7 @@ const NavBar = () => {
       <div className="navbar-start">
         <Link
           to={"/"}
-          className="text-black flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2 rounded-lg font-bold bg-white hover:bg-green-500 hover:border-2 hover:border-black hover:text-white text-lg sm:text-xl"
+          className="text-black flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2 rounded-lg font-bold bg-white hover:border-2 hover:border-black hover:text-white text-lg sm:text-xl"
         >
           Fluent <span className="text-green-500">Deutsch</span>
         </Link>
