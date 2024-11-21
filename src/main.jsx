@@ -9,13 +9,13 @@ import StartLearning from "./Components/Pages/StartLearning/StartLearning";
 import Tutorials from "./Components/Pages/Tutorials/Tutorials";
 import Lesson from "./Components/PrivateData/Lesson/VocabularyCards";
 import Login from "./Components/Forms/Login";
-import SignUp from "./Components/Forms/SignUP";
 import AuthProvider from "./Contexts/AuthContext/AuthProvider";
 import PrivateRoute from "./PrivateRoute/PrivateRoute";
 import Profile from "./Components/PrivateData/Profile";
 import UpdateProfile from "./Components/Forms/UpdateProfile";
 import AboutUs from "./Components/Pages/AboutUs/AboutUs";
 import ForgotPassword from "./Components/Forms/forgotPassword";
+import SignUp from "./Components/Forms/SignUp";
 
 const router = createBrowserRouter([
   {
@@ -43,7 +43,7 @@ const router = createBrowserRouter([
         path: "/lesson/:lesson_id",
         loader: async ({ params }) => {
           const response = await fetch(
-            `/Data/Lesson/Lesson${params.lesson_id}.json`
+            `../public/Data/Lesson/Lesson${params.lesson_id}.json`
           );
           const lesson = await response.json();
           return lesson || null;

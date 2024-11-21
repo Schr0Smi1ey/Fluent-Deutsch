@@ -1,18 +1,15 @@
-import React from "react";
-
-const difficultyColors = {
-  easy: "bg-gradient-to-r from-green-200 to-green-100 border-green-400",
-  medium: "bg-gradient-to-r from-yellow-200 to-yellow-100 border-yellow-400",
-  hard: "bg-gradient-to-r from-red-200 to-red-100 border-red-400",
-};
-const hoverDifficultyColors = {
-  easy: "hover:bg-gradient-to-r hover:from-green-300 hover:to-green-200 hover:border-green-400",
-  medium:
-    "hover:bg-gradient-to-r hover:from-yellow-300 hover:to-yellow-200 hover:border-yellow-400",
-  hard: "hover:bg-gradient-to-r hover:from-red-300 hover:to-red-200 hover:border-red-400",
-};
-
 const VocabularyCard = ({ vocab }) => {
+  const difficultyColors = {
+    easy: "bg-gradient-to-r from-green-200 to-green-100 border-green-400",
+    medium: "bg-gradient-to-r from-yellow-200 to-yellow-100 border-yellow-400",
+    hard: "bg-gradient-to-r from-red-200 to-red-100 border-red-400",
+  };
+  const hoverDifficultyColors = {
+    easy: "hover:bg-gradient-to-r hover:from-green-300 hover:to-green-200 hover:border-green-400",
+    medium:
+      "hover:bg-gradient-to-r hover:from-yellow-300 hover:to-yellow-200 hover:border-yellow-400",
+    hard: "hover:bg-gradient-to-r hover:from-red-300 hover:to-red-200 hover:border-red-400",
+  };
   const openModal = () => {
     const modal = document.getElementById("my_modal");
     modal.showModal();
@@ -74,7 +71,6 @@ const VocabularyCard = ({ vocab }) => {
         </div>
       </div>
 
-      {/* Modal */}
       <dialog
         id="my_modal"
         className="modal transition-all duration-500 ease-in-out"

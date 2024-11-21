@@ -9,7 +9,7 @@ const Login = () => {
   const { signInUser, signInWithGoogle, Toast } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
-  const [email, setEmail] = useState(""); // Track email input
+  const [email, setEmail] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const handlePasswordVisibility = () => {
     setShowPassword(!showPassword);
@@ -19,7 +19,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const password = e.target[1].value; // Password from the form
+    const password = e.target[1].value;
     signInUser(email, password)
       .then(() => {
         console.log("attempted path: ", attemptedPath);
@@ -96,7 +96,7 @@ const Login = () => {
           <div className="text-right">
             <Link
               to="/forgot-password"
-              state={{ email }} // Pass the email state
+              state={{ email }}
               className="text-sm text-blue-500 hover:underline"
             >
               Forgot Password?

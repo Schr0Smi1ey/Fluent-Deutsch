@@ -116,7 +116,7 @@ const Banner = () => {
             data-aos-duration="1000"
           >
             <div
-              className={`w-full md:p-10 md:px-16 lg:px-28 flex justify-center items-center bg-gradient-to-r from-[${slide.bgFrom}] to-[${slide.bgTo}]`}
+              className={`w-full md:p-10 md:px-16 lg:px-28 flex justify-center items-center`}
             >
               <div className="text-center md:text-left flex flex-col items-center md:flex-row">
                 <div className="flex justify-center items-center md:w-4/6 lg:w-3/6">

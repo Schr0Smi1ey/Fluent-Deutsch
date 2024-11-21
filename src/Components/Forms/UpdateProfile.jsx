@@ -32,7 +32,7 @@ const UpdateProfile = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="min-h-[500px] flex items-center justify-center bg-gray-100">
       <Helmet>
         <title>Fluent Deutsch | Profile Update</title>
       </Helmet>

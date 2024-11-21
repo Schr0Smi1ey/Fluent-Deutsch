@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import story from "../../../../public/Assets/Story.png";
 import { SiListmonk } from "react-icons/si";
 import Founder from "../../../../public/Assets/Founder.jpg";
@@ -9,6 +9,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Contexts/AuthContext/AuthProvider";
 import { Helmet } from "react-helmet";
+import Aos from "aos";
 const AboutUs = () => {
   const { user } = useContext(AuthContext);
   const navigate = useNavigate();
@@ -19,6 +20,9 @@ const AboutUs = () => {
       navigate("/login");
     }
   };
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  });
   return (
     <div>
       <Helmet>
@@ -35,7 +39,10 @@ const AboutUs = () => {
           </p>
         </header>
 
-        <section className="max-w-4xl mx-auto px-4 py-8 rounded-lg">
+        <section
+          data-aos="zoom-in"
+          className="max-w-4xl mx-auto px-4 py-8 rounded-lg"
+        >
           <div className="bg-gradient-to-r from-green-50 to-green-100 relative mb-5 py-12 px-6 md:px-12 lg:px-20 rounded-2xl shadow-xl max-w-4xl mx-auto">
             <div className="absolute inset-0 opacity-20">
               <img
@@ -69,7 +76,10 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <div className="relative bg-gradient-to-br from-green-50 to-green-100 py-12 px-6 md:px-16 lg:px-24 rounded-lg shadow-lg overflow-hidden">
+          <div
+            data-aos="zoom-in"
+            className="relative bg-gradient-to-br from-green-50 to-green-100 py-12 px-6 md:px-16 lg:px-24 rounded-lg shadow-lg overflow-hidden"
+          >
             <div className="absolute inset-0 opacity-20">
               <img
                 src={story}
@@ -108,7 +118,10 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <div className="bg-white p-10 rounded-3xl shadow-2xl max-w-6xl mx-auto my-16">
+          <div
+            data-aos="zoom-in"
+            className="bg-white p-10 rounded-3xl shadow-2xl max-w-6xl mx-auto my-16"
+          >
             <h2 className="text-4xl font-extrabold mb-12 text-center leading-tight">
               Why Choose <span className="text-green-500">FluentDeutsch</span>?
             </h2>
@@ -164,7 +177,7 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <div className="py-16 bg-gray-50">
+          <div data-aos="zoom-in" className="py-16 bg-gray-50">
             <div className="max-w-6xl mx-auto px-6 text-center md:text-left">
               <h2 className="text-4xl font-extrabold text-gray-800 mb-8 tracking-tight">
                 Meet the Founder
@@ -231,7 +244,10 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <section className="mt-16 bg-white text-gray-800 py-16 px-6 md:px-12 lg:px-16">
+          <section
+            data-aos="zoom-in"
+            className="mt-16 bg-white text-gray-800 py-16 px-6 md:px-12 lg:px-16"
+          >
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
               <div className="text-center md:text-left">
                 <h2 className="text-4xl font-extrabold text-green-500 leading-tight mb-6">

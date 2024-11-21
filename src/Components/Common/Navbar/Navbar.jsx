@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Contexts/AuthContext/AuthProvider";
-import "./Navbar.css";
+// import "./Navbar.css";
 const NavBar = () => {
   const { user, signOutUser, Toast } = useContext(AuthContext);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
@@ -71,7 +71,7 @@ const NavBar = () => {
             <div className="w-10 rounded-full">
               <img
                 onClick={toggleProfileDropdown}
-                alt="Tailwind CSS Navbar component"
+                alt="Profile Image"
                 src={user.photoURL || "https://i.pravatar.cc/500"}
               />
             </div>

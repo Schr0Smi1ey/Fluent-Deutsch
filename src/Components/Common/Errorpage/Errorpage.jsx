@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const ErrorPage = () => {
   return (
     <div className="flex items-center justify-center h-screen bg-gray-100">
@@ -7,12 +9,12 @@ const ErrorPage = () => {
         <p className="text-lg text-gray-500 mt-2">
           The page you are looking for does not exist or has been moved.
         </p>
-        <a
-          href="/"
+        <Link
+          to={"/"}
           className="mt-6 inline-block px-6 py-2 bg-green-500 text-white text-lg rounded-md hover:bg-green-600"
         >
           Go Back to Home
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -30,7 +30,7 @@ const AuthProvider = ({ children }) => {
     return signOut(auth);
   };
   const signInWithGoogle = () => {
-    setLoading(true);
+    // setLoading(true);
     return signInWithPopup(auth, provider);
   };
   const updateUserProfile = (name, photoURL) => {

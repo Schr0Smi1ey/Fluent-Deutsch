@@ -4,14 +4,9 @@ import {
   FaTwitter,
   FaInstagram,
   FaLinkedinIn,
-} from "react-icons/fa"; // Import icons
+} from "react-icons/fa";
 
 const Footer = () => {
-  const navigate = useNavigate();
-  const handleNavigate = (path) => {
-    navigate(path);
-  };
-
   return (
     <div className="container mx-auto p-10">
       <div className="text-center">
@@ -79,7 +74,6 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        {/* Removed Legal grid and added Social Icons */}
         <div className="flex justify-center md:justify-start text-center md:text-left mb-5 md:mb-0">
           <div className="flex flex-col gap-2">
             <h2 className="mb-3 font-bold text-xl text-black">Follow Us</h2>
