@@ -16,7 +16,7 @@ const SignUp = () => {
     setShowPassword(!showPassword);
   };
   const navigate = useNavigate();
-  const { createUser, Toast, updateUserProfile, signInWithGoogle } =
+  const { createUser, Toast, updateUserProfile, signInWithGoogle, setLoading } =
     useContext(AuthContext);
   const [passwordError, setPasswordError] = useState("");
   const handleInputChange = (e) => {
@@ -67,6 +67,7 @@ const SignUp = () => {
       })
       .finally(() => {
         setFormData({ name: "", email: "", photoURL: "", password: "" });
+        setLoading(false);
       });
   };
   const handleSignInWithGoogle = () => {
@@ -77,6 +78,9 @@ const SignUp = () => {
       })
       .catch((error) => {
         setError(error.message);
+      })
+      .finally(() => {
+        setLoading(false);
       });
   };
   return (

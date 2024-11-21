@@ -22,12 +22,14 @@ const Login = () => {
     const password = e.target[1].value;
     signInUser(email, password)
       .then(() => {
-        console.log("attempted path: ", attemptedPath);
         navigate(attemptedPath);
         Toast("Login Successful", "success");
       })
       .catch((error) => {
         Toast(error.message, "error");
+      })
+      .finally(() => {
+        setLoading(false);
       });
   };
 
@@ -39,6 +41,9 @@ const Login = () => {
       })
       .catch((error) => {
         Toast(error.message, "error");
+      })
+      .finally(() => {
+        setLoading(false);
       });
   };
 

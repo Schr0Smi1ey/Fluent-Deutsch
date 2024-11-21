@@ -19,18 +19,15 @@ const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const createUser = (email, password) => {
-    setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
   };
   const signInUser = (email, password) => {
     return signInWithEmailAndPassword(auth, email, password);
   };
   const signOutUser = () => {
-    setLoading(true);
     return signOut(auth);
   };
   const signInWithGoogle = () => {
-    // setLoading(true);
     return signInWithPopup(auth, provider);
   };
   const updateUserProfile = (name, photoURL) => {
@@ -49,16 +46,14 @@ const AuthProvider = ({ children }) => {
       } else {
         setUser(null);
       }
-      console.log("called");
       setLoading(false);
     });
     return () => unsubscribe();
-  }, []);
+  }, [user]);
   const Toast = (message, type) => {
-    console.log("Toast:", message, type);
     toast[type](message, {
       position: "top-center",
-      autoClose: 1500,
+      autoClose: 1000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,

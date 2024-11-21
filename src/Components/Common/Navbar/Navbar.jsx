@@ -1,9 +1,9 @@
 import { useContext, useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Contexts/AuthContext/AuthProvider";
-// import "./Navbar.css";
+import "./Navbar.css";
 const NavBar = () => {
-  const { user, signOutUser, Toast } = useContext(AuthContext);
+  const { user, signOutUser, Toast, setLoading } = useContext(AuthContext);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
@@ -26,6 +26,9 @@ const NavBar = () => {
       })
       .catch((error) => {
         Toast(error.message, "error");
+      })
+      .finally(() => {
+        setLoading(false);
       });
     hideSignOutModal();
   };
@@ -119,14 +122,12 @@ const NavBar = () => {
                 later!
               </p>
               <div className="modal-action justify-between flex mx-auto items-center">
-                {/* Cancel Button */}
                 <button
                   onClick={hideSignOutModal}
                   className="px-2 py-1 bg-green-500 font-semibold text-base rounded-lg hover:bg-gray-300"
                 >
                   Cancel
                 </button>
-                {/* Sign Out Button */}
                 <button
                   onClick={handleSignOut}
                   className="px-2 py-1 font-semibold text-base bg-red-500 rounded-lg hover:bg-red-600"

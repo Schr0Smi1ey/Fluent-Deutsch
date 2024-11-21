@@ -43,7 +43,7 @@ const router = createBrowserRouter([
         path: "/lesson/:lesson_id",
         loader: async ({ params }) => {
           const response = await fetch(
-            `../public/Data/Lesson/Lesson${params.lesson_id}.json`
+            `/Data/Lesson/Lesson${params.lesson_id}.json`
           );
           const lesson = await response.json();
           return lesson || null;
