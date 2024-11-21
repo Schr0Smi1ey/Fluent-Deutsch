@@ -109,34 +109,6 @@ const NavBar = () => {
               </li>
             </ul>
           )}
-          <dialog
-            id="signout-modal"
-            className="modal flex justify-center items-center fixed inset-0 bg-black bg-opacity-50"
-          >
-            <div className="modal-box w-fit max-w-sm bg-white rounded-lg shadow-lg">
-              <h3 className="text-3xl text-center font-semibold text-gray-800 mb-4">
-                Sign Out
-              </h3>
-              <p className="text-gray-600 mb-6">
-                Are you sure you want to sign out? You can always come back
-                later!
-              </p>
-              <div className="modal-action justify-between flex mx-auto items-center">
-                <button
-                  onClick={hideSignOutModal}
-                  className="px-2 py-1 bg-green-500 font-semibold text-base rounded-lg hover:bg-gray-300"
-                >
-                  Cancel
-                </button>
-                <button
-                  onClick={handleSignOut}
-                  className="px-2 py-1 font-semibold text-base bg-red-500 rounded-lg hover:bg-red-600"
-                >
-                  Sign Out
-                </button>
-              </div>
-            </div>
-          </dialog>
         </div>
       )}
       <div className="flex flex-col sm:flex-row gap-0 sm:gap-4 items-center">
@@ -168,6 +140,33 @@ const NavBar = () => {
           : "bg-white text-black"
       } rounded-t-xl`}
     >
+      <dialog
+        id="signout-modal"
+        className="modal flex justify-center items-center bg-black bg-opacity-50 z-50"
+      >
+        <div className="modal-box w-full max-w-sm bg-white rounded-lg shadow-lg p-4">
+          <h3 className="text-3xl text-center font-semibold text-gray-800 mb-4">
+            Sign Out
+          </h3>
+          <p className="text-gray-600 mb-6">
+            Are you sure you want to sign out? You can always come back later!
+          </p>
+          <div className="modal-action justify-between flex mx-auto items-center">
+            <button
+              onClick={hideSignOutModal}
+              className="px-4 py-2 bg-green-500 font-semibold text-base rounded-lg hover:bg-gray-300"
+            >
+              Cancel
+            </button>
+            <button
+              onClick={handleSignOut}
+              className="px-4 py-2 font-semibold text-base bg-red-500 rounded-lg hover:bg-red-600"
+            >
+              Sign Out
+            </button>
+          </div>
+        </div>
+      </dialog>
       <div className="navbar-start">
         <Link
           to={"/"}
@@ -203,8 +202,16 @@ const NavBar = () => {
           </div>
           {isMenuOpen && (
             <ul className="menu menu-sm dropdown-content text-black lg:text-white bg-base-100 rounded-box z-[1] mt-14 w-40 p-4 pb-4 space-y-2 shadow">
-              <div className="sm:hidden">{navElementsEnd}</div>
-              <div>{navElements}</div>
+              {user ? (
+                <div className="sm:hidden">{navElementsEnd}</div>
+              ) : (
+                <div>{navElements}</div>
+              )}
+              {user ? (
+                <div>{navElements}</div>
+              ) : (
+                <div className="sm:hidden">{navElementsEnd}</div>
+              )}
             </ul>
           )}
         </div>

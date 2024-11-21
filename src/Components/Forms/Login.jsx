@@ -34,17 +34,7 @@ const Login = () => {
   };
 
   const handleSignInWithGoogle = () => {
-    signInWithGoogle()
-      .then(() => {
-        navigate(attemptedPath);
-        Toast("Login Successful", "success");
-      })
-      .catch((error) => {
-        Toast(error.message, "error");
-      })
-      .finally(() => {
-        setLoading(false);
-      });
+    signInWithGoogle();
   };
 
   return (
