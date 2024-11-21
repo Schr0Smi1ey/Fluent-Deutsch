@@ -15,7 +15,6 @@ const StartLearning = () => {
       });
   }, []);
   const handleLearningBtn = (id) => {
-    console.log("id : ", id);
     navigate(`/lesson/${id}`);
   };
   const handleViewMore = () => {

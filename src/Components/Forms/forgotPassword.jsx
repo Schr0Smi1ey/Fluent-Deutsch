@@ -5,7 +5,7 @@ import { AuthContext } from "../../Contexts/AuthContext/AuthProvider";
 const ForgotPassword = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const [email, setEmail] = useState(location.state?.email || ""); // Access email from state
+  const [email, setEmail] = useState(location.state?.email || "");
   const { resetPassword, Toast } = useContext(AuthContext);
   const handleSubmit = (e) => {
     e.preventDefault();

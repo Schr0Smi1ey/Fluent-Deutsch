@@ -16,25 +16,25 @@ const About = () => {
       title: "Free. Fun. Effective.",
       description:
         "Learning with FluentDeutsch is engaging and effective. Studies show that interactive lessons help you learn faster while building real-world communication skills.",
-      icon: about1, // Replace with actual image path or component
+      icon: about1,
     },
     {
       title: "Backed by Science",
       description:
         "Our lessons combine research-based teaching methods with carefully curated content that improves speaking, writing, and comprehension skills.",
-      icon: about2, // Replace with actual image path or component
+      icon: about2,
     },
     {
       title: "Stay Motivated",
       description:
         "We make language learning a habit with gamified lessons, badges, and streaks, all while keeping it fun and rewarding.",
-      icon: about3, // Replace with actual image path or component
+      icon: about3,
     },
     {
       title: "Personalized Learning",
       description:
         "Lessons are tailored just for you, combining the power of AI and your learning preferences to provide the right content at the right time.",
-      icon: about4, // Replace with actual image path or component
+      icon: about4,
     },
   ];
   return (
