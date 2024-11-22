@@ -6,7 +6,7 @@ Learning a new language can be challenging, especially when it comes to retainin
 
 ## Live Demo
 
-[FluentDeutsch Live Demo](#) _(https://fluent-deutsch.web.app/)_
+[Live Site Link](https://fluent-deutsch.web.app/)
 
 ## Key Features
 
