@@ -127,7 +127,7 @@ const Banner = () => {
                 </p>
                 <button
                   onClick={handleLearningBtn}
-                  className="btn bg-green-500 font-semibold text-lg text-white"
+                  className="btn bg-green-500 hover:bg-white hover:text-black hover:border-2 hover:border-green-500 font-semibold text-lg text-white"
                   data-aos="fade-up"
                   data-aos-delay="400"
                   data-aos-duration="1000"

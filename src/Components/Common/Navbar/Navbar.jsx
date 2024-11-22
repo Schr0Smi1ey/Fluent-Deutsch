@@ -12,15 +12,12 @@ const NavBar = () => {
     setIsProfileOpen(false);
   };
   const toggleProfileDropdown = () => {
-    setIsProfileOpen((prevState) => !prevState);
-  };
-  const handleProfile = () => {
     if (window.innerWidth <= 640) {
       navigate("/profile");
-    } else {
-      toggleProfileDropdown();
+      setIsMenuOpen(false);
+      return;
     }
-    toggleMenuDropdown();
+    setIsProfileOpen((prevState) => !prevState);
   };
   const showSignOutModal = (event) => {
     event.preventDefault();
@@ -58,6 +55,7 @@ const NavBar = () => {
       <NavLink onClick={toggleMenuDropdown} to="/about-us">
         <span className="block text-center">About Us</span>
       </NavLink>
+      <button></button>
     </ul>
   );
   const navElementsEnd = (
@@ -71,7 +69,7 @@ const NavBar = () => {
           >
             <div className="w-10 rounded-full">
               <img
-                onClick={handleProfile}
+                onClick={toggleProfileDropdown}
                 alt="Profile Image"
                 src={user.photoURL || "https://i.pravatar.cc/500"}
               />

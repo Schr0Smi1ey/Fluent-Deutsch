@@ -17,8 +17,8 @@ const Profile = () => {
       <Helmet>
         <title>Fluent Deutsch | Profile</title>
       </Helmet>
-      <div className="bg-white shadow-lg rounded-lg flex flex-col md:flex-row w-full max-w-4xl p-6">
-        <div className="flex justify-center items-center md:w-1/3 mb-6 md:mb-0">
+      <div className="bg-white shadow-lg rounded-lg  flex flex-col sm:flex-row items-center sm:gap-20 justify-center max-w-4xl p-6">
+        <div className="flex justify-center items-center mb-6 sm:mb-0">
           <img
             src={user.photoURL || "https://via.placeholder.com/150"}
             alt="Profile"
@@ -26,7 +26,7 @@ const Profile = () => {
           />
         </div>
 
-        <div className="flex flex-col justify-center md:w-2/3 px-6">
+        <div className="flex flex-col justify-center items-center sm:items-start md:w-2/3 px-6">
           <h1 className="text-2xl font-bold text-gray-800 mb-2">
             Welcome, {user.displayName || "Guest"}!
           </h1>

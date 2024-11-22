@@ -157,14 +157,12 @@ const Tutorials = () => {
         ))}
       </div>
 
-      {/* Modal */}
       <dialog
         id="video_modal"
         className="modal modal-middle"
         onClose={closeModal}
       >
         <div className="modal-box relative">
-          {/* Close Button */}
           <button
             className="absolute z-10 bg-black top-2 right-2 text-white p-2 rounded-full hover:bg-red-700"
             onClick={closeModal}
@@ -172,7 +170,6 @@ const Tutorials = () => {
             <ImCross className="text-red-500" />
           </button>
 
-          {/* Video Iframe */}
           {selectedVideo ? (
             <iframe
               className="w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-xl"
