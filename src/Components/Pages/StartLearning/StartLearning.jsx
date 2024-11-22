@@ -32,7 +32,7 @@ const StartLearning = () => {
       </Helmet>
       <div data-aos="fade-left" className="relative py-3 md:py-5 lg:py-8">
         <div className="text-center mb-5">
-          <h1 className="font-bold text-3xl text-gray-800 mb-3">
+          <h1 className="font-bold text-4xl text-gray-800 mb-3">
             Expand Your German Vocabulary
           </h1>
           <p className="text-gray-600 w-[90%] md:w-1/2 mx-auto text-lg">
