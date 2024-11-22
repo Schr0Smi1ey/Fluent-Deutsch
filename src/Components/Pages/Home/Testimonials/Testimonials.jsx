@@ -1,9 +1,9 @@
-import upArrow from "/Assets/up-arrow.png";
-import downArrow from "/Assets/down-arrow.png";
-import Commenter2 from "/Assets/commenter2.png";
-import Commenter3 from "/Assets/commenter3.png";
-import Commenter4 from "/Assets/commenter4.png";
-import Commenter1 from "/Assets/commenter1.jpg";
+import upArrow from "../../../../Assets/up-arrow.png";
+import downArrow from "../../../../Assets/down-arrow.png";
+import Commenter1 from "../../../../Assets/commenter1.jpg";
+import Commenter2 from "../../../../Assets/commenter2.png";
+import Commenter3 from "../../../../Assets/commenter3.png";
+import Commenter4 from "../../../../Assets/commenter4.png";
 import { useState } from "react";
 import { useEffect } from "react";
 import AOS from "aos";

@@ -8,14 +8,14 @@ import { useContext } from "react";
 import { AuthContext } from "../../Contexts/AuthContext/AuthProvider";
 
 const Root = () => {
-  // const { loading } = useContext(AuthContext);
-  // if (loading) {
-  //   return (
-  //     <div className="flex items-center justify-center h-screen">
-  //       <RingLoader color="#22c55d" size={150} />
-  //     </div>
-  //   );
-  // }
+  const { loading } = useContext(AuthContext);
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <RingLoader color="#22c55d" size={150} />
+      </div>
+    );
+  }
   return (
     <div className="container ubuntu  mx-auto overflow-hidden">
       <NavBar></NavBar>

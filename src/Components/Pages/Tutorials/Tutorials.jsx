@@ -81,9 +81,6 @@ const Tutorials = () => {
     },
   ];
 
-  useEffect(() => {
-    AOS.init({ duration: 800 });
-  }, []);
   const navigate = useNavigate();
   const [selectedVideo, setSelectedVideo] = useState(null);
   const { user, loading } = useContext(AuthContext);
@@ -91,13 +88,15 @@ const Tutorials = () => {
     setSelectedVideo(videoId);
     document.getElementById("video_modal").showModal();
   };
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   const closeModal = () => {
     document.getElementById("video_modal").close();
     setSelectedVideo(null);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    AOS.init({ duration: 800 });
+  }, []);
+
   const handleLearnVocab = () => {
     navigate("/start-learning");
   };

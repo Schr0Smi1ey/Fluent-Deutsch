@@ -8,6 +8,8 @@ import {
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+
 const Footer = () => {
   useEffect(() => {
     AOS.init({ duration: 800 });
@@ -77,38 +79,38 @@ const Footer = () => {
           <div className="flex flex-col gap-2">
             <h2 className="mb-3 font-bold text-xl text-black">Follow Us</h2>
             <div className="flex gap-4 justify-center md:justify-start">
-              <Link
-                to="https://www.facebook.com/radiant.remel.5/"
+              <a
+                href="https://www.facebook.com/radiant.remel.5/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xl text-gray-600 hover:text-green-500"
               >
                 <FaFacebookF />
-              </Link>
-              <Link
-                to="https://x.com/sarafat_karim"
+              </a>
+              <a
+                href="https://x.com/sarafat_karim"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xl text-gray-600 hover:text-green-500"
               >
                 <FaTwitter />
-              </Link>
-              <Link
+              </a>
+              <a
                 href="https://www.instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xl text-gray-600 hover:text-green-500"
               >
                 <FaInstagram />
-              </Link>
-              <Link
-                to={"https://www.linkedin.com/in/sarafat-karim/"}
+              </a>
+              <a
+                href="https://www.linkedin.com/in/sarafat-karim/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xl text-gray-600 hover:text-green-500"
               >
                 <FaLinkedinIn />
-              </Link>
+              </a>
             </div>
           </div>
         </div>

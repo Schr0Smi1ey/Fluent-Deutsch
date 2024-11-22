@@ -1,3 +1,7 @@
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const VocabularyCard = ({ vocab }) => {
   const difficultyColors = {
     easy: "bg-gradient-to-r from-green-200 to-green-100 border-green-400",
@@ -11,12 +15,12 @@ const VocabularyCard = ({ vocab }) => {
     hard: "hover:bg-gradient-to-r hover:from-red-300 hover:to-red-200 hover:border-red-400",
   };
   const openModal = () => {
-    const modal = document.getElementById("my_modal");
+    const modal = document.getElementById("vocab_modal");
     modal.showModal();
   };
 
   const closeModal = () => {
-    const modal = document.getElementById("my_modal");
+    const modal = document.getElementById("vocab_modal");
     modal.close();
   };
 
@@ -25,10 +29,13 @@ const VocabularyCard = ({ vocab }) => {
     utterance.lang = "de-DE";
     window.speechSynthesis.speak(utterance);
   };
-
+  useEffect(() => {
+    AOS.init({ duration: 800 });
+  }, []);
   return (
     <div className="mb-8">
       <div
+        data-aos="fade-up"
         key={vocab.id}
         className={`border rounded-lg shadow-lg p-5 ${
           difficultyColors[vocab.difficulty]
@@ -72,7 +79,7 @@ const VocabularyCard = ({ vocab }) => {
       </div>
 
       <dialog
-        id="my_modal"
+        id="vocab_modal"
         className="modal transition-all duration-500 ease-in-out"
       >
         <div className="modal-box w-80 max-w-lg">

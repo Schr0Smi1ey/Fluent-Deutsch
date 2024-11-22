@@ -1,7 +1,10 @@
 import { useLoaderData, useNavigate } from "react-router-dom";
 import VocabularyCard from "../../Cards/VocabularyCard";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { AuthContext } from "../../../Contexts/AuthContext/AuthProvider";
 
 const difficultyColors = {
   easy: "bg-green-100 border-green-400 hover:bg-green-200",
@@ -11,14 +14,21 @@ const difficultyColors = {
 
 const VocabularyCards = () => {
   const vocabularies = useLoaderData();
+  if (!vocabularies) return <h1>Loading...</h1>;
+  const { user, loading } = useContext(AuthContext);
+  if (!user || loading) {
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <RingLoader color="#22c55d" size={150} />
+      </div>
+    );
+  }
+  console.log(vocabularies);
   const [filterVocab, setFilterVocab] = useState(vocabularies);
   const navigate = useNavigate();
   const handleBackToLesson = () => {
     navigate("/start-learning");
   };
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   const handleFilter = (difficulty) => {
     const filteredVocab = vocabularies.filter(
@@ -26,6 +36,11 @@ const VocabularyCards = () => {
     );
     setFilterVocab(filteredVocab);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    AOS.init({ duration: 500 });
+    AOS.refresh();
+  }, []);
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -39,22 +54,28 @@ const VocabularyCards = () => {
       </Helmet>
 
       <div className="text-center mb-10">
-        <h1 className="font-extrabold text-4xl md:text-5xl text-gray-800 mb-6">
+        <h1
+          data-aos="fade-right"
+          className="font-extrabold text-4xl md:text-5xl text-gray-800 mb-6"
+        >
           Master German Vocabulary
         </h1>
-        <p className="text-gray-600 text-lg md:text-xl mx-auto w-[90%] md:w-2/3 leading-relaxed mb-4">
+        <p
+          data-aos="fade-right"
+          className="text-gray-600 text-lg md:text-xl mx-auto w-[90%] md:w-2/3 leading-relaxed mb-4"
+        >
           Kickstart your journey to fluency with FluentDeutsch! Explore words
           based on difficulty levels, learn their usage, and strengthen your
           communication in German. Expand your world today—one word at a time.
         </p>
 
-        <h1 className="text-2xl font-bold">
+        <h1 data-aos="fade-right" className="text-2xl font-bold">
           Welcome to Lesson{" "}
           <span className="text-green-500 font-extrabold">
             {filterVocab[0].lesson_no}
           </span>
         </h1>
-        <div className="flex justify-center gap-6 mt-10">
+        <div data-aos="fade-up" className="flex justify-center gap-6 mt-10">
           <div
             onClick={() => handleFilter("easy")}
             className={`w-20 h-20 md:w-24 md:h-24 cursor-pointer rounded-full flex items-center justify-center ${difficultyColors.easy} border-4 transition-all duration-300 ease-in-out hover:scale-105`}

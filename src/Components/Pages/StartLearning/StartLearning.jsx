@@ -8,7 +8,7 @@ const StartLearning = () => {
   const [lessons, setLessons] = useState([]);
   const navigate = useNavigate();
   useEffect(() => {
-    fetch("/Data/Lessons.json")
+    fetch("/Lessons.json")
       .then((res) => res.json())
       .then((data) => {
         setLessons(data);
@@ -21,16 +21,8 @@ const StartLearning = () => {
     navigate("/tutorials");
   };
   useEffect(() => {
-    AOS.init({ duration: 500 });
-    return () => {
-      AOS.refresh();
-    };
-  }, []);
-  useEffect(() => {
-    AOS.refresh();
-  }, [lessons]);
-  useEffect(() => {
     window.scrollTo(0, 0);
+    AOS.init({ duration: 500 });
   }, []);
   return (
     <div className="container mx-auto px-4">
@@ -111,7 +103,6 @@ const StartLearning = () => {
               src="https://www.youtube.com/embed/RuGmc662HDg?si=BorQOlZ52Xhp_mqu"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
             ></iframe>
           </div>

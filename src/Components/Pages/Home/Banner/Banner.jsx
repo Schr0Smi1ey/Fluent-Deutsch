@@ -1,11 +1,11 @@
 import React, { useEffect, useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../../Contexts/AuthContext/AuthProvider";
-import slide1 from "/Assets/Slide1.png";
-import slide2 from "/Assets/Slide2.jpg";
-import slide3 from "/Assets/Slide3.jpg";
-import slide4 from "/Assets/Slide4.jpg";
-import slide5 from "/Assets/Slide5.png";
+import slide1 from "../../../../Assets/Slide1.png";
+import slide2 from "../../../../Assets/Slide2.jpg";
+import slide3 from "../../../../Assets/Slide3.jpg";
+import slide4 from "../../../../Assets/Slide4.jpg";
+import slide5 from "../../../../Assets/Slide5.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
