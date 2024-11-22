@@ -4,6 +4,8 @@ import { CiPlay1 } from "react-icons/ci";
 import { ImCross } from "react-icons/im";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Contexts/AuthContext/AuthProvider";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Tutorials = () => {
   const tutorials = [
     {
@@ -78,6 +80,10 @@ const Tutorials = () => {
       videoId: "xy4a1c7W7k0",
     },
   ];
+
+  useEffect(() => {
+    AOS.init({ duration: 800 });
+  }, []);
   const navigate = useNavigate();
   const [selectedVideo, setSelectedVideo] = useState(null);
   const { user, loading } = useContext(AuthContext);

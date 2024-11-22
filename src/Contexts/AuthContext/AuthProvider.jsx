@@ -49,7 +49,7 @@ const AuthProvider = ({ children }) => {
       setLoading(false);
     });
     return () => unsubscribe();
-  }, [user]);
+  }, []);
   const Toast = (message, type) => {
     toast[type](message, {
       position: "top-center",

@@ -5,8 +5,13 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
-
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Footer = () => {
+  useEffect(() => {
+    AOS.init({ duration: 800 });
+  }, []);
   return (
     <div className="container mx-auto p-10">
       <div data-aos="fade-down" className="text-center">
