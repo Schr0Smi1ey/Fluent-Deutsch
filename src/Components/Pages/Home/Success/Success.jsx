@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 
 const Success = () => {
   useEffect(() => {
-    Aos.init({ duration: 800 });
+    Aos.init({ duration: 700 });
   }, []);
   return (
     <div className="container mx-auto">

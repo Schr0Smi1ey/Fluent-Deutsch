@@ -52,11 +52,12 @@ const Banner = () => {
       imgSrc: slide5,
     },
   ];
-
   const { user } = useContext(AuthContext);
   const navigate = useNavigate();
   const [currentSlide, setCurrentSlide] = useState(0);
-
+  useEffect(() => {
+    AOS.init({ duration: 500 });
+  }, []);
   const goToPreviousSlide = () => {
     setCurrentSlide(
       (prev) => (prev - 1 + sliderContent.length) % sliderContent.length
@@ -70,10 +71,6 @@ const Banner = () => {
   const handleLearningBtn = () => {
     navigate("/start-learning");
   };
-
-  useEffect(() => {
-    AOS.init({ duration: 500 });
-  }, []);
   const { id, title, description, buttonText, imgSrc } =
     sliderContent[currentSlide];
   return (

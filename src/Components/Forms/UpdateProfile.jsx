@@ -13,10 +13,8 @@ const UpdateProfile = () => {
     photoURL: user.photoURL || "",
   });
   useEffect(() => {
-    AOS.init({ duration: 800 });
-  }, []);
-  useEffect(() => {
     window.scrollTo(0, 0);
+    AOS.init({ duration: 500 });
   }, []);
 
   const handleChange = (e) => {

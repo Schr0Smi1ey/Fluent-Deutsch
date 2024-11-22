@@ -8,26 +8,24 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const SignUp = () => {
+  const location = useLocation();
+  const [passwordError, setPasswordError] = useState("");
+  const navigate = useNavigate();
+  const { createUser, Toast, updateUserProfile, signInWithGoogle, setLoading } =
+    useContext(AuthContext);
+
+  const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     photoURL: "",
     password: "",
   });
-  const [showPassword, setShowPassword] = useState(false);
+
   const handlePasswordVisivility = () => {
     setShowPassword(!showPassword);
   };
-  useEffect(() => {
-    AOS.init({ duration: 800 });
-  }, []);
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-  const navigate = useNavigate();
-  const { createUser, Toast, updateUserProfile, signInWithGoogle, setLoading } =
-    useContext(AuthContext);
-  const [passwordError, setPasswordError] = useState("");
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -36,6 +34,10 @@ const SignUp = () => {
     }
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    AOS.init({ duration: 500 });
+  }, []);
   const validatePassword = (password) => {
     const uppercase = /[A-Z]/.test(password);
     const lowercase = /[a-z]/.test(password);
@@ -51,13 +53,9 @@ const SignUp = () => {
       setPasswordError("");
     }
   };
-  const location = useLocation();
-
   const handleSubmit = (e) => {
     e.preventDefault();
     const { email, password, name, photoURL } = formData;
-
-    // setLoading(true);
     const navigationPath = location.state?.from ? location.state.from : "/";
     createUser(email, password)
       .then((userCredential) => {
@@ -82,7 +80,6 @@ const SignUp = () => {
   };
 
   const handleSignInWithGoogle = () => {
-    // setLoading(true);
     signInWithGoogle()
       .then((userCredential) => {
         setTimeout(() => {

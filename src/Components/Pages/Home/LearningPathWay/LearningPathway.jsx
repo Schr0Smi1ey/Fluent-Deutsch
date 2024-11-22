@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const LearningPathway = () => {
   useEffect(() => {
-    Aos.init({ duration: 800 });
+    Aos.init({ duration: 700 });
   });
   return (
     <section className="py-16 bg-white">

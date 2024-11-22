@@ -14,16 +14,17 @@ const StartLearning = () => {
         setLessons(data);
       });
   }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    AOS.init({ duration: 500 });
+  }, []);
   const handleLearningBtn = (id) => {
     navigate(`/lesson/${id}`);
   };
   const handleViewMore = () => {
     navigate("/tutorials");
   };
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    AOS.init({ duration: 500 });
-  }, []);
   return (
     <div className="container mx-auto px-4">
       <Helmet>

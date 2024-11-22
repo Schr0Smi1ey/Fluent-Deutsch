@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useEffect } from "react";
 import story from "../../../Assets/Story.png";
 import Founder from "../../../Assets/Founder.jpg";
 import Mission from "../../../Assets/Mission.png";
@@ -7,25 +7,17 @@ import { FaFacebook, FaTwitter } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { FaGithubSquare } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
-import { AuthContext } from "../../../Contexts/AuthContext/AuthProvider";
 import { Helmet } from "react-helmet";
 import Aos from "aos";
 const AboutUs = () => {
-  const { user } = useContext(AuthContext);
   const navigate = useNavigate();
   const handleGetStarted = () => {
-    if (user) {
-      navigate("/start-learning");
-    } else {
-      navigate("/login");
-    }
+    navigate("/start-learning");
   };
   useEffect(() => {
-    Aos.init({ duration: 1000 });
-  });
-  useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+    Aos.init({ duration: 600 });
+  });
   return (
     <div>
       <Helmet>

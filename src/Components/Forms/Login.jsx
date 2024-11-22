@@ -17,10 +17,8 @@ const Login = () => {
     setShowPassword(!showPassword);
   };
   useEffect(() => {
-    AOS.init({ duration: 800 });
-  }, []);
-  useEffect(() => {
     window.scrollTo(0, 0);
+    AOS.init({ duration: 500 });
   }, []);
   const attemptedPath = location.state?.from || "/";
   const handleSubmit = (e) => {

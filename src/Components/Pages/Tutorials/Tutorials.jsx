@@ -84,6 +84,20 @@ const Tutorials = () => {
   const navigate = useNavigate();
   const [selectedVideo, setSelectedVideo] = useState(null);
   const { user, loading } = useContext(AuthContext);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    AOS.init({ duration: 800 });
+  }, []);
+
+  if (!user || loading) {
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <RingLoader color="#22c55d" size={150} />
+      </div>
+    );
+  }
+
   const openModal = (videoId) => {
     setSelectedVideo(videoId);
     document.getElementById("video_modal").showModal();
@@ -92,21 +106,9 @@ const Tutorials = () => {
     document.getElementById("video_modal").close();
     setSelectedVideo(null);
   };
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    AOS.init({ duration: 800 });
-  }, []);
-
   const handleLearnVocab = () => {
     navigate("/start-learning");
   };
-  if (!user || loading) {
-    return (
-      <div className="flex items-center justify-center h-screen">
-        <RingLoader color="#22c55d" size={150} />
-      </div>
-    );
-  }
   return (
     <div className="container mx-auto">
       <Helmet>

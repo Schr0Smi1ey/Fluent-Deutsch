@@ -14,6 +14,7 @@ const VocabularyCard = ({ vocab }) => {
       "hover:bg-gradient-to-r hover:from-yellow-300 hover:to-yellow-200 hover:border-yellow-400",
     hard: "hover:bg-gradient-to-r hover:from-red-300 hover:to-red-200 hover:border-red-400",
   };
+
   const openModal = () => {
     const modal = document.getElementById("vocab_modal");
     modal.showModal();
@@ -29,8 +30,9 @@ const VocabularyCard = ({ vocab }) => {
     utterance.lang = "de-DE";
     window.speechSynthesis.speak(utterance);
   };
+
   useEffect(() => {
-    AOS.init({ duration: 800 });
+    AOS.init({ duration: 500 });
   }, []);
   return (
     <div className="mb-8">

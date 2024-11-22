@@ -20,7 +20,7 @@ const PrivateRoute = ({ children }) => {
   if (loading || (!user && !isRedirecting)) {
     return (
       <div className="flex items-center justify-center h-screen">
-        <RingLoader color="#22c55d" size={150} />
+        <RingLoader color="#22c55d" size={130} />
       </div>
     );
   }

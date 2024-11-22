@@ -15,6 +15,14 @@ const difficultyColors = {
 const VocabularyCards = () => {
   const vocabularies = useLoaderData();
   const { user, loading } = useContext(AuthContext);
+  const [filterVocab, setFilterVocab] = useState(vocabularies);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    AOS.init({ duration: 500 });
+  }, []);
+
   if (!user || loading) {
     return (
       <div className="flex items-center justify-center h-screen">
@@ -22,8 +30,6 @@ const VocabularyCards = () => {
       </div>
     );
   }
-  const [filterVocab, setFilterVocab] = useState(vocabularies);
-  const navigate = useNavigate();
   const handleBackToLesson = () => {
     navigate("/start-learning");
   };
@@ -34,11 +40,6 @@ const VocabularyCards = () => {
     );
     setFilterVocab(filteredVocab);
   };
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    AOS.init({ duration: 500 });
-    AOS.refresh();
-  }, []);
 
   return (
     <div className="container mx-auto px-4 py-8">

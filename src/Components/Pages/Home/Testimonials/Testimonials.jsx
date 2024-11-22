@@ -42,17 +42,15 @@ const Testimonials = () => {
   ];
   const [currentSlide, setCurrentSlide] = useState(0);
   const goToPreviousSlide = () => {
-    AOS.init();
     setCurrentSlide(
       (prev) => (prev - 1 + testimonials.length) % testimonials.length
     );
   };
   const goToNextSlide = () => {
-    AOS.init();
     setCurrentSlide((prev) => (prev + 1) % testimonials.length);
   };
   useEffect(() => {
-    AOS.init();
+    AOS.init({ duration: 500 });
   }, []);
 
   const { id, text, name, location, image } = testimonials[currentSlide];

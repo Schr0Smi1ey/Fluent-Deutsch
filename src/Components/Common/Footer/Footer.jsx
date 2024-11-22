@@ -9,10 +9,9 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-
 const Footer = () => {
   useEffect(() => {
-    AOS.init({ duration: 800 });
+    AOS.init({ duration: 500 });
   }, []);
   return (
     <div className="container mx-auto p-10">

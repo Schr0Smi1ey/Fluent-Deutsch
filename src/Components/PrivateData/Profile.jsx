@@ -11,10 +11,8 @@ const Profile = () => {
     navigate("/update-profile");
   };
   useEffect(() => {
-    AOS.init({ duration: 800 });
-  }, []);
-  useEffect(() => {
     window.scrollTo(0, 0);
+    AOS.init({ duration: 700 });
   }, []);
   return (
     <div className="min-h-[400px] flex items-center justify-center bg-gradient-to-r from-green-50 to-green-100">
