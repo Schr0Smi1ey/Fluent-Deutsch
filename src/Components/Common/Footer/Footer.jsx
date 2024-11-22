@@ -27,26 +27,17 @@ const Footer = () => {
             </h2>
             <Link
               className="hover:text-green-500 hover:font-semibold"
-              to="/courses"
+              to="/tutorials"
             >
               Tutorial
             </Link>
-            <Link
-              className="hover:text-green-500 hover:font-semibold"
-              to="/practice"
-            >
+            <Link className="hover:text-green-500 hover:font-semibold">
               Practice Exercises
             </Link>
-            <Link
-              className="hover:text-green-500 hover:font-semibold"
-              to="/exams"
-            >
+            <Link className="hover:text-green-500 hover:font-semibold">
               Proficiency Exams
             </Link>
-            <Link
-              className="hover:text-green-500 hover:font-semibold"
-              to="/community"
-            >
+            <Link className="hover:text-green-500 hover:font-semibold">
               Community Forum
             </Link>
           </div>
@@ -56,20 +47,14 @@ const Footer = () => {
             <h2 className="mb-3 font-bold text-xl text-black">Company</h2>
             <Link
               className="hover:text-green-500 hover:font-semibold"
-              to="/about"
+              to="/about-us"
             >
               About Us
             </Link>
-            <Link
-              className="hover:text-green-500 hover:font-semibold"
-              to="/careers"
-            >
+            <Link className="hover:text-green-500 hover:font-semibold">
               Careers
             </Link>
-            <Link
-              className="hover:text-green-500 hover:font-semibold"
-              to="/contact"
-            >
+            <Link className="hover:text-green-500 hover:font-semibold">
               Contact
             </Link>
           </div>
@@ -78,38 +63,38 @@ const Footer = () => {
           <div className="flex flex-col gap-2">
             <h2 className="mb-3 font-bold text-xl text-black">Follow Us</h2>
             <div className="flex gap-4 justify-center md:justify-start">
-              <a
-                href="https://www.facebook.com"
+              <Link
+                to="https://www.facebook.com/radiant.remel.5/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xl text-gray-600 hover:text-green-500"
               >
                 <FaFacebookF />
-              </a>
-              <a
-                href="https://www.twitter.com"
+              </Link>
+              <Link
+                to="https://x.com/sarafat_karim"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xl text-gray-600 hover:text-green-500"
               >
                 <FaTwitter />
-              </a>
-              <a
+              </Link>
+              <Link
                 href="https://www.instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xl text-gray-600 hover:text-green-500"
               >
                 <FaInstagram />
-              </a>
-              <a
-                href="https://www.linkedin.com"
+              </Link>
+              <Link
+                to={"https://www.linkedin.com/in/sarafat-karim/"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xl text-gray-600 hover:text-green-500"
               >
                 <FaLinkedinIn />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

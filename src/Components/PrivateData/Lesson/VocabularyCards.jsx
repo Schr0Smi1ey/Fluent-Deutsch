@@ -1,6 +1,6 @@
 import { useLoaderData, useNavigate } from "react-router-dom";
 import VocabularyCard from "../../Cards/VocabularyCard";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 
 const difficultyColors = {
@@ -16,6 +16,9 @@ const VocabularyCards = () => {
   const handleBackToLesson = () => {
     navigate("/start-learning");
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleFilter = (difficulty) => {
     const filteredVocab = vocabularies.filter(

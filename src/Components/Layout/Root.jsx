@@ -19,7 +19,9 @@ const Root = () => {
   return (
     <div className="container mx-auto overflow-hidden">
       <NavBar></NavBar>
-      <Outlet></Outlet>
+      <div className="my-32">
+        <Outlet></Outlet>
+      </div>
       <Footer></Footer>
       <ToastContainer />
     </div>

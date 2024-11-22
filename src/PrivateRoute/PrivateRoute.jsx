@@ -1,28 +1,34 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../Contexts/AuthContext/AuthProvider";
 import { RingLoader } from "react-spinners";
 import { Navigate, useLocation } from "react-router-dom";
 
 const PrivateRoute = ({ children }) => {
   const { user, loading } = useContext(AuthContext);
-  console.log("user", user);
-  console.log("loading", loading);
+  const [isRedirecting, setIsRedirecting] = useState(false);
   const location = useLocation();
-  if (loading) {
+
+  useEffect(() => {
+    if (!loading && !user) {
+      const timeout = setTimeout(() => {
+        setIsRedirecting(true);
+      }, 300);
+      return () => clearTimeout(timeout);
+    }
+  }, [loading, user]);
+
+  if (loading || (!user && !isRedirecting)) {
     return (
       <div className="flex items-center justify-center h-screen">
         <RingLoader color="#22c55d" size={150} />
       </div>
     );
   }
+
   if (user) {
     return children;
   }
-  return (
-    <div>
-      <Navigate to="/login" state={{ from: location.pathname }}></Navigate>
-    </div>
-  );
+  return <Navigate to="/login" state={{ from: location.pathname }} />;
 };
 
 export default PrivateRoute;

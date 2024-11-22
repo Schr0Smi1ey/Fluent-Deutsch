@@ -1,5 +1,5 @@
 import { useLocation, useNavigate } from "react-router-dom";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Contexts/AuthContext/AuthProvider";
 
 const ForgotPassword = () => {
@@ -18,6 +18,9 @@ const ForgotPassword = () => {
         Toast(error.message, "error");
       });
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="min-h-[500px] flex items-center justify-center bg-gradient-to-t from-green-200 to-green-100">

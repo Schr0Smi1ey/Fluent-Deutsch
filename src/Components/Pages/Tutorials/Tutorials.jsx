@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { CiPlay1 } from "react-icons/ci";
 import { ImCross } from "react-icons/im";
@@ -85,7 +85,9 @@ const Tutorials = () => {
     setSelectedVideo(videoId);
     document.getElementById("video_modal").showModal();
   };
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const closeModal = () => {
     document.getElementById("video_modal").close();
     setSelectedVideo(null);

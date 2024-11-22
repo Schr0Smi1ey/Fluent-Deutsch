@@ -23,6 +23,9 @@ const AboutUs = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   });
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Helmet>

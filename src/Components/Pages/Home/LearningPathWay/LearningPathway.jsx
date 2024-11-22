@@ -1,6 +1,7 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const LearningPathway = () => {
   useEffect(() => {
@@ -63,9 +64,12 @@ const LearningPathway = () => {
           </div>
         </div>
         <div className="text-center mt-12">
-          <button className="btn bg-green-500 hover:bg-green-600 text-white py-3 px-6 rounded-md transition duration-200">
+          <Link
+            to={"/start-learning"}
+            className="btn text-lg font-semibold bg-green-500 hover:bg-green-600 text-white py-2 px-6 rounded-md transition duration-200"
+          >
             Start Your Journey
-          </button>
+          </Link>
         </div>
       </div>
     </section>

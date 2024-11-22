@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Contexts/AuthContext/AuthProvider";
 import { IoMdEye } from "react-icons/io";
 import { VscEyeClosed } from "react-icons/vsc";
@@ -15,6 +15,9 @@ const SignUp = () => {
   const handlePasswordVisivility = () => {
     setShowPassword(!showPassword);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const navigate = useNavigate();
   const { createUser, Toast, updateUserProfile, signInWithGoogle, setLoading } =
     useContext(AuthContext);
@@ -43,20 +46,22 @@ const SignUp = () => {
     }
   };
   const location = useLocation();
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    const { email, password, name, photoURL } = formData;
 
-    if (passwordError) {
-      Toast(passwordError, "error");
-      return;
-    }
-
-    createUser(formData.email, formData.password)
+    setLoading(true);
+    const navigationPath = location.state?.from ? location.state.from : "/";
+    createUser(email, password)
       .then((userCredential) => {
-        return updateUserProfile(formData.name, formData.photoURL)
+        return updateUserProfile(name, photoURL)
           .then(() => {
             Toast("Account Created Successfully", "success");
-            navigate(`${location.state?.from ? location.state.from : "/"}`);
+            setTimeout(() => {
+              navigate(`${navigationPath}`);
+              setLoading(false);
+            }, 200);
           })
           .catch((error) => {
             Toast(`Profile update failed: ${error.message}`, "error");
@@ -67,17 +72,21 @@ const SignUp = () => {
       })
       .finally(() => {
         setFormData({ name: "", email: "", photoURL: "", password: "" });
-        setLoading(false);
       });
   };
+
   const handleSignInWithGoogle = () => {
+    setLoading(true);
+
     signInWithGoogle()
       .then((userCredential) => {
-        navigate(`${location.state?.from ? location.state.from : "/"}`);
-        Toast("Login Successful", "success");
+        setTimeout(() => {
+          navigate(`${location.state?.from ? location.state.from : "/"}`);
+          Toast("Login Successful", "success");
+        }, 200);
       })
       .catch((error) => {
-        setError(error.message);
+        Toast(`Login failed: ${error.message}`, "error");
       })
       .finally(() => {
         setLoading(false);

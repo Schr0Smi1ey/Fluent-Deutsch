@@ -1,18 +1,26 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Contexts/AuthContext/AuthProvider";
 import "./Navbar.css";
 const NavBar = () => {
-  const { user, signOutUser, Toast, setLoading, loading } =
-    useContext(AuthContext);
+  const { user, signOutUser, Toast, setLoading } = useContext(AuthContext);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
   const toggleMenuDropdown = () => {
     setIsMenuOpen(!isMenuOpen);
+    setIsProfileOpen(false);
   };
   const toggleProfileDropdown = () => {
     setIsProfileOpen((prevState) => !prevState);
+  };
+  const handleProfile = () => {
+    if (window.innerWidth <= 640) {
+      navigate("/profile");
+    } else {
+      toggleProfileDropdown();
+    }
+    toggleMenuDropdown();
   };
   const showSignOutModal = (event) => {
     event.preventDefault();
@@ -44,10 +52,7 @@ const NavBar = () => {
       <NavLink onClick={toggleMenuDropdown} to="/start-learning">
         <span>Learn</span>
       </NavLink>
-      <NavLink
-        to={"/tutorials"}
-        onClick={toggleMenuDropdown}
-      >
+      <NavLink to={"/tutorials"} onClick={toggleMenuDropdown}>
         <span>Tutorials</span>
       </NavLink>
       <NavLink onClick={toggleMenuDropdown} to="/about-us">
@@ -66,7 +71,7 @@ const NavBar = () => {
           >
             <div className="w-10 rounded-full">
               <img
-                onClick={toggleProfileDropdown}
+                onClick={handleProfile}
                 alt="Profile Image"
                 src={user.photoURL || "https://i.pravatar.cc/500"}
               />
@@ -75,7 +80,7 @@ const NavBar = () => {
           {isProfileOpen && (
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] w-52 mt-3 mr-4 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] w-fit min-w-40 mt-3 mr-4 p-2 shadow"
             >
               <li className="block">
                 <img
@@ -87,9 +92,6 @@ const NavBar = () => {
               <li className="hover:bg-gradient-to-t hover:from-green-200 hover:to-green-100">
                 <h3 className="justify-between flex font-bold text-base">
                   {user.displayName}
-                  <span className="badge bg-green-500 font-semibold text-xs p-2">
-                    New
-                  </span>
                 </h3>
               </li>
               <li className="font-semibold hover:bg-gradient-to-t hover:from-green-200 hover:to-green-100">
@@ -107,6 +109,7 @@ const NavBar = () => {
       <div className="flex flex-col sm:flex-row gap-0 sm:gap-4 items-center">
         {!user && (
           <Link
+            onClick={toggleMenuDropdown}
             to={"/login"}
             className="bg-white px-2 py-1 rounded-lg text-black font-semibold text-lg"
           >
@@ -115,6 +118,7 @@ const NavBar = () => {
         )}
         {!user && (
           <Link
+            onClick={toggleMenuDropdown}
             to={"/signup"}
             className="bg-white px-2 py-1 rounded-lg text-black font-semibold text-lg"
           >
@@ -124,14 +128,25 @@ const NavBar = () => {
       </div>
     </div>
   );
+  const [scroll, setScroll] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <div
-      className={`navbar container py-5 px-2 sm:p-5 mx-auto ${
-        location.pathname === "/"
-          ? "bg-gradient-to-r from-green-400 to-green-500 text-white"
-          : "bg-white text-black"
-      } rounded-t-xl`}
+      className={`navbar shadow-md rounded-b-md container mx-auto center z-[70] w-[98%] sm:w-full md:w-[96%] py-2 px-3 md:py-3 md:px-5 flex justify-between items-center my-5 fixed top-0 left-[49.8%] sm:left-[50.7%] md:left-[50.7%] lg:left-1/2 xl:left-[50.1%]  transform -translate-x-1/2 transition-all duration-500 -translate-y-4 ${
+        scroll ? "bg-green-500 mt-4 rounded-b-2xl" : "bg-white"
+      }`}
     >
       <dialog
         id="signout-modal"
@@ -163,7 +178,7 @@ const NavBar = () => {
       <div className="navbar-start">
         <Link
           to={"/"}
-          className="text-black flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2 rounded-lg font-bold bg-white hover:border-2 hover:border-black hover:text-white text-lg sm:text-xl"
+          className="text-black flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2 rounded-lg font-bold bg-white hover:border-2 hover:border-black text-lg sm:text-xl"
         >
           Fluent <span className="text-green-500">Deutsch</span>
         </Link>
@@ -194,7 +209,7 @@ const NavBar = () => {
             </svg>
           </div>
           {isMenuOpen && (
-            <ul className="menu menu-sm dropdown-content text-black lg:text-white bg-base-100 rounded-box z-[1] mt-14 w-40 p-4 pb-4 space-y-2 shadow">
+            <ul className="menu menu-sm dropdown-content text-black lg:text-white bg-base-100 rounded-box z-[1] mt-14 w-fit min-w-40 p-2 pb-4 space-y-2 shadow">
               {user ? (
                 <div className="sm:hidden">{navElementsEnd}</div>
               ) : (

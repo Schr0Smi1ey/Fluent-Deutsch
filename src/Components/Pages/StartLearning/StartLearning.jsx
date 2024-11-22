@@ -29,6 +29,9 @@ const StartLearning = () => {
   useEffect(() => {
     AOS.refresh();
   }, [lessons]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="container mx-auto px-4">
       <Helmet>
@@ -94,7 +97,7 @@ const StartLearning = () => {
           data-aos="flip-left"
           className="w-full flex justify-center items-center mb-8"
         >
-          <div className="relative group w-fit rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+          <div className="relative group w-fit rounded-xl overflow-hidden shadow-lg">
             <iframe
               className="w-[320px] md:w-[560px] lg:w-[720px] h-[180px] md:h-[315px] lg:h-[405px] rounded-xl"
               src="https://www.youtube.com/embed/RuGmc662HDg?si=BorQOlZ52Xhp_mqu"
@@ -103,15 +106,14 @@ const StartLearning = () => {
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
             ></iframe>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
           </div>
         </div>
         <div className="text-center">
           <button
             onClick={handleViewMore}
-            className="w-full md:w-1/2 lg:w-1/3 px-6 py-3 text-xl font-semibold bg-gradient-to-r from-green-500 to-green-600 text-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105"
+            className="w-[60%] md:w-1/2 lg:w-1/3 px-6 py-3 text-xl font-semibold bg-gradient-to-r from-green-500 to-green-600 text-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 ease-in-out transform hover:scale-105"
           >
-            View More Tutorials!
+            View More!
           </button>
         </div>
       </div>

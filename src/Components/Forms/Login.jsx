@@ -15,14 +15,21 @@ const Login = () => {
   const handlePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const attemptedPath = location.state?.from || "/";
   const handleSubmit = (e) => {
     e.preventDefault();
     const password = e.target[1].value;
+
+    setLoading(true);
     signInUser(email, password)
       .then(() => {
-        navigate(attemptedPath);
-        Toast("Login Successful", "success");
+        setTimeout(() => {
+          navigate(attemptedPath);
+          Toast("Login Successful", "success");
+        }, 200);
       })
       .catch((error) => {
         Toast(error.message, "error");
@@ -31,12 +38,14 @@ const Login = () => {
         setLoading(false);
       });
   };
-
   const handleSignInWithGoogle = () => {
+    setLoading(true);
     signInWithGoogle()
       .then(() => {
-        navigate(attemptedPath);
-        Toast("Login Successful", "success");
+        setTimeout(() => {
+          navigate(attemptedPath);
+          Toast("Login Successful", "success");
+        }, 200);
       })
       .catch((error) => {
         Toast(error.message, "error");

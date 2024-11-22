@@ -1,15 +1,19 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Contexts/AuthContext/AuthProvider";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 const UpdateProfile = () => {
-  const { user, updateUserProfile, Toast } = useContext(AuthContext);
+  const { user, updateUserProfile, Toast, setLoading } =
+    useContext(AuthContext);
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     displayName: user.displayName || "",
     photoURL: user.photoURL || "",
   });
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,18 +25,25 @@ const UpdateProfile = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoading(true);
+
     updateUserProfile(formData.displayName, formData.photoURL)
       .then(() => {
-        navigate("/profile");
-        Toast("Profile Updated Successfully", "success");
+        setTimeout(() => {
+          navigate("/profile");
+          Toast("Profile Updated Successfully", "success");
+        }, 200);
       })
       .catch((error) => {
         Toast(error.message, "error");
+      })
+      .finally(() => {
+        setLoading(false);
       });
   };
 
   return (
-    <div className="min-h-[500px] flex items-center justify-center bg-gray-100">
+    <div className="min-h-[500px] flex items-center justify-center bg-gray-100 bg-gradient-to-r from-green-50 to-green-100">
       <Helmet>
         <title>Fluent Deutsch | Profile Update</title>
       </Helmet>
