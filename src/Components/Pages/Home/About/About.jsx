@@ -9,7 +9,7 @@ import { useEffect } from "react";
 
 const About = () => {
   useEffect(() => {
-    Aos.init({ duration: 500 });
+    Aos.init({ duration: 700 });
   }, []);
   const aboutContent = [
     {
@@ -42,15 +42,16 @@ const About = () => {
       <div className="divider"></div>
       <div className="flex px-4 w-fit gap-4 justify-center items-center mx-auto">
         <ReactCountryFlag
+          data-aos="fade-right"
           countryCode="DE"
           svg
           style={{
-            width: "3em",
-            height: "3em",
+            width: "4em",
+            height: "4em",
           }}
           title="US"
         />
-        <h3 className="font-semibold text-2xl">
+        <h3 data-aos="fade-left" className="font-semibold text-2xl">
           The world's most popular way to learn German online
         </h3>
       </div>

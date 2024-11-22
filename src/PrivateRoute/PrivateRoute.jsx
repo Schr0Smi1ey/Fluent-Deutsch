@@ -12,7 +12,7 @@ const PrivateRoute = ({ children }) => {
     if (!loading && !user) {
       const timeout = setTimeout(() => {
         setIsRedirecting(true);
-      }, 300);
+      }, 100);
       return () => clearTimeout(timeout);
     }
   }, [loading, user]);
@@ -28,7 +28,7 @@ const PrivateRoute = ({ children }) => {
   if (user) {
     return children;
   }
-  return <Navigate to="/login" state={{ from: location.pathname }} />;
+  return <Navigate to="/login" replace state={{ from: location.pathname }} />;
 };
 
 export default PrivateRoute;

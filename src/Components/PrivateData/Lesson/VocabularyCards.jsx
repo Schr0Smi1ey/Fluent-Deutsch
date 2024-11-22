@@ -14,7 +14,6 @@ const difficultyColors = {
 
 const VocabularyCards = () => {
   const vocabularies = useLoaderData();
-  if (!vocabularies) return <h1>Loading...</h1>;
   const { user, loading } = useContext(AuthContext);
   if (!user || loading) {
     return (
@@ -23,7 +22,6 @@ const VocabularyCards = () => {
       </div>
     );
   }
-  console.log(vocabularies);
   const [filterVocab, setFilterVocab] = useState(vocabularies);
   const navigate = useNavigate();
   const handleBackToLesson = () => {
