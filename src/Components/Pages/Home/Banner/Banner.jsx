@@ -72,12 +72,8 @@ const Banner = () => {
   };
 
   useEffect(() => {
-    AOS.init();
+    AOS.init({ duration: 500 });
   }, []);
-
-  useEffect(() => {
-    AOS.init();
-  }, [currentSlide]);
   const { id, title, description, buttonText, imgSrc } =
     sliderContent[currentSlide];
   return (
@@ -136,7 +132,10 @@ const Banner = () => {
                 </button>
               </div>
             </div>
-            <div className="absolute left-2 right-2 md:left-4 md:right-4 lg:left-14 lg:right-14 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <div
+              key={id}
+              className="absolute left-2 right-2 md:left-4 md:right-4 lg:left-14 lg:right-14 top-1/2 flex -translate-y-1/2 transform justify-between"
+            >
               <button
                 onClick={goToPreviousSlide}
                 className="btn btn-circle bg-white text-lg border-none hover:bg-white"

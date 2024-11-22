@@ -9,7 +9,7 @@ import { useEffect } from "react";
 
 const About = () => {
   useEffect(() => {
-    Aos.init({ duration: 800 });
+    Aos.init({ duration: 500 });
   }, []);
   const aboutContent = [
     {
@@ -62,7 +62,7 @@ const About = () => {
         <div className="max-w-4xl mx-auto grid grid-cols-1 gap-10">
           {aboutContent.map((item, index) => (
             <div
-              data-aos="flip-left"
+              data-aos="fade-up"
               key={index}
               className={`flex gap-3 flex-col justify-center items-center shadow-md hover:bg-gradient-to-t hover:from-green-200 hover:to-green-100 p-5 rounded-2xl ${
                 index % 2 === 0
@@ -70,11 +70,15 @@ const About = () => {
                   : "sm:flex-row sm:justify-start"
               } items-center text-center transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl`}
             >
-              <div className="w-1/2 bg-gradient-to-r from-green-50 to-green-100 rounded-lg">
+              <div
+                data-aos="zoom-in"
+                className="w-1/2 bg-gradient-to-r from-green-50 to-green-100 rounded-lg"
+              >
                 <img src={item.icon} alt={item.title} className="w-30 h-30" />
               </div>
               <div className="text-center w-3/4">
                 <h3
+                  data-aos="fade-up"
                   className={`text-4xl font-bold text-green-600 mb-4 ${
                     index % 2 === 0
                       ? "sm:text-left text-center"
@@ -84,6 +88,7 @@ const About = () => {
                   {item.title}
                 </h3>
                 <p
+                  data-aos="fade-up"
                   className={`text-gray-700 ${
                     index % 2 === 0 ? "sm:text-left" : "sm:text-right mr-0"
                   }`}

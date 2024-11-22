@@ -32,7 +32,7 @@ const AboutUs = () => {
         <title>Fluent Deutsch | About Us</title>
       </Helmet>
       <div className="min-h-screen flex flex-col items-center py-10">
-        <header className="text-center mb-10">
+        <header data-aos="fade-left" className="text-center mb-10">
           <h1 className="text-5xl font-bold mb-3">
             About Fluent <span className="text-green-500">Deutsch</span>
           </h1>
@@ -55,13 +55,16 @@ const AboutUs = () => {
               />
             </div>
             <div className="text-center mb-10">
-              <h2 className="text-4xl font-extrabold text-gray-800 mb-4 tracking-tight">
+              <h2
+                data-aos="fade-left"
+                className="text-4xl font-extrabold text-gray-800 mb-4 tracking-tight"
+              >
                 Our Mission
               </h2>
               <div className="w-24 h-1 bg-green-600 mx-auto rounded-full"></div>
             </div>
             <div className="text-lg text-gray-700 leading-relaxed space-y-8">
-              <p>
+              <p data-aos="fade-up">
                 At Fluent{" "}
                 <span className="text-green-600 font-semibold">Deutsch</span>,
                 our mission is to make learning German easy, accessible, and
@@ -69,7 +72,7 @@ const AboutUs = () => {
                 improve your skills, our platform offers a variety of tools,
                 exercises, and resources to help you achieve fluency.
               </p>
-              <p>
+              <p data-aos="fade-up">
                 We believe in the power of immersive learning, providing
                 real-world examples, interactive lessons, and native speaker
                 content to enhance your learning experience. Together, let’s
@@ -92,20 +95,23 @@ const AboutUs = () => {
             </div>
             <div className="relative text-center md:text-left">
               <div className="mb-8">
-                <h2 className="text-4xl md:text-5xl font-extrabold text-green-700 mb-4">
+                <h2
+                  data-aos="fade-left"
+                  className="text-4xl md:text-5xl font-extrabold text-green-700 mb-4"
+                >
                   Our Story
                 </h2>
                 <div className="w-20 h-2 bg-green-500 mx-auto md:mx-0"></div>
               </div>
               <div className="space-y-6 text-gray-800 text-lg md:text-xl">
-                <p>
+                <p data-aos="fade-up">
                   FluentDeutsch was born out of a shared passion for languages,
                   education, and technology. Our founders, a group of language
                   enthusiasts and educators, set out with a mission to break the
                   barriers to language learning by combining innovative
                   technology with immersive experiences.
                 </p>
-                <p>
+                <p data-aos="fade-up">
                   The journey began with a simple idea: to create a platform
                   that mirrors how we naturally learn languages – through
                   stories, culture, and interaction. FluentDeutsch isn’t just a
@@ -113,7 +119,7 @@ const AboutUs = () => {
                   German-speaking world.
                 </p>
               </div>
-              <div className="mt-8">
+              <div data-aos="fade-up" className="mt-8">
                 <button className="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-full shadow-md transition duration-300">
                   Learn More About Us
                 </button>
@@ -125,11 +131,17 @@ const AboutUs = () => {
             data-aos="zoom-in"
             className="bg-white p-10 rounded-3xl shadow-2xl max-w-6xl mx-auto my-16"
           >
-            <h2 className="text-4xl font-extrabold mb-12 text-center leading-tight">
+            <h2
+              data-aos="fade-left"
+              className="text-4xl font-extrabold mb-12 text-center leading-tight"
+            >
               Why Choose <span className="text-green-500">FluentDeutsch</span>?
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-              <div className="flex items-start gap-6 p-6 bg-green-50 rounded-xl shadow-md transform transition-transform duration-300 hover:scale-105">
+              <div
+                data-aos="fade-down"
+                className="flex items-start gap-6 p-6 bg-green-50 rounded-xl shadow-md transform transition-transform duration-300 hover:scale-105"
+              >
                 <div className="text-4xl text-green-600">
                   <SiListmonk />
                 </div>
@@ -137,7 +149,10 @@ const AboutUs = () => {
                   Interactive lessons that cater to all skill levels
                 </p>
               </div>
-              <div className="flex items-start gap-6 p-6 bg-green-50 rounded-xl shadow-md transform transition-transform duration-300 hover:scale-105">
+              <div
+                data-aos="fade-down"
+                className="flex items-start gap-6 p-6 bg-green-50 rounded-xl shadow-md transform transition-transform duration-300 hover:scale-105"
+              >
                 <div className="text-4xl text-green-600">
                   <SiListmonk />
                 </div>
@@ -145,7 +160,10 @@ const AboutUs = () => {
                   Real-world language usage with practical exercises
                 </p>
               </div>
-              <div className="flex items-start gap-6 p-6 bg-green-50 rounded-xl shadow-md transform transition-transform duration-300 hover:scale-105">
+              <div
+                data-aos="fade-down"
+                className="flex items-start gap-6 p-6 bg-green-50 rounded-xl shadow-md transform transition-transform duration-300 hover:scale-105"
+              >
                 <div className="text-4xl text-green-600">
                   <SiListmonk />
                 </div>
@@ -153,7 +171,10 @@ const AboutUs = () => {
                   Native speaker content to improve listening and comprehension
                 </p>
               </div>
-              <div className="flex items-start gap-6 p-6 bg-green-50 rounded-xl shadow-md transform transition-transform duration-300 hover:scale-105">
+              <div
+                data-aos="fade-up"
+                className="flex items-start gap-6 p-6 bg-green-50 rounded-xl shadow-md transform transition-transform duration-300 hover:scale-105"
+              >
                 <div className="text-4xl text-green-600">
                   <SiListmonk />
                 </div>
@@ -161,7 +182,10 @@ const AboutUs = () => {
                   Customizable learning paths and progress tracking
                 </p>
               </div>
-              <div className="flex items-start gap-6 p-6 bg-green-50 rounded-xl shadow-md transform transition-transform duration-300 hover:scale-105">
+              <div
+                data-aos="fade-up"
+                className="flex items-start gap-6 p-6 bg-green-50 rounded-xl shadow-md transform transition-transform duration-300 hover:scale-105"
+              >
                 <div className="text-4xl text-green-600">
                   <SiListmonk />
                 </div>
@@ -169,7 +193,10 @@ const AboutUs = () => {
                   Friendly and supportive community of learners
                 </p>
               </div>
-              <div className="flex items-start gap-6 p-6 bg-green-50 rounded-xl shadow-md transform transition-transform duration-300 hover:scale-105">
+              <div
+                data-aos="fade-up"
+                className="flex items-start gap-6 p-6 bg-green-50 rounded-xl shadow-md transform transition-transform duration-300 hover:scale-105"
+              >
                 <div className="text-4xl text-green-600">
                   <SiListmonk />
                 </div>
@@ -181,12 +208,18 @@ const AboutUs = () => {
           </div>
 
           <div data-aos="zoom-in" className="py-16 bg-gray-50">
-            <div className="max-w-6xl mx-auto px-6 text-center md:text-left">
+            <div
+              data-aos="fade-down"
+              className="max-w-6xl mx-auto px-6 text-center md:text-left"
+            >
               <h2 className="text-4xl font-extrabold text-gray-800 mb-8 tracking-tight">
                 Meet the Founder
               </h2>
               <div className="flex flex-col md:flex-row items-center justify-between gap-12">
-                <div className="w-full md:w-1/3 bg-gradient-to-r from-green-400 to-green-300 p-4 rounded-xl shadow-lg">
+                <div
+                  data-aos="fade-right"
+                  className="w-full md:w-1/3 bg-gradient-to-r from-green-400 to-green-300 p-4 rounded-xl shadow-lg"
+                >
                   <img
                     src={Founder}
                     alt="Founder"
@@ -195,13 +228,22 @@ const AboutUs = () => {
                 </div>
 
                 <div className="w-full md:w-2/3 text-center md:text-left">
-                  <h3 className="text-3xl font-semibold text-gray-800 mb-4">
+                  <h3
+                    data-aos="fade-left"
+                    className="text-3xl font-semibold text-gray-800 mb-4"
+                  >
                     Sarafat Karim
                   </h3>
-                  <p className="text-lg text-gray-600 italic mb-4">
+                  <p
+                    data-aos="fade-left"
+                    className="text-lg text-gray-600 italic mb-4"
+                  >
                     Founder & CEO
                   </p>
-                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                  <p
+                    data-aos="fade-left"
+                    className="text-lg text-gray-700 leading-relaxed mb-6"
+                  >
                     Sarafat Karim is the visionary behind FluentDeutsch,
                     dedicated to making the German language accessible and
                     enjoyable for learners around the world. With a passion for
@@ -211,6 +253,7 @@ const AboutUs = () => {
 
                   <div className="flex justify-center md:justify-start space-x-8 mt-6">
                     <Link
+                      data-aos="fade-up"
                       to="https://www.facebook.com/radiant.remel.5/"
                       target="_blank"
                       className="text-gray-700 hover:text-green-500 transition-colors duration-300 transform hover:scale-110"
@@ -219,6 +262,7 @@ const AboutUs = () => {
                     </Link>
 
                     <Link
+                      data-aos="fade-up"
                       to={"https://www.linkedin.com/in/sarafat-karim/"}
                       target="_blank"
                       className="text-gray-700 hover:text-green-500 transition-colors duration-300 transform hover:scale-110"
@@ -227,6 +271,7 @@ const AboutUs = () => {
                     </Link>
 
                     <Link
+                      data-aos="fade-up"
                       to="https://x.com/sarafat_karim"
                       target="_blank"
                       className="text-gray-700 hover:text-green-500 transition-colors duration-300 transform hover:scale-110"
@@ -235,6 +280,7 @@ const AboutUs = () => {
                     </Link>
 
                     <Link
+                      data-aos="fade-up"
                       to={"https://github.com/Schr0Smi1ey"}
                       target="_blank"
                       className="text-gray-700 hover:text-green-500 transition-colors duration-300 transform hover:scale-110"
@@ -253,15 +299,22 @@ const AboutUs = () => {
           >
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
               <div className="text-center md:text-left">
-                <h2 className="text-4xl font-extrabold text-green-500 leading-tight mb-6">
+                <h2
+                  data-aos="fade-right"
+                  className="text-4xl font-extrabold text-green-500 leading-tight mb-6"
+                >
                   Start Your German Journey Today
                 </h2>
-                <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                <p
+                  data-aos="fade-right"
+                  className="text-lg text-gray-600 mb-8 leading-relaxed"
+                >
                   FluentDeutsch is your gateway to mastering the German
                   language. Dive into interactive lessons, engaging exercises,
                   and practical tips to speak with confidence.
                 </p>
                 <button
+                  data-aos="fade-up"
                   onClick={handleGetStarted}
                   className="inline-block font-semibold bg-green-500 text-white py-3 px-8 text-lg rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 hover:bg-green-600 focus:ring-4 focus:ring-green-300 shadow-lg"
                 >
@@ -269,10 +322,19 @@ const AboutUs = () => {
                 </button>
               </div>
 
-              <div className="flex justify-center md:justify-end">
+              <div
+                data-aos="fade-left"
+                className="flex justify-center md:justify-end"
+              >
                 <div className="relative">
-                  <div className="w-full px-4 h-64 md:h-80 lg:h-96 bg-gradient-to-br from-green-200 to-green-500 rounded-lg shadow-lg flex items-center justify-center">
-                    <span className="text-white text-2xl font-bold">
+                  <div
+                    data-aos="zoom-in"
+                    className="w-full px-4 h-64 md:h-80 lg:h-96 bg-gradient-to-br from-green-200 to-green-500 rounded-lg shadow-lg flex items-center justify-center"
+                  >
+                    <span
+                      data-aos="fade-up"
+                      className="text-white text-2xl font-bold"
+                    >
                       📘 Learn German
                     </span>
                   </div>

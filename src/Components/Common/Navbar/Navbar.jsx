@@ -42,7 +42,7 @@ const NavBar = () => {
     document.getElementById("signout-modal").close();
   };
   const navElements = (
-    <ul className="flex flex-col text-center lg:flex-row items-center justify-center gap-5 font-medium text-lg">
+    <ul className="flex flex-col text-center lg:flex-row items-center justify-center gap-2 sm:gap-5 font-medium text-lg">
       <NavLink onClick={toggleMenuDropdown} to="/">
         <span>Home</span>
       </NavLink>
@@ -55,17 +55,21 @@ const NavBar = () => {
       <NavLink onClick={toggleMenuDropdown} to="/about-us">
         <span className="block text-center">About Us</span>
       </NavLink>
-      <button></button>
+      {user && (
+        <Link className="sm:hidden text-red-600" onClick={showSignOutModal}>
+          Logout
+        </Link>
+      )}
     </ul>
   );
   const navElementsEnd = (
-    <div className="flex items-center justify-center sm:justify-left gap-2 sm:gap-5">
+    <div className="flex items-center justify-center sm:justify-left gap-1 sm:gap-5">
       {user && (
-        <div className="dropdown dropdown-end text-black">
+        <div className="hidden sm:flex dropdown dropdown-end text-black">
           <div
             tabIndex={0}
             role="button"
-            className="btn btn-ghost btn-circle avatar"
+            className="btn border-2 border-green-500 btn-ghost btn-circle avatar"
           >
             <div className="w-10 rounded-full">
               <img
@@ -182,7 +186,20 @@ const NavBar = () => {
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">{navElements}</div>
-      <div className="navbar-end">
+      <div className="navbar-end gap-2">
+        <div
+          tabIndex={0}
+          role="button"
+          className="sm:hidden btn btn-ghost btn-circle avatar"
+        >
+          <div className="w-[36px] rounded-full border-2 border-green-500">
+            <img
+              onClick={toggleProfileDropdown}
+              alt="Profile Image"
+              src={user.photoURL || "https://i.pravatar.cc/500"}
+            />
+          </div>
+        </div>
         <div className="hidden sm:flex">{navElementsEnd}</div>
         <div className="dropdown dropdown-left">
           <div

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const LearningPathway = () => {
   useEffect(() => {
-    Aos.init({ duration: 1200 });
+    Aos.init({ duration: 800 });
   });
   return (
     <section className="py-16 bg-white">
@@ -17,7 +17,7 @@ const LearningPathway = () => {
           Follow our structured approach to mastering German, step by step.
         </p>
         <div
-          data-aos="fade-down"
+          data-aos="fade-up"
           className="grid grid-cols-1 md:grid-cols-3 gap-8"
         >
           <div className="text-center p-6 bg-gray-50 rounded-lg shadow-md border-t-4 border-green-500">
@@ -33,7 +33,7 @@ const LearningPathway = () => {
             </p>
           </div>
           <div
-            data-aos="fade-down"
+            data-aos="fade-up"
             className="text-center p-6 bg-gray-50 rounded-lg shadow-md border-t-4 border-green-500"
           >
             <div className="w-16 h-16 bg-green-500 text-white rounded-full mx-auto flex items-center justify-center text-2xl font-bold mb-4">
@@ -48,7 +48,7 @@ const LearningPathway = () => {
             </p>
           </div>
           <div
-            data-aos="fade-down"
+            data-aos="fade-up"
             className="text-center p-6 bg-gray-50 rounded-lg shadow-md border-t-4 border-green-500"
           >
             <div className="w-16 h-16 bg-green-500 text-white rounded-full mx-auto flex items-center justify-center text-2xl font-bold mb-4">
@@ -63,7 +63,7 @@ const LearningPathway = () => {
             </p>
           </div>
         </div>
-        <div className="text-center mt-12">
+        <div data-aos="fade-up" className="text-center mt-12">
           <Link
             to={"/start-learning"}
             className="btn text-lg font-semibold bg-green-500 hover:bg-green-600 text-white py-2 px-6 rounded-md transition duration-200"

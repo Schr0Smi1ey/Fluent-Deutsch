@@ -9,7 +9,7 @@ import {
 const Footer = () => {
   return (
     <div className="container mx-auto p-10">
-      <div className="text-center">
+      <div data-aos="fade-down" className="text-center">
         <h3 className="flex justify-center items-center gap-3 font-bold text-3xl mb-3">
           Fluent <span className="text-green-500">Deutsch</span>
         </h3>
@@ -18,9 +18,12 @@ const Footer = () => {
           innovative tools.
         </p>
       </div>
-      <div className="divider"></div>
+      <div data-aos="fade-down" className="divider"></div>
       <div className="grid grid-cols-1 md:grid-cols-3 text-[#09080F99]">
-        <div className="flex justify-center md:justify-end text-center md:text-left mb-5 md:mb-0">
+        <div
+          data-aos="fade-up"
+          className="flex justify-center md:justify-end text-center md:text-left mb-5 md:mb-0"
+        >
           <div className="flex flex-col gap-2">
             <h2 className="mb-3 font-bold text-xl text-black">
               Language Learning
@@ -42,7 +45,10 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="flex justify-center text-center md:text-left mb-5 md:mb-0">
+        <div
+          data-aos="fade-up"
+          className="flex justify-center text-center md:text-left mb-5 md:mb-0"
+        >
           <div className="flex flex-col gap-2">
             <h2 className="mb-3 font-bold text-xl text-black">Company</h2>
             <Link
@@ -59,7 +65,10 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="flex justify-center md:justify-start text-center md:text-left mb-5 md:mb-0">
+        <div
+          data-aos="fade-up"
+          className="flex justify-center md:justify-start text-center md:text-left mb-5 md:mb-0"
+        >
           <div className="flex flex-col gap-2">
             <h2 className="mb-3 font-bold text-xl text-black">Follow Us</h2>
             <div className="flex gap-4 justify-center md:justify-start">

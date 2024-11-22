@@ -108,7 +108,7 @@ const Tutorials = () => {
         <title>Fluent Deutsch | Tutorials</title>
       </Helmet>
       <div className="relative py-5">
-        <div className="text-center mb-5">
+        <div data-aos="fade-left" className="text-center mb-5">
           <h1 className="font-bold text-3xl mb-3">
             Learn German with Engaging Tutorials
           </h1>
@@ -121,7 +121,7 @@ const Tutorials = () => {
           </p>
         </div>
 
-        <div className="w-fit mx-auto">
+        <div data-aos="fade-up" className="w-fit mx-auto">
           <button
             onClick={handleLearnVocab}
             className="px-4 py-2 bg-green-500 text-white rounded-xl font-semibold text-xl"
@@ -134,10 +134,12 @@ const Tutorials = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 p-5 lg:grid-cols-3 gap-5">
         {tutorials.map((tutorial) => (
           <div
+            data-aos="fade-up"
             key={tutorial.id}
             className="bg-white p-5 my-5 shadow-xl rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:bg-gradient-to-t hover:from-green-200 hover:to-green-100"
           >
             <div
+              data-aos="zoom-in"
               className="cursor-pointer relative"
               onClick={() => openModal(tutorial.videoId)}
             >
@@ -146,13 +148,18 @@ const Tutorials = () => {
                 alt="Video thumbnail"
                 className="w-[300px] md:w-[350px] lg:w-[450px] h-[250px] lg:h-[300px] rounded-2xl object-cover"
               />
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-2xl">
+              <div
+                data-aos="fade-left"
+                className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 rounded-2xl"
+              >
                 <span className="flex items-center gap-2 text-green-500 text-2xl font-bold">
                   <CiPlay1 className="text-green-500" /> Play
                 </span>
               </div>
             </div>
-            <h1 className="font-bold text-xl mt-3">{tutorial.title}</h1>
+            <h1 data-aos="fade-up" className="font-bold text-xl mt-3">
+              {tutorial.title}
+            </h1>
           </div>
         ))}
       </div>
