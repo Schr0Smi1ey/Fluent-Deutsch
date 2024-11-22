@@ -82,7 +82,7 @@ const NavBar = () => {
           {isProfileOpen && (
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] w-fit min-w-40 mt-3 mr-4 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] w-fit min-w-40 mt-12 mr-10 p-2 shadow"
             >
               <li className="block">
                 <img

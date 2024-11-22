@@ -17,7 +17,7 @@ const Root = () => {
     );
   }
   return (
-    <div className="container mx-auto overflow-hidden">
+    <div className="container ubuntu  mx-auto overflow-hidden">
       <NavBar></NavBar>
       <div className="my-32">
         <Outlet></Outlet>
