@@ -4,6 +4,9 @@ import { IoMdEye } from "react-icons/io";
 import { VscEyeClosed } from "react-icons/vsc";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const SignUp = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -15,6 +18,9 @@ const SignUp = () => {
   const handlePasswordVisivility = () => {
     setShowPassword(!showPassword);
   };
+  useEffect(() => {
+    AOS.init({ duration: 800 });
+  }, []);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -51,7 +57,7 @@ const SignUp = () => {
     e.preventDefault();
     const { email, password, name, photoURL } = formData;
 
-    setLoading(true);
+    // setLoading(true);
     const navigationPath = location.state?.from ? location.state.from : "/";
     createUser(email, password)
       .then((userCredential) => {
@@ -60,7 +66,6 @@ const SignUp = () => {
             Toast("Account Created Successfully", "success");
             setTimeout(() => {
               navigate(`${navigationPath}`);
-              setLoading(false);
             }, 200);
           })
           .catch((error) => {
@@ -71,13 +76,13 @@ const SignUp = () => {
         Toast(`Sign-up failed: ${error.message}`, "error");
       })
       .finally(() => {
+        setLoading(false);
         setFormData({ name: "", email: "", photoURL: "", password: "" });
       });
   };
 
   const handleSignInWithGoogle = () => {
-    setLoading(true);
-
+    // setLoading(true);
     signInWithGoogle()
       .then((userCredential) => {
         setTimeout(() => {
@@ -97,10 +102,18 @@ const SignUp = () => {
       <Helmet>
         <title>Fluent Deutsch | Sign Up</title>
       </Helmet>
-      <div className="bg-white shadow-md rounded-lg p-8 w-full max-w-sm">
-        <h2 className="text-2xl font-bold mb-6 text-center">Sign Up</h2>
+      <div
+        data-aos="zoom-in"
+        className="bg-white shadow-md rounded-lg p-8 w-full max-w-sm"
+      >
+        <h2
+          data-aos="fade-down"
+          className="text-4xl font-bold mb-6 text-center"
+        >
+          Sign Up
+        </h2>
         <form onSubmit={handleSubmit} className="space-y-4">
-          <div>
+          <div data-aos="fade-up">
             <label className="block text-sm font-medium mb-1" htmlFor="name">
               Name
             </label>
@@ -116,7 +129,7 @@ const SignUp = () => {
             />
           </div>
 
-          <div>
+          <div data-aos="fade-up">
             <label className="block text-sm font-medium mb-1" htmlFor="email">
               Email
             </label>
@@ -132,7 +145,7 @@ const SignUp = () => {
             />
           </div>
 
-          <div>
+          <div data-aos="fade-up">
             <label
               className="block text-sm font-medium mb-1"
               htmlFor="photoURL"
@@ -150,7 +163,7 @@ const SignUp = () => {
             />
           </div>
 
-          <div>
+          <div data-aos="fade-up">
             <label
               className="block text-sm font-medium mb-1"
               htmlFor="password"
@@ -187,6 +200,7 @@ const SignUp = () => {
           </div>
 
           <button
+            data-aos="fade-up"
             type="submit"
             className="w-full bg-green-500 text-white font-bold py-2 rounded-lg hover:bg-green-600"
           >
@@ -194,13 +208,17 @@ const SignUp = () => {
           </button>
         </form>
 
-        <div className="flex items-center justify-between my-4">
+        <div
+          data-aos="fade-up"
+          className="flex items-center justify-between my-4"
+        >
           <span className="border-b w-1/5 lg:w-1/4"></span>
           <p className="text-xs text-gray-500">OR</p>
           <span className="border-b w-1/5 lg:w-1/4"></span>
         </div>
 
         <button
+          data-aos="fade-up"
           onClick={handleSignInWithGoogle}
           className="w-full bg-gray-100 font-bold py-2 rounded-lg hover:bg-gray-200 flex items-center justify-center space-x-2"
         >
@@ -229,7 +247,7 @@ const SignUp = () => {
           <span>Sign Up with Google</span>
         </button>
 
-        <p className="mt-4 text-lg text-center">
+        <p data-aos="fade-right" className="mt-4 text-lg text-center">
           Already have an account?{" "}
           <Link
             to={"/login"}

@@ -187,19 +187,21 @@ const NavBar = () => {
       </div>
       <div className="navbar-center hidden lg:flex">{navElements}</div>
       <div className="navbar-end gap-2">
-        <div
-          tabIndex={0}
-          role="button"
-          className="sm:hidden btn btn-ghost btn-circle avatar"
-        >
-          <div className="w-[36px] rounded-full border-2 border-green-500">
-            <img
-              onClick={toggleProfileDropdown}
-              alt="Profile Image"
-              src={user.photoURL || "https://i.pravatar.cc/500"}
-            />
+        {user && (
+          <div
+            tabIndex={0}
+            role="button"
+            className="sm:hidden btn btn-ghost btn-circle avatar"
+          >
+            <div className="w-[36px] rounded-full border-2 border-green-500">
+              <img
+                onClick={toggleProfileDropdown}
+                alt="Profile Image"
+                src={user.photoURL || "https://i.pravatar.cc/500"}
+              />
+            </div>
           </div>
-        </div>
+        )}
         <div className="hidden sm:flex">{navElementsEnd}</div>
         <div className="dropdown dropdown-left">
           <div

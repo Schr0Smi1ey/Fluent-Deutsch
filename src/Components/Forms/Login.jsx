@@ -4,7 +4,8 @@ import { IoMdEye } from "react-icons/io";
 import { VscEyeClosed } from "react-icons/vsc";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Login = () => {
   const { user, signInUser, signInWithGoogle, Toast, setLoading } =
     useContext(AuthContext);
@@ -16,6 +17,9 @@ const Login = () => {
     setShowPassword(!showPassword);
   };
   useEffect(() => {
+    AOS.init({ duration: 800 });
+  }, []);
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   const attemptedPath = location.state?.from || "/";
@@ -23,7 +27,7 @@ const Login = () => {
     e.preventDefault();
     const password = e.target[1].value;
 
-    setLoading(true);
+    // setLoading(true);
     signInUser(email, password)
       .then(() => {
         setTimeout(() => {
@@ -39,7 +43,7 @@ const Login = () => {
       });
   };
   const handleSignInWithGoogle = () => {
-    setLoading(true);
+    // setLoading(true);
     signInWithGoogle()
       .then(() => {
         setTimeout(() => {
@@ -60,10 +64,18 @@ const Login = () => {
       <Helmet>
         <title>Fluent Deutsch | Login</title>
       </Helmet>
-      <div className="bg-white shadow-md rounded-lg p-8 w-full max-w-sm">
-        <h2 className="text-4xl font-bold mb-6 text-center">Login</h2>
+      <div
+        data-aos="zoom-in"
+        className="bg-white shadow-md rounded-lg p-8 w-full max-w-sm"
+      >
+        <h2
+          data-aos="fade-down"
+          className="text-4xl font-bold mb-6 text-center"
+        >
+          Login
+        </h2>
         <form onSubmit={handleSubmit} className="space-y-4">
-          <div>
+          <div data-aos="fade-up">
             <label className="block text-sm font-medium mb-1" htmlFor="email">
               Email
             </label>
@@ -78,7 +90,7 @@ const Login = () => {
             />
           </div>
 
-          <div>
+          <div data-aos="fade-up">
             <label
               className="block text-sm font-medium mb-1"
               htmlFor="password"
@@ -106,7 +118,7 @@ const Login = () => {
             </div>
           </div>
 
-          <div className="text-right">
+          <div data-aos="fade-left" className="text-right">
             <Link
               to="/forgot-password"
               state={{ email }}
@@ -117,6 +129,7 @@ const Login = () => {
           </div>
 
           <button
+            data-aos="fade-up"
             type="submit"
             className="w-full bg-green-500 text-white font-bold py-2 rounded-lg hover:bg-green-600"
           >
@@ -124,9 +137,12 @@ const Login = () => {
           </button>
         </form>
 
-        <div className="divider text-gray-400">OR</div>
+        <div data-aos="fade-right" className="divider text-gray-400">
+          OR
+        </div>
 
         <button
+          data-aos="fade-up"
           onClick={handleSignInWithGoogle}
           className="w-full bg-gray-100 font-bold py-2 rounded-lg flex items-center justify-center space-x-2"
         >

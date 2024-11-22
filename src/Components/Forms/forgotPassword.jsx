@@ -1,7 +1,8 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Contexts/AuthContext/AuthProvider";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const ForgotPassword = () => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -19,18 +20,29 @@ const ForgotPassword = () => {
       });
   };
   useEffect(() => {
+    AOS.init({ duration: 800 });
+  }, []);
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className="min-h-[500px] flex items-center justify-center bg-gradient-to-t from-green-200 to-green-100">
-      <div className="bg-white shadow-md rounded-lg p-8 w-full max-w-md">
-        <h2 className="text-4xl font-bold mb-6 text-center">Reset Password</h2>
-        <p className="text-gray-600 mb-4 text-center">
+      <div
+        data-aos="zoom-in"
+        className="bg-white shadow-md rounded-lg p-8 w-full max-w-md"
+      >
+        <h2
+          data-aos="fade-down"
+          className="text-4xl font-bold mb-6 text-center"
+        >
+          Reset Password
+        </h2>
+        <p data-aos="fade-down" className="text-gray-600 mb-4 text-center">
           Enter your email to reset your password.
         </p>
         <form onSubmit={handleSubmit} className="space-y-6">
-          <div>
+          <div data-aos="fade-up">
             <label className="block text-sm font-medium mb-2" htmlFor="email">
               Email
             </label>
@@ -45,13 +57,14 @@ const ForgotPassword = () => {
             />
           </div>
           <button
+            data-aos="fade-up"
             type="submit"
             className="w-full bg-green-500 text-white font-bold py-2 rounded-lg hover:bg-green-600"
           >
             Reset Password
           </button>
         </form>
-        <div className="text-center mt-4">
+        <div data-aos="fade-up" className="text-center mt-4">
           <button
             onClick={() => navigate("/login")}
             className="text-sm text-blue-500 hover:underline"

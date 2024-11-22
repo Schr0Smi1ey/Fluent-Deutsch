@@ -2,7 +2,8 @@ import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Contexts/AuthContext/AuthProvider";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const UpdateProfile = () => {
   const { user, updateUserProfile, Toast, setLoading } =
     useContext(AuthContext);
@@ -11,6 +12,9 @@ const UpdateProfile = () => {
     displayName: user.displayName || "",
     photoURL: user.photoURL || "",
   });
+  useEffect(() => {
+    AOS.init({ duration: 800 });
+  }, []);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -47,12 +51,18 @@ const UpdateProfile = () => {
       <Helmet>
         <title>Fluent Deutsch | Profile Update</title>
       </Helmet>
-      <div className="bg-white shadow-lg rounded-lg w-full max-w-md p-6">
-        <h2 className="text-3xl text-center font-bold text-gray-800 mb-4">
+      <div
+        data-aos="zoom-in"
+        className="bg-white shadow-lg rounded-lg w-full max-w-md p-6"
+      >
+        <h2
+          data-aos="fade-down"
+          className="text-3xl text-center font-bold text-gray-800 mb-4"
+        >
           Update Profile
         </h2>
         <form onSubmit={handleSubmit} className="space-y-4">
-          <div>
+          <div data-aos="fade-up">
             <label
               htmlFor="displayName"
               className="block text-gray-700 font-medium mb-2"
@@ -70,7 +80,7 @@ const UpdateProfile = () => {
               required
             />
           </div>
-          <div>
+          <div data-aos="fade-up">
             <label
               htmlFor="photoURL"
               className="block text-gray-700 font-medium mb-2"
@@ -89,6 +99,7 @@ const UpdateProfile = () => {
           </div>
 
           <button
+            data-aos="fade-up"
             type="submit"
             className="w-full py-3 bg-green-500 text-white rounded-lg font-semibold hover:bg-green-600"
           >

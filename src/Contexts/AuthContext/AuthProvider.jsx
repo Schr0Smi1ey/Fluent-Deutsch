@@ -51,7 +51,6 @@ const AuthProvider = ({ children }) => {
     return () => unsubscribe();
   }, [user]);
   const Toast = (message, type) => {
-    console.log("Toast:", message, type);
     toast[type](message, {
       position: "top-center",
       autoClose: 1500,
