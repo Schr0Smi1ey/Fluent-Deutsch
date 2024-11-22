@@ -1,10 +1,12 @@
-import { useContext, useRef } from "react";
+import { useContext } from "react";
 import { AuthContext } from "../Contexts/AuthContext/AuthProvider";
 import { RingLoader } from "react-spinners";
 import { Navigate, useLocation } from "react-router-dom";
 
 const PrivateRoute = ({ children }) => {
   const { user, loading } = useContext(AuthContext);
+  console.log("user", user);
+  console.log("loading", loading);
   const location = useLocation();
   if (loading) {
     return (

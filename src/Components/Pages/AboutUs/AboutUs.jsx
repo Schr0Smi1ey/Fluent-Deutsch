@@ -1,8 +1,8 @@
 import React, { useContext, useEffect } from "react";
-import story from "../../../../public/Assets/Story.png";
+import story from "/Assets/Story.png";
 import { SiListmonk } from "react-icons/si";
-import Founder from "../../../../public/Assets/Founder.jpg";
-import Mission from "../../../../public/Assets/Mission.png";
+import Founder from "/Assets/Founder.jpg";
+import Mission from "/Assets/Mission.png";
 import { FaFacebook, FaTwitter } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { FaGithubSquare } from "react-icons/fa";

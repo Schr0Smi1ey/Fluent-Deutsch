@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { CiPlay1 } from "react-icons/ci";
 import { ImCross } from "react-icons/im";
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../../../Contexts/AuthContext/AuthProvider";
 const Tutorials = () => {
   const tutorials = [
     {
@@ -79,6 +80,7 @@ const Tutorials = () => {
   ];
   const navigate = useNavigate();
   const [selectedVideo, setSelectedVideo] = useState(null);
+  const { user, loading } = useContext(AuthContext);
   const openModal = (videoId) => {
     setSelectedVideo(videoId);
     document.getElementById("video_modal").showModal();
@@ -91,6 +93,13 @@ const Tutorials = () => {
   const handleLearnVocab = () => {
     navigate("/start-learning");
   };
+  if (!user || loading) {
+    return (
+      <div className="flex items-center justify-center h-screen">
+        <RingLoader color="#22c55d" size={150} />
+      </div>
+    );
+  }
   return (
     <div className="container mx-auto">
       <Helmet>

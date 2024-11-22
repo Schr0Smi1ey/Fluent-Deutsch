@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 const LearningPathway = () => {
   useEffect(() => {
-    Aos.init({ duration: 1000 });
+    Aos.init({ duration: 1200 });
   });
   return (
     <section className="py-16 bg-white">

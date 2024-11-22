@@ -3,7 +3,8 @@ import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../../Contexts/AuthContext/AuthProvider";
 import "./Navbar.css";
 const NavBar = () => {
-  const { user, signOutUser, Toast, setLoading } = useContext(AuthContext);
+  const { user, signOutUser, Toast, setLoading, loading } =
+    useContext(AuthContext);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigate = useNavigate();
@@ -37,24 +38,19 @@ const NavBar = () => {
   };
   const navElements = (
     <ul className="flex flex-col text-center lg:flex-row items-center justify-center gap-5 font-medium text-lg">
-      <NavLink to="/">
+      <NavLink onClick={toggleMenuDropdown} to="/">
         <span>Home</span>
       </NavLink>
-      <NavLink to="/start-learning">
+      <NavLink onClick={toggleMenuDropdown} to="/start-learning">
         <span>Learn</span>
       </NavLink>
       <NavLink
         to={"/tutorials"}
-        onClick={(e) => {
-          if (!user) {
-            e.preventDefault();
-            navigate("/login", { state: { from: "/tutorials" } });
-          }
-        }}
+        onClick={toggleMenuDropdown}
       >
         <span>Tutorials</span>
       </NavLink>
-      <NavLink to="/about-us">
+      <NavLink onClick={toggleMenuDropdown} to="/about-us">
         <span className="block text-center">About Us</span>
       </NavLink>
     </ul>

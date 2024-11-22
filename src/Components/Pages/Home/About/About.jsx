@@ -1,7 +1,7 @@
-import about1 from "./about1.svg";
-import about2 from "./about2.svg";
-import about3 from "./about3.svg";
-import about4 from "./about4.svg";
+import about1 from "/Assets/about1.svg";
+import about2 from "/Assets/about2.svg";
+import about3 from "/Assets/about3.svg";
+import about4 from "/Assets/about4.svg";
 import ReactCountryFlag from "react-country-flag";
 import Aos from "aos";
 import "aos/dist/aos.css";

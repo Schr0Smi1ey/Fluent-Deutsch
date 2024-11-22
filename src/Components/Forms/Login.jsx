@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Contexts/AuthContext/AuthProvider";
 import { IoMdEye } from "react-icons/io";
 import { VscEyeClosed } from "react-icons/vsc";
@@ -6,7 +6,8 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 const Login = () => {
-  const { signInUser, signInWithGoogle, Toast } = useContext(AuthContext);
+  const { user, signInUser, signInWithGoogle, Toast, setLoading } =
+    useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
   const [email, setEmail] = useState("");
@@ -14,9 +15,7 @@ const Login = () => {
   const handlePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
-
   const attemptedPath = location.state?.from || "/";
-
   const handleSubmit = (e) => {
     e.preventDefault();
     const password = e.target[1].value;
