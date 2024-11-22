@@ -6,7 +6,7 @@ Learning a new language can be challenging, especially when it comes to retainin
 
 ## Live Demo
 
-[FluentDeutsch Live Demo](#) *(Add the live URL here)*
+[FluentDeutsch Live Demo](#) _(https://fluent-deutsch.web.app/)_
 
 ## Key Features
 
@@ -40,8 +40,6 @@ Learning a new language can be challenging, especially when it comes to retainin
 - **Conditional Routing**  
   Routes are dynamically handled based on user authentication status, providing seamless redirection to the learning dashboard or login page.
 
-
-
 ## Technologies Used
 
 - **React**: For creating interactive components, managing state, and handling routing.
@@ -55,17 +53,19 @@ Learning a new language can be challenging, especially when it comes to retainin
   - **React Helmet**: For managing document head tags and SEO optimization.
   - **React Icons**: For adding icons to the application.
   - **React Spinners**: For adding loading spinners to the application.
-  
 
 ## Screenshots
 
 ### Home Page
+
 ![Home Page](./images/home.png)
 
 ### Vocabulary Cards
+
 ![Vocabulary Cards](./images/vocabulary-cards.png)
 
 ### Modal Example
+
 ![Modal Example](./images/modal-example.png)
 
 ## Future Improvements
@@ -74,7 +74,7 @@ Learning a new language can be challenging, especially when it comes to retainin
 - Implement additional language exercises such as quizzes or flashcards.
 - Add a leaderboard to create a gamified learning experience.
 - Expand the media library with more audio and video lessons.
-  
+
 ## Contributing
 
 I welcome contributions! If you would like to contribute to this project, please follow these steps:
