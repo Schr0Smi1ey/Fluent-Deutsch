@@ -30,7 +30,7 @@ const Profile = () => {
           <img
             src={user.photoURL || "https://via.placeholder.com/150"}
             alt="Profile"
-            className="w-60 h-48 rounded-full border-4 border-green-500"
+            className="w-60 h-60 rounded-full border-4 border-green-500"
           />
         </div>
 

@@ -153,7 +153,7 @@ const Tutorials = () => {
               <img
                 src={`https://img.youtube.com/vi/${tutorial.videoId}/0.jpg`}
                 alt="Video thumbnail"
-                className="w-[300px] md:w-[350px] lg:w-[450px] h-[250px] lg:h-[300px] rounded-2xl object-cover"
+                className="rounded-2xl object-cover"
               />
               <div
                 data-aos="fade-left"

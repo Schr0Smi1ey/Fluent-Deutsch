@@ -13,33 +13,34 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      text: "Absolutely thrilled with my new headphones from Gadget Heavens! The sound quality is incredible, and the recommendation was spot-on. Shipping was quick and secure—highly recommended!",
+      text: "I am absolutely thrilled with my experience on FluentDeutsch! The lessons are engaging, and the interactive exercises make learning German so much fun. Highly recommend it to anyone looking to improve their language skills!",
       name: "Emily Smith",
       location: "Toronto, Canada",
       image: Commenter1,
     },
     {
       id: 2,
-      text: "Shopping at Gadget Heavens was incredibly easy! Got a great deal on a laptop, and the support team helped me choose the perfect model. Couldn’t be happier with my purchase!",
+      text: "Learning German with FluentDeutsch has been fantastic! The personalized study plans and practical vocabulary lessons have made a huge difference. It’s the best platform I’ve tried so far!",
       name: "Carlos Mendes",
       location: "São Paulo, Brazil",
       image: Commenter2,
     },
     {
       id: 3,
-      text: "Amazing service! Bought a new mobile phone and some accessories, and the entire process was seamless. Gadget Heavens made it easy to find exactly what I needed. I’ll definitely be back!",
+      text: "FluentDeutsch has been a game-changer for me. The grammar explanations are clear and easy to follow, and the speaking exercises have boosted my confidence in real-life conversations. Amazing service!",
       name: "Mohammed Al-Mansoori",
       location: "Dubai, UAE",
       image: Commenter3,
     },
     {
       id: 4,
-      text: "A fantastic shopping experience! Found the perfect laptop bag and charging accessories. Gadget Heavens has everything I needed, and the customer service was excellent. Highly recommend!",
+      text: "An incredible learning platform! FluentDeutsch helped me prepare for my German language exam with their tailored exercises and practice tests. I couldn’t have done it without them!",
       name: "Liam O'Reilly",
       location: "Dublin, Ireland",
       image: Commenter4,
     },
   ];
+
   const [currentSlide, setCurrentSlide] = useState(0);
   const goToPreviousSlide = () => {
     setCurrentSlide(
