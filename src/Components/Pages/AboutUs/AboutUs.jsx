@@ -55,7 +55,7 @@ const AboutUs = () => {
               </h2>
               <div className="w-24 h-1 bg-green-600 mx-auto rounded-full"></div>
             </div>
-            <div className="text-lg text-gray-700 leading-relaxed space-y-8">
+            <div className="text-lg md:text-xl text-gray-800 leading-relaxed space-y-8">
               <p data-aos="fade-up">
                 At Fluent{" "}
                 <span className="text-green-600 font-semibold">Deutsch</span>,

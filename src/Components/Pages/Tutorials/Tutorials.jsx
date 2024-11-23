@@ -116,7 +116,7 @@ const Tutorials = () => {
       </Helmet>
       <div className="relative py-5">
         <div data-aos="fade-left" className="text-center mb-5">
-          <h1 className="font-bold text-3xl mb-3">
+          <h1 className="font-bold text-4xl mb-3">
             Learn German with Engaging Tutorials
           </h1>
           <p className="text-gray-500 w-[90%] md:w-1/2 mx-auto">
