@@ -1,8 +1,8 @@
-# FluentDeutsch
+# Fluent Deutsch
 
-FluentDeutsch is a fun and interactive language learning application designed to help users expand their vocabulary and improve their communication skills in German. The platform makes language learning easier and more engaging by providing various lessons and vocabulary exercises.
+Fluent Deutsch is a fun and interactive language learning application designed to help users expand their vocabulary and improve their communication skills in German. The platform makes language learning easier and more engaging by providing various lessons and vocabulary exercises.
 
-Learning a new language can be challenging, especially when it comes to retaining vocabulary. FluentDeutsch addresses this challenge by offering a user-friendly experience that combines interactive vocabulary sets, pronunciation features, and multimedia lessons, allowing users to learn German at their own pace and build confidence in their language skills.
+Learning a new language can be challenging, especially when it comes to retaining vocabulary. Fluent Deutsch addresses this challenge by offering a user-friendly experience that combines interactive vocabulary sets, pronunciation features, and multimedia lessons, allowing users to learn German at their own pace and build confidence in their language skills.
 
 ## Live Demo
 
@@ -39,8 +39,6 @@ Learning a new language can be challenging, especially when it comes to retainin
 
 - **Mobile-Responsive Design**  
   Designed with **TailwindCSS**, the app ensures a fully responsive and modern interface that adapts seamlessly across devices (desktop and mobile).
-
-
 
 # Technologies Used
 
