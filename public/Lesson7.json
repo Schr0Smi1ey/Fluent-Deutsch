@@ -1,0 +1,222 @@
+[
+  {
+    "id": "121",
+    "word": "Wetter",
+    "pronunciation": "VET-ter",
+    "meaning": "weather",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 7,
+    "when_to_say": "When discussing daily atmospheric conditions.",
+    "example": "Das Wetter ist heute schön. (The weather is nice today.)"
+  },
+  {
+    "id": "122",
+    "word": "Regen",
+    "pronunciation": "RAY-gen",
+    "meaning": "rain",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 7,
+    "when_to_say": "When describing precipitation.",
+    "example": "Der Regen ist stark. (The rain is heavy.)"
+  },
+  {
+    "id": "123",
+    "word": "Sonne",
+    "pronunciation": "ZOH-neh",
+    "meaning": "sun",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 7,
+    "when_to_say": "When referring to sunlight.",
+    "example": "Die Sonne scheint. (The sun is shining.)"
+  },
+  {
+    "id": "124",
+    "word": "Schnee",
+    "pronunciation": "SHNAY",
+    "meaning": "snow",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 7,
+    "when_to_say": "When describing frozen precipitation.",
+    "example": "Es gibt Schnee im Winter. (There is snow in winter.)"
+  },
+  {
+    "id": "125",
+    "word": "Wind",
+    "pronunciation": "vint",
+    "meaning": "wind",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 7,
+    "when_to_say": "When referring to moving air.",
+    "example": "Der Wind ist stark heute. (The wind is strong today.)"
+  },
+  {
+    "id": "126",
+    "word": "Himmel",
+    "pronunciation": "HIM-mel",
+    "meaning": "sky",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 7,
+    "when_to_say": "When describing what is above us.",
+    "example": "Der Himmel ist blau. (The sky is blue.)"
+  },
+  {
+    "id": "127",
+    "word": "Wolke",
+    "pronunciation": "VOHL-keh",
+    "meaning": "cloud",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 7,
+    "when_to_say": "When referring to water vapor formations.",
+    "example": "Die Wolken sind weiß. (The clouds are white.)"
+  },
+  {
+    "id": "128",
+    "word": "Sturm",
+    "pronunciation": "shtoorm",
+    "meaning": "storm",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 7,
+    "when_to_say": "When describing severe weather.",
+    "example": "Der Sturm hat viele Bäume umgeweht. (The storm knocked down many trees.)"
+  },
+  {
+    "id": "129",
+    "word": "Blitz",
+    "pronunciation": "blits",
+    "meaning": "lightning",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 7,
+    "when_to_say": "When describing electrical storms.",
+    "example": "Der Blitz war sehr hell. (The lightning was very bright.)"
+  },
+  {
+    "id": "130",
+    "word": "Donner",
+    "pronunciation": "DOH-ner",
+    "meaning": "thunder",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 7,
+    "when_to_say": "When referring to the sound after lightning.",
+    "example": "Der Donner war laut. (The thunder was loud.)"
+  },
+  {
+    "id": "131",
+    "word": "Regenbogen",
+    "pronunciation": "RAY-gen-BOH-gen",
+    "meaning": "rainbow",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 7,
+    "when_to_say": "When referring to a colorful arc in the sky.",
+    "example": "Ein Regenbogen erschien nach dem Regen. (A rainbow appeared after the rain.)"
+  },
+  {
+    "id": "132",
+    "word": "Natur",
+    "pronunciation": "nah-TOOR",
+    "meaning": "nature",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 7,
+    "when_to_say": "When discussing the environment.",
+    "example": "Die Natur ist wunderschön. (Nature is beautiful.)"
+  },
+  {
+    "id": "133",
+    "word": "Wald",
+    "pronunciation": "valt",
+    "meaning": "forest",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 7,
+    "when_to_say": "When describing a wooded area.",
+    "example": "Der Wald ist ruhig. (The forest is quiet.)"
+  },
+  {
+    "id": "134",
+    "word": "Fluss",
+    "pronunciation": "flooss",
+    "meaning": "river",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 7,
+    "when_to_say": "When describing a body of flowing water.",
+    "example": "Der Fluss ist lang. (The river is long.)"
+  },
+  {
+    "id": "135",
+    "word": "Berg",
+    "pronunciation": "berk",
+    "meaning": "mountain",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 7,
+    "when_to_say": "When describing a large landform.",
+    "example": "Der Berg ist hoch. (The mountain is tall.)"
+  },
+  {
+    "id": "136",
+    "word": "See",
+    "pronunciation": "zay",
+    "meaning": "lake",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 7,
+    "when_to_say": "When describing a large body of still water.",
+    "example": "Der See ist klar. (The lake is clear.)"
+  },
+  {
+    "id": "137",
+    "word": "Wüste",
+    "pronunciation": "VÜS-teh",
+    "meaning": "desert",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 7,
+    "when_to_say": "When referring to dry areas.",
+    "example": "Die Wüste ist heiß. (The desert is hot.)"
+  },
+  {
+    "id": "138",
+    "word": "Ozean",
+    "pronunciation": "OH-tseh-an",
+    "meaning": "ocean",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 7,
+    "when_to_say": "When describing large bodies of salt water.",
+    "example": "Der Ozean ist tief. (The ocean is deep.)"
+  },
+  {
+    "id": "139",
+    "word": "Feld",
+    "pronunciation": "felt",
+    "meaning": "field",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 7,
+    "when_to_say": "When describing large open areas.",
+    "example": "Das Feld ist grün. (The field is green.)"
+  },
+  {
+    "id": "140",
+    "word": "Küste",
+    "pronunciation": "KÜS-teh",
+    "meaning": "coast",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 7,
+    "when_to_say": "When describing land next to water.",
+    "example": "Die Küste ist windig. (The coast is windy.)"
+  }
+]

@@ -1,0 +1,222 @@
+[
+  {
+    "id": "181",
+    "word": "Lehrer",
+    "pronunciation": "LAY-rehr",
+    "meaning": "teacher",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 10,
+    "when_to_say": "When referring to someone who teaches.",
+    "example": "Der Lehrer erklärt die Lektion. (The teacher explains the lesson.)"
+  },
+  {
+    "id": "182",
+    "word": "Arzt",
+    "pronunciation": "ahrtst",
+    "meaning": "doctor",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 10,
+    "when_to_say": "When talking about medical professionals.",
+    "example": "Der Arzt untersucht den Patienten. (The doctor examines the patient.)"
+  },
+  {
+    "id": "183",
+    "word": "Ingenieur",
+    "pronunciation": "in-jeh-NYUHR",
+    "meaning": "engineer",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 10,
+    "when_to_say": "When referring to someone in technical design.",
+    "example": "Der Ingenieur baut Brücken. (The engineer builds bridges.)"
+  },
+  {
+    "id": "184",
+    "word": "Bäcker",
+    "pronunciation": "BECK-er",
+    "meaning": "baker",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 10,
+    "when_to_say": "When referring to someone who bakes bread or pastries.",
+    "example": "Der Bäcker backt frisches Brot. (The baker bakes fresh bread.)"
+  },
+  {
+    "id": "185",
+    "word": "Künstler",
+    "pronunciation": "KUNST-ler",
+    "meaning": "artist",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 10,
+    "when_to_say": "When referring to someone in creative arts.",
+    "example": "Der Künstler malt ein Bild. (The artist paints a picture.)"
+  },
+  {
+    "id": "186",
+    "word": "Polizist",
+    "pronunciation": "po-LEE-tsist",
+    "meaning": "police officer",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 10,
+    "when_to_say": "When discussing law enforcement.",
+    "example": "Der Polizist hilft den Menschen. (The police officer helps people.)"
+  },
+  {
+    "id": "187",
+    "word": "Koch",
+    "pronunciation": "kohkh",
+    "meaning": "cook",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 10,
+    "when_to_say": "When referring to someone who prepares meals.",
+    "example": "Der Koch bereitet ein Essen vor. (The cook is preparing a meal.)"
+  },
+  {
+    "id": "188",
+    "word": "Schriftsteller",
+    "pronunciation": "SHRIFT-shtel-ler",
+    "meaning": "writer",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 10,
+    "when_to_say": "When referring to someone who writes books or articles.",
+    "example": "Der Schriftsteller arbeitet an einem Roman. (The writer is working on a novel.)"
+  },
+  {
+    "id": "189",
+    "word": "Bauarbeiter",
+    "pronunciation": "BAU-ar-bye-ter",
+    "meaning": "construction worker",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 10,
+    "when_to_say": "When referring to someone who builds structures.",
+    "example": "Der Bauarbeiter arbeitet auf der Baustelle. (The construction worker works on the construction site.)"
+  },
+  {
+    "id": "190",
+    "word": "Mechaniker",
+    "pronunciation": "meh-KAH-nee-ker",
+    "meaning": "mechanic",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 10,
+    "when_to_say": "When referring to someone who fixes machines.",
+    "example": "Der Mechaniker repariert das Auto. (The mechanic repairs the car.)"
+  },
+  {
+    "id": "191",
+    "word": "Verkäufer",
+    "pronunciation": "fer-KOI-fer",
+    "meaning": "salesperson",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 10,
+    "when_to_say": "When discussing someone in sales.",
+    "example": "Der Verkäufer hilft den Kunden. (The salesperson helps the customers.)"
+  },
+  {
+    "id": "192",
+    "word": "Buchhalter",
+    "pronunciation": "BOOCH-hal-ter",
+    "meaning": "accountant",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 10,
+    "when_to_say": "When referring to someone managing finances.",
+    "example": "Der Buchhalter prüft die Rechnungen. (The accountant checks the invoices.)"
+  },
+  {
+    "id": "193",
+    "word": "Arbeiter",
+    "pronunciation": "AR-bye-ter",
+    "meaning": "worker",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 10,
+    "when_to_say": "When referring to someone employed in general labor.",
+    "example": "Die Arbeiter sind fleißig. (The workers are hardworking.)"
+  },
+  {
+    "id": "194",
+    "word": "Pilot",
+    "pronunciation": "pee-LOHT",
+    "meaning": "pilot",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 10,
+    "when_to_say": "When discussing someone who flies planes.",
+    "example": "Der Pilot fliegt das Flugzeug. (The pilot flies the plane.)"
+  },
+  {
+    "id": "195",
+    "word": "Rechtsanwalt",
+    "pronunciation": "RECHTS-an-vahlt",
+    "meaning": "lawyer",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 10,
+    "when_to_say": "When discussing someone providing legal advice.",
+    "example": "Der Rechtsanwalt hilft bei rechtlichen Fragen. (The lawyer helps with legal matters.)"
+  },
+  {
+    "id": "196",
+    "word": "Krankenschwester",
+    "pronunciation": "KRAHN-ken-shves-ter",
+    "meaning": "nurse",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 10,
+    "when_to_say": "When referring to someone in medical care.",
+    "example": "Die Krankenschwester kümmert sich um die Patienten. (The nurse takes care of the patients.)"
+  },
+  {
+    "id": "197",
+    "word": "Feuerwehrmann",
+    "pronunciation": "FOI-er-vehr-mahn",
+    "meaning": "firefighter",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 10,
+    "when_to_say": "When discussing emergency responders.",
+    "example": "Der Feuerwehrmann löscht das Feuer. (The firefighter extinguishes the fire.)"
+  },
+  {
+    "id": "198",
+    "word": "Unternehmer",
+    "pronunciation": "oon-ter-NEY-mer",
+    "meaning": "entrepreneur",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 10,
+    "when_to_say": "When referring to business founders.",
+    "example": "Der Unternehmer gründet ein Unternehmen. (The entrepreneur is starting a business.)"
+  },
+  {
+    "id": "199",
+    "word": "Schneider",
+    "pronunciation": "SHNEI-der",
+    "meaning": "tailor",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 10,
+    "when_to_say": "When discussing someone who makes or alters clothes.",
+    "example": "Der Schneider näht ein Kleid. (The tailor sews a dress.)"
+  },
+  {
+    "id": "200",
+    "word": "Wissenschaftler",
+    "pronunciation": "VIS-sen-shaft-ler",
+    "meaning": "scientist",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 10,
+    "when_to_say": "When referring to someone in scientific research.",
+    "example": "Der Wissenschaftler entdeckt neue Dinge. (The scientist discovers new things.)"
+  }
+]

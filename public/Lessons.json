@@ -1,0 +1,52 @@
+[
+  {
+    "lesson_id": 1,
+    "lesson_img": "https://i.ibb.co.com/zmkN81M/food-and-dining.jpg",
+    "title": "Food and Dining"
+  },
+  {
+    "lesson_id": 2,
+    "lesson_img": "https://i.ibb.co.com/CtP0jWc/health-care-and-medicine.png",
+    "title": "Health and Medicine"
+  },
+  {
+    "lesson_id": 3,
+    "lesson_img": "https://i.ibb.co.com/2htDh97/animals-and-pets.png",
+    "title": "Animals and Pets"
+  },
+  {
+    "lesson_id": 4,
+    "lesson_img": "https://i.ibb.co.com/D4Hx3Ns/Daily-routine.png",
+    "title": "Daily Routine and Activities"
+  },
+  {
+    "lesson_id": 5,
+    "lesson_img": "https://i.ibb.co.com/D5yLVVW/Clothing-Fashion.jpg",
+    "title": "Clothing and Fashion"
+  },
+  {
+    "lesson_id": 6,
+    "lesson_img": "https://i.ibb.co.com/NmDYKTR/Technology-gadgets.jpg",
+    "title": "Technology and Gadgets"
+  },
+  {
+    "lesson_id": 7,
+    "lesson_img": "https://i.ibb.co.com/PxQwTrP/Weather-Nature.jpg",
+    "title": "Weather and Nature"
+  },
+  {
+    "lesson_id": 8,
+    "lesson_img": "https://i.ibb.co.com/WnCW472/Travel-Transportation.jpg",
+    "title": "Travel and Transportation"
+  },
+  {
+    "lesson_id": 9,
+    "lesson_img": "https://i.ibb.co.com/W5L0thk/Entertainment-leisure.jpg",
+    "title": "Entertainment and Leisure"
+  },
+  {
+    "lesson_id": 10,
+    "lesson_img": "https://i.ibb.co.com/ym2k1Sg/Professions-workplace.jpg",
+    "title": "Professions and Workplace"
+  }
+]

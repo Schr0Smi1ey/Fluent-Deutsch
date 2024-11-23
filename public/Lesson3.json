@@ -1,0 +1,222 @@
+[
+  {
+    "id": "41",
+    "word": "Hund",
+    "pronunciation": "hoont",
+    "meaning": "dog",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 3,
+    "when_to_say": "When talking about pets or animals.",
+    "example": "Der Hund bellt. (The dog barks.)"
+  },
+  {
+    "id": "42",
+    "word": "Katze",
+    "pronunciation": "KAHT-seh",
+    "meaning": "cat",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 3,
+    "when_to_say": "When referring to a pet or animal.",
+    "example": "Die Katze schläft. (The cat is sleeping.)"
+  },
+  {
+    "id": "43",
+    "word": "Vogel",
+    "pronunciation": "FOH-gel",
+    "meaning": "bird",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 3,
+    "when_to_say": "When talking about flying animals.",
+    "example": "Der Vogel singt. (The bird sings.)"
+  },
+  {
+    "id": "44",
+    "word": "Fisch",
+    "pronunciation": "fish",
+    "meaning": "fish",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 3,
+    "when_to_say": "When referring to aquatic animals.",
+    "example": "Der Fisch schwimmt. (The fish swims.)"
+  },
+  {
+    "id": "45",
+    "word": "Pferd",
+    "pronunciation": "fairt",
+    "meaning": "horse",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 3,
+    "when_to_say": "When describing farm animals or transportation.",
+    "example": "Das Pferd rennt. (The horse runs.)"
+  },
+  {
+    "id": "46",
+    "word": "Kuh",
+    "pronunciation": "koo",
+    "meaning": "cow",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 3,
+    "when_to_say": "When describing farm animals.",
+    "example": "Die Kuh gibt Milch. (The cow gives milk.)"
+  },
+  {
+    "id": "47",
+    "word": "Schwein",
+    "pronunciation": "shvine",
+    "meaning": "pig",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 3,
+    "when_to_say": "When referring to farm animals.",
+    "example": "Das Schwein ist im Stall. (The pig is in the barn.)"
+  },
+  {
+    "id": "48",
+    "word": "Huhn",
+    "pronunciation": "hoon",
+    "meaning": "chicken",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 3,
+    "when_to_say": "When describing poultry or farm animals.",
+    "example": "Das Huhn legt ein Ei. (The chicken lays an egg.)"
+  },
+  {
+    "id": "49",
+    "word": "Schaf",
+    "pronunciation": "shahf",
+    "meaning": "sheep",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 3,
+    "when_to_say": "When referring to wool-producing animals.",
+    "example": "Das Schaf ist weiß. (The sheep is white.)"
+  },
+  {
+    "id": "50",
+    "word": "Esel",
+    "pronunciation": "AY-zel",
+    "meaning": "donkey",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 3,
+    "when_to_say": "When talking about pack animals.",
+    "example": "Der Esel trägt die Last. (The donkey carries the load.)"
+  },
+  {
+    "id": "51",
+    "word": "Wolf",
+    "pronunciation": "volf",
+    "meaning": "wolf",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 3,
+    "when_to_say": "When referring to wild animals.",
+    "example": "Der Wolf heult. (The wolf howls.)"
+  },
+  {
+    "id": "52",
+    "word": "Löwe",
+    "pronunciation": "LUH-vuh",
+    "meaning": "lion",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 3,
+    "when_to_say": "When discussing wild or safari animals.",
+    "example": "Der Löwe ist stark. (The lion is strong.)"
+  },
+  {
+    "id": "53",
+    "word": "Bär",
+    "pronunciation": "bair",
+    "meaning": "bear",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 3,
+    "when_to_say": "When referring to large wild animals.",
+    "example": "Der Bär lebt im Wald. (The bear lives in the forest.)"
+  },
+  {
+    "id": "54",
+    "word": "Fuchs",
+    "pronunciation": "fooks",
+    "meaning": "fox",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 3,
+    "when_to_say": "When describing sly or cunning animals.",
+    "example": "Der Fuchs ist schlau. (The fox is clever.)"
+  },
+  {
+    "id": "55",
+    "word": "Schlange",
+    "pronunciation": "shlahng-eh",
+    "meaning": "snake",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 3,
+    "when_to_say": "When referring to reptiles.",
+    "example": "Die Schlange ist gefährlich. (The snake is dangerous.)"
+  },
+  {
+    "id": "56",
+    "word": "Maus",
+    "pronunciation": "mouse",
+    "meaning": "mouse",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 3,
+    "when_to_say": "When describing small rodents.",
+    "example": "Die Maus ist klein. (The mouse is small.)"
+  },
+  {
+    "id": "57",
+    "word": "Affe",
+    "pronunciation": "AH-feh",
+    "meaning": "monkey",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 3,
+    "when_to_say": "When talking about playful animals.",
+    "example": "Der Affe klettert auf den Baum. (The monkey climbs the tree.)"
+  },
+  {
+    "id": "58",
+    "word": "Giraffe",
+    "pronunciation": "gee-RAH-feh",
+    "meaning": "giraffe",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 3,
+    "when_to_say": "When describing tall animals.",
+    "example": "Die Giraffe hat einen langen Hals. (The giraffe has a long neck.)"
+  },
+  {
+    "id": "59",
+    "word": "Elefant",
+    "pronunciation": "eh-leh-FAHNT",
+    "meaning": "elephant",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 3,
+    "when_to_say": "When talking about large wild animals.",
+    "example": "Der Elefant ist groß. (The elephant is big.)"
+  },
+  {
+    "id": "60",
+    "word": "Zebra",
+    "pronunciation": "TSEH-brah",
+    "meaning": "zebra",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 3,
+    "when_to_say": "When referring to striped animals.",
+    "example": "Das Zebra läuft schnell. (The zebra runs fast.)"
+  }
+]

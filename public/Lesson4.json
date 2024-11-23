@@ -1,0 +1,222 @@
+[
+      {
+    "id": "61",
+    "word": "Bahnhof",
+    "pronunciation": "BAHN-hohf",
+    "meaning": "train station",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 4,
+    "when_to_say": "When referring to a place to catch a train.",
+    "example": "Der Zug fährt vom Bahnhof ab. (The train departs from the station.)"
+  },
+  {
+    "id": "62",
+    "word": "Flughafen",
+    "pronunciation": "FLOOG-hah-fen",
+    "meaning": "airport",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 4,
+    "when_to_say": "When referring to a place for air travel.",
+    "example": "Der Flugzeug landet am Flughafen. (The airplane lands at the airport.)"
+  },
+  {
+    "id": "63",
+    "word": "Gepäck",
+    "pronunciation": "geh-PECK",
+    "meaning": "luggage",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 4,
+    "when_to_say": "When discussing travel bags.",
+    "example": "Ich habe mein Gepäck vergessen. (I forgot my luggage.)"
+  },
+  {
+    "id": "64",
+    "word": "Reise",
+    "pronunciation": "RYE-zeh",
+    "meaning": "journey",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 4,
+    "when_to_say": "When describing a trip or journey.",
+    "example": "Die Reise war schön. (The journey was beautiful.)"
+  },
+  {
+    "id": "65",
+    "word": "Pass",
+    "pronunciation": "pahs",
+    "meaning": "passport",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 4,
+    "when_to_say": "When referring to identification for travel.",
+    "example": "Haben Sie Ihren Pass dabei? (Do you have your passport with you?)"
+  },
+  {
+    "id": "66",
+    "word": "Flug",
+    "pronunciation": "flook",
+    "meaning": "flight",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 4,
+    "when_to_say": "When discussing airplane trips.",
+    "example": "Der Flug war verspätet. (The flight was delayed.)"
+  },
+  {
+    "id": "67",
+    "word": "Ticket",
+    "pronunciation": "TIK-et",
+    "meaning": "ticket",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 4,
+    "when_to_say": "When referring to admission or travel tickets.",
+    "example": "Wo kann ich ein Ticket kaufen? (Where can I buy a ticket?)"
+  },
+  {
+    "id": "68",
+    "word": "Zug",
+    "pronunciation": "tsook",
+    "meaning": "train",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 4,
+    "when_to_say": "When discussing rail travel.",
+    "example": "Der Zug ist pünktlich. (The train is on time.)"
+  },
+  {
+    "id": "69",
+    "word": "Straßenbahn",
+    "pronunciation": "STRAH-sen-bahn",
+    "meaning": "tram",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 4,
+    "when_to_say": "When referring to urban rail transport.",
+    "example": "Die Straßenbahn ist bequem. (The tram is convenient.)"
+  },
+  {
+    "id": "70",
+    "word": "Auto",
+    "pronunciation": "ow-toh",
+    "meaning": "car",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 4,
+    "when_to_say": "When discussing vehicles.",
+    "example": "Ich fahre mit dem Auto. (I drive by car.)"
+  },
+  {
+    "id": "71",
+    "word": "Bus",
+    "pronunciation": "boos",
+    "meaning": "bus",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 4,
+    "when_to_say": "When referring to public transportation.",
+    "example": "Der Bus kommt um 10 Uhr. (The bus arrives at 10 o'clock.)"
+  },
+  {
+    "id": "72",
+    "word": "Fähre",
+    "pronunciation": "FAIR-eh",
+    "meaning": "ferry",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 4,
+    "when_to_say": "When discussing water transport.",
+    "example": "Die Fähre fährt über den Fluss. (The ferry crosses the river.)"
+  },
+  {
+    "id": "73",
+    "word": "Hotel",
+    "pronunciation": "hoh-TELL",
+    "meaning": "hotel",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 4,
+    "when_to_say": "When referring to accommodations.",
+    "example": "Das Hotel ist in der Nähe. (The hotel is nearby.)"
+  },
+  {
+    "id": "74",
+    "word": "Koffer",
+    "pronunciation": "KOH-fer",
+    "meaning": "suitcase",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 4,
+    "when_to_say": "When referring to luggage.",
+    "example": "Der Koffer ist schwer. (The suitcase is heavy.)"
+  },
+  {
+    "id": "75",
+    "word": "Reiseleiter",
+    "pronunciation": "RYE-zeh-lye-ter",
+    "meaning": "tour guide",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 4,
+    "when_to_say": "When talking about guided tours.",
+    "example": "Der Reiseleiter spricht Deutsch. (The tour guide speaks German.)"
+  },
+  {
+    "id": "76",
+    "word": "Stadtplan",
+    "pronunciation": "STAT-plan",
+    "meaning": "city map",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 4,
+    "when_to_say": "When navigating in a city.",
+    "example": "Ich brauche einen Stadtplan. (I need a city map.)"
+  },
+  {
+    "id": "77",
+    "word": "Zoll",
+    "pronunciation": "tsoll",
+    "meaning": "customs",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 4,
+    "when_to_say": "When discussing border control.",
+    "example": "Haben Sie etwas zu verzollen? (Do you have anything to declare?)"
+  },
+  {
+    "id": "78",
+    "word": "Reiseführer",
+    "pronunciation": "RYE-zeh-fuhr-er",
+    "meaning": "guidebook",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 4,
+    "when_to_say": "When referring to a travel guidebook.",
+    "example": "Der Reiseführer ist nützlich. (The guidebook is useful.)"
+  },
+  {
+    "id": "79",
+    "word": "Tourist",
+    "pronunciation": "TOO-risst",
+    "meaning": "tourist",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 4,
+    "when_to_say": "When referring to a person traveling.",
+    "example": "Der Tourist macht Fotos. (The tourist takes pictures.)"
+  },
+  {
+    "id": "80",
+    "word": "Abfahrt",
+    "pronunciation": "AB-fart",
+    "meaning": "departure",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 4,
+    "when_to_say": "When talking about leaving a location.",
+    "example": "Die Abfahrt ist um 8 Uhr. (The departure is at 8 o'clock.)"
+  }
+]

@@ -1,0 +1,222 @@
+[
+  {
+    "id": "101",
+    "word": "Computer",
+    "pronunciation": "kom-PYOO-ter",
+    "meaning": "computer",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 6,
+    "when_to_say": "When referring to electronic devices for work or entertainment.",
+    "example": "Ich arbeite am Computer. (I work on the computer.)"
+  },
+  {
+    "id": "102",
+    "word": "Internet",
+    "pronunciation": "IN-ter-net",
+    "meaning": "internet",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 6,
+    "when_to_say": "When referring to global connectivity.",
+    "example": "Das Internet ist langsam. (The internet is slow.)"
+  },
+  {
+    "id": "103",
+    "word": "Smartphone",
+    "pronunciation": "SMART-fohn",
+    "meaning": "smartphone",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 6,
+    "when_to_say": "When referring to mobile devices.",
+    "example": "Ich habe ein neues Smartphone. (I have a new smartphone.)"
+  },
+  {
+    "id": "104",
+    "word": "Bildschirm",
+    "pronunciation": "BILD-sheerm",
+    "meaning": "screen",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 6,
+    "when_to_say": "When describing display devices.",
+    "example": "Der Bildschirm ist groß. (The screen is big.)"
+  },
+  {
+    "id": "105",
+    "word": "Drucker",
+    "pronunciation": "DROOK-er",
+    "meaning": "printer",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 6,
+    "when_to_say": "When referring to devices for printing.",
+    "example": "Der Drucker funktioniert nicht. (The printer is not working.)"
+  },
+  {
+    "id": "106",
+    "word": "Software",
+    "pronunciation": "SOFT-vehr",
+    "meaning": "software",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 6,
+    "when_to_say": "When discussing programs on devices.",
+    "example": "Die Software muss aktualisiert werden. (The software needs to be updated.)"
+  },
+  {
+    "id": "107",
+    "word": "Tastatur",
+    "pronunciation": "tas-tah-TOOR",
+    "meaning": "keyboard",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 6,
+    "when_to_say": "When referring to typing devices.",
+    "example": "Die Tastatur ist kabellos. (The keyboard is wireless.)"
+  },
+  {
+    "id": "108",
+    "word": "Router",
+    "pronunciation": "ROO-ter",
+    "meaning": "router",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 6,
+    "when_to_say": "When discussing internet devices.",
+    "example": "Der Router ist ausgeschaltet. (The router is turned off.)"
+  },
+  {
+    "id": "109",
+    "word": "USB-Stick",
+    "pronunciation": "OO-ES-BAY shtik",
+    "meaning": "USB stick",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 6,
+    "when_to_say": "When referring to portable storage devices.",
+    "example": "Ich speichere die Datei auf dem USB-Stick. (I save the file on the USB stick.)"
+  },
+  {
+    "id": "110",
+    "word": "Lautsprecher",
+    "pronunciation": "LOWT-shpree-ker",
+    "meaning": "speaker",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 6,
+    "when_to_say": "When referring to sound output devices.",
+    "example": "Der Lautsprecher ist laut. (The speaker is loud.)"
+  },
+  {
+    "id": "111",
+    "word": "App",
+    "pronunciation": "äpp",
+    "meaning": "application",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 6,
+    "when_to_say": "When referring to mobile or desktop software.",
+    "example": "Diese App ist sehr nützlich. (This app is very useful.)"
+  },
+  {
+    "id": "112",
+    "word": "Datei",
+    "pronunciation": "dah-TYE",
+    "meaning": "file",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 6,
+    "when_to_say": "When discussing digital documents.",
+    "example": "Ich öffne die Datei. (I open the file.)"
+  },
+  {
+    "id": "113",
+    "word": "Programm",
+    "pronunciation": "pro-GRAM",
+    "meaning": "program",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 6,
+    "when_to_say": "When referring to computer software.",
+    "example": "Das Programm startet langsam. (The program starts slowly.)"
+  },
+  {
+    "id": "114",
+    "word": "Daten",
+    "pronunciation": "DAH-ten",
+    "meaning": "data",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 6,
+    "when_to_say": "When discussing information.",
+    "example": "Die Daten sind verschlüsselt. (The data is encrypted.)"
+  },
+  {
+    "id": "115",
+    "word": "Kopfhörer",
+    "pronunciation": "KOPF-hör-er",
+    "meaning": "headphones",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 6,
+    "when_to_say": "When discussing audio devices.",
+    "example": "Die Kopfhörer sind bequem. (The headphones are comfortable.)"
+  },
+  {
+    "id": "116",
+    "word": "Cloud",
+    "pronunciation": "klowd",
+    "meaning": "cloud",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 6,
+    "when_to_say": "When referring to online storage.",
+    "example": "Die Daten sind in der Cloud gespeichert. (The data is stored in the cloud.)"
+  },
+  {
+    "id": "117",
+    "word": "Maus",
+    "pronunciation": "mows",
+    "meaning": "mouse",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 6,
+    "when_to_say": "When discussing pointing devices.",
+    "example": "Die Maus ist kabellos. (The mouse is wireless.)"
+  },
+  {
+    "id": "118",
+    "word": "Passwort",
+    "pronunciation": "PASS-vort",
+    "meaning": "password",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 6,
+    "when_to_say": "When referring to secure access codes.",
+    "example": "Vergiss dein Passwort nicht. (Don't forget your password.)"
+  },
+  {
+    "id": "119",
+    "word": "Algorithmus",
+    "pronunciation": "ahl-go-RIT-moos",
+    "meaning": "algorithm",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 6,
+    "when_to_say": "When referring to computational methods.",
+    "example": "Der Algorithmus ist komplex. (The algorithm is complex.)"
+  },
+  {
+    "id": "120",
+    "word": "Server",
+    "pronunciation": "SERR-ver",
+    "meaning": "server",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 6,
+    "when_to_say": "When discussing data hosting.",
+    "example": "Der Server ist überlastet. (The server is overloaded.)"
+  }
+]

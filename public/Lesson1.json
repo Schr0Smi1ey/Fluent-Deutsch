@@ -1,0 +1,222 @@
+[
+  {
+    "id": "1",
+    "word": "Apfel",
+    "pronunciation": "AHP-fel",
+    "meaning": "apple",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 1,
+    "when_to_say": "When referring to a fruit or food.",
+    "example": "Ich esse einen Apfel. (I eat an apple.)"
+  },
+  {
+    "id": "2",
+    "word": "Wasser",
+    "pronunciation": "VAH-ser",
+    "meaning": "water",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 1,
+    "when_to_say": "When referring to a drink or hydration.",
+    "example": "Ich trinke Wasser. (I drink water.)"
+  },
+  {
+    "id": "3",
+    "word": "Brot",
+    "pronunciation": "broht",
+    "meaning": "bread",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 1,
+    "when_to_say": "When talking about food, especially breakfast or meals.",
+    "example": "Ich esse Brot zum Frühstück. (I eat bread for breakfast.)"
+  },
+  {
+    "id": "4",
+    "word": "Milch",
+    "pronunciation": "milh",
+    "meaning": "milk",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 1,
+    "when_to_say": "When referring to dairy products or drinks.",
+    "example": "Ich mag Milch. (I like milk.)"
+  },
+  {
+    "id": "5",
+    "word": "Eis",
+    "pronunciation": "eyes",
+    "meaning": "ice cream",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 1,
+    "when_to_say": "When referring to dessert or a cold treat.",
+    "example": "Ich liebe Eis. (I love ice cream.)"
+  },
+  {
+    "id": "6",
+    "word": "Tomate",
+    "pronunciation": "toh-MAH-teh",
+    "meaning": "tomato",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 1,
+    "when_to_say": "When referring to vegetables or cooking ingredients.",
+    "example": "Ich kaufe Tomaten. (I buy tomatoes.)"
+  },
+  {
+    "id": "7",
+    "word": "Banane",
+    "pronunciation": "bah-NAH-neh",
+    "meaning": "banana",
+    "part_of_speech": "noun",
+    "difficulty": "easy",
+    "lesson_no": 1,
+    "when_to_say": "When referring to fruit or snacks.",
+    "example": "Ich esse eine Banane. (I eat a banana.)"
+  },
+  {
+    "id": "8",
+    "word": "Kaffee",
+    "pronunciation": "KAH-feh",
+    "meaning": "coffee",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 1,
+    "when_to_say": "When ordering or referring to a beverage.",
+    "example": "Ich trinke jeden Morgen Kaffee. (I drink coffee every morning.)"
+  },
+  {
+    "id": "9",
+    "word": "Zucker",
+    "pronunciation": "TSU-kahr",
+    "meaning": "sugar",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 1,
+    "when_to_say": "When referring to sweeteners in food or drink.",
+    "example": "Bitte Zucker für meinen Kaffee. (Please, sugar for my coffee.)"
+  },
+  {
+    "id": "10",
+    "word": "Fisch",
+    "pronunciation": "fish",
+    "meaning": "fish",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 1,
+    "when_to_say": "When referring to seafood.",
+    "example": "Ich esse Fisch zum Abendessen. (I eat fish for dinner.)"
+  },
+  {
+    "id": "11",
+    "word": "Fleisch",
+    "pronunciation": "flaysh",
+    "meaning": "meat",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 1,
+    "when_to_say": "When referring to food or meal preferences.",
+    "example": "Ich esse kein Fleisch. (I don’t eat meat.)"
+  },
+  {
+    "id": "12",
+    "word": "Hühnchen",
+    "pronunciation": "HYUHN-chen",
+    "meaning": "chicken",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 1,
+    "when_to_say": "When referring to poultry or meals.",
+    "example": "Das Hühnchen ist lecker. (The chicken is delicious.)"
+  },
+  {
+    "id": "13",
+    "word": "Kartoffel",
+    "pronunciation": "kar-TOF-fel",
+    "meaning": "potato",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 1,
+    "when_to_say": "When referring to vegetables or meals.",
+    "example": "Die Kartoffel ist gekocht. (The potato is cooked.)"
+  },
+  {
+    "id": "14",
+    "word": "Reis",
+    "pronunciation": "rice",
+    "meaning": "rice",
+    "part_of_speech": "noun",
+    "difficulty": "medium",
+    "lesson_no": 1,
+    "when_to_say": "When referring to food or meals.",
+    "example": "Reis ist gesund. (Rice is healthy.)"
+  },
+  {
+    "id": "15",
+    "word": "Butter",
+    "pronunciation": "BOO-ter",
+    "meaning": "butter",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 1,
+    "when_to_say": "When cooking or preparing meals.",
+    "example": "Butter auf das Brot. (Butter on the bread.)"
+  },
+  {
+    "id": "16",
+    "word": "Apfelsaft",
+    "pronunciation": "AHP-fel-saft",
+    "meaning": "apple juice",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 1,
+    "when_to_say": "When referring to drinks.",
+    "example": "Ich trinke Apfelsaft. (I drink apple juice.)"
+  },
+  {
+    "id": "17",
+    "word": "Schokolade",
+    "pronunciation": "SHOH-koh-lah-deh",
+    "meaning": "chocolate",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 1,
+    "when_to_say": "When referring to sweets or desserts.",
+    "example": "Ich mag Schokolade. (I like chocolate.)"
+  },
+  {
+    "id": "18",
+    "word": "Käse",
+    "pronunciation": "KAY-zeh",
+    "meaning": "cheese",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 1,
+    "when_to_say": "When referring to dairy or food.",
+    "example": "Käse ist lecker. (Cheese is delicious.)"
+  },
+  {
+    "id": "19",
+    "word": "Erdbeere",
+    "pronunciation": "ERD-beh-reh",
+    "meaning": "strawberry",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 1,
+    "when_to_say": "When talking about fruits or desserts.",
+    "example": "Die Erdbeeren sind süß. (The strawberries are sweet.)"
+  },
+  {
+    "id": "20",
+    "word": "Salz",
+    "pronunciation": "zalts",
+    "meaning": "salt",
+    "part_of_speech": "noun",
+    "difficulty": "hard",
+    "lesson_no": 1,
+    "when_to_say": "When seasoning food or cooking.",
+    "example": "Vergiss das Salz nicht! (Don't forget the salt!)"
+  }
+]
