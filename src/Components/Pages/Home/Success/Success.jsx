@@ -16,7 +16,7 @@ const Success = () => {
         <h2 className="text-5xl font-bold text-gray-800 mb-12 tracking-tight">
           Our Achievements
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div
             data-aos="zoom-in"
             className="bg-white shadow-lg hover:bg-gradient-to-t hover:from-green-200 p-8 rounded-xl transform transition-transform duration-300 hover:scale-105"
