@@ -40,7 +40,6 @@ const Testimonials = () => {
       image: Commenter4,
     },
   ];
-
   const [currentSlide, setCurrentSlide] = useState(0);
   const goToPreviousSlide = () => {
     setCurrentSlide(
